@@ -1,0 +1,103 @@
+
+% GA-PRAC-01
+% C2 - Escenario 2: Sabores de la Abuela Rosa
+% Responsable: Cordova Carreno Mayra Lucila
+% Requiere: longtable y array
+
+\subsection{Escenario 2: Sabores de la Abuela Rosa}
+
+El emprendimiento Sabores de la Abuela Rosa necesita
+una aplicación móvil para gestionar pedidos de comida
+típica. El proyecto presenta alta volatilidad de
+requisitos, disponibilidad frecuente de la propietaria,
+un presupuesto pequeño y un plazo de 14 semanas.
+
+El sistema debe proteger los datos personales de los
+clientes, controlar los pagos por transferencia y
+funcionar en teléfonos Android de gama baja con
+conectividad intermitente.
+
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.35}
+
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.16\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}|}
+\hline
+\textbf{Criterio} &
+\textbf{Secuencial (cascada)} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Criterio} &
+\textbf{Secuencial (cascada)} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endhead
+
+\textbf{K1. Estabilidad y cambios} &
+Una especificación inicial quedaría desactualizada
+por los cambios diarios del menú y las nuevas ideas
+de Doña Rosa y su hijo. &
+Permite incorporar progresivamente cambios en
+promociones, menú y funcionalidades mediante
+ciclos de revisión. &
+Favorece la repriorización frecuente de requisitos
+según los cambios del menú y las decisiones
+de Doña Rosa. \\
+\hline
+
+\textbf{K2. Partes interesadas y disponibilidad} &
+Doña Rosa podría aprobar requisitos al inicio,
+pero su disponibilidad diaria quedaría poco
+aprovechada durante el desarrollo. &
+Permite que Doña Rosa pruebe los incrementos
+y comunique correcciones al finalizar cada ciclo. &
+Aprovecha su disponibilidad diaria para validar
+funcionalidades y decidir prioridades, aunque
+deben controlarse las solicitudes adicionales
+de su hijo. \\
+\hline
+
+\textbf{K3. Tipo de sistema y criticidad} &
+Permite documentar requisitos de pagos y protección
+de datos, pero podría detectar tarde problemas
+de uso en teléfonos económicos. &
+Facilita probar progresivamente pedidos, pagos
+y funcionamiento con conexiones intermitentes. &
+Permite validar tempranamente la experiencia móvil,
+pero exige criterios de aceptación para pagos,
+privacidad y funcionamiento sin conexión estable. \\
+\hline
+
+\textbf{K4. Riesgo principal} &
+Los cambios frecuentes podrían provocar retrabajo
+y comprometer la entrega dentro de las 14 semanas. &
+Existe riesgo de no completar los incrementos
+previstos con dos desarrolladores a medio tiempo. &
+Las nuevas ideas pueden ampliar excesivamente
+el alcance y agotar el presupuesto antes
+de las fiestas. \\
+\hline
+
+\textbf{K5. Documentación y marco normativo o contractual} &
+Favorece una especificación formal de datos
+personales y pagos, aunque requiere actualizarla
+ante cambios frecuentes. &
+Permite mantener requisitos y evidencias
+de pruebas actualizados por incremento. &
+Puede utilizar historias de usuario y criterios
+de aceptación, complementados con documentación
+de privacidad y conciliación de transferencias. \\
+\hline
+
+\end{longtable}
+
+\normalsize
