@@ -1,0 +1,108 @@
+
+% GA-PRAC-01
+% C2 - Escenario 1: Extractora Rio Lindo
+% Responsable: Cordova Carreno Mayra Lucila
+% Requiere: \usepackage{longtable}
+%           \usepackage{array}
+
+\section{C2. Matriz comparativa contextualizada}
+
+\subsection{Escenario 1: Extractora Río Lindo}
+
+La Extractora Río Lindo requiere un sistema embebido
+para controlar temperatura, presión y niveles de
+tanques. El proyecto presenta requisitos de seguridad
+estables e incertidumbre en sensores, interfaz y
+reportes. Su criticidad es muy alta debido a los
+riesgos para los operadores y la producción.
+
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.35}
+
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.16\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}|}
+\hline
+\textbf{Criterio} &
+\textbf{Secuencial (cascada)} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Criterio} &
+\textbf{Secuencial (cascada)} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endhead
+
+\textbf{K1. Estabilidad y cambios} &
+Favorece la especificación temprana de temperaturas,
+presiones y bloqueos, pero dificulta incorporar
+cambios posteriores en sensores e interfaz. &
+Permite mantener estables los requisitos de seguridad
+y refinar por iteraciones la comunicación con sensores
+y los reportes. &
+Facilita adaptar interfaz y reportes, pero los cambios
+frecuentes no aportan la misma ventaja a las reglas
+de seguridad ya definidas. \\
+\hline
+
+\textbf{K2. Partes interesadas y disponibilidad} &
+Permite planificar reuniones con el jefe de planta
+dos mañanas por semana y obtener aprobaciones
+formales del responsable de seguridad. &
+Permite programar revisiones con el jefe de planta
+y operadores de distintos turnos al finalizar
+cada iteración. &
+La colaboración frecuente resulta difícil por la
+disponibilidad limitada del jefe de planta y los
+turnos rotativos de los operadores. \\
+\hline
+
+\textbf{K3. Tipo de sistema y criticidad} &
+Favorece la trazabilidad de los requisitos de
+protección del sistema embebido, aunque puede
+retrasar pruebas de integración. &
+Permite comprobar progresivamente alarmas, bloqueos
+y comunicación con dispositivos, conservando
+requisitos de seguridad verificables. &
+Facilita ajustar la interfaz, pero necesita controles
+rigurosos para evitar que cambios rápidos comprometan
+funciones críticas de protección. \\
+\hline
+
+\textbf{K4. Riesgo principal} &
+La selección de sensores en el tercer mes podría
+invalidar decisiones técnicas anteriores y
+generar retrabajo. &
+Permite verificar tempranamente la integración
+con sensores y válvulas, reduciendo incertidumbre
+antes de la puesta en marcha. &
+Existe riesgo de priorizar mejoras visibles de
+interfaz sobre verificaciones críticas si no se
+establecen prioridades y criterios de seguridad
+estrictos. \\
+\hline
+
+\textbf{K5. Documentación y marco normativo o contractual} &
+Favorece la aprobación formal de requisitos de
+seguridad y la documentación de pruebas exigidas
+por la aseguradora. &
+Permite conservar versiones de requisitos y
+evidencias de pruebas por incremento, manteniendo
+la trazabilidad de funciones de protección. &
+Requiere complementar la documentación habitual
+de trabajo con requisitos de seguridad aprobados
+y evidencias verificables de cada función de
+protección. \\
+\hline
+
+\end{longtable}
+
+\normalsize
