@@ -17,13 +17,13 @@ Los requisitos presentan incertidumbre debido a posibles cambios en el flujo de 
 \renewcommand{\arraystretch}{1.35}
 
 \begin{longtable}{
-|>{\raggedright\arraybackslash}p{2.5cm}
-|>{\raggedright\arraybackslash}p{3.5cm}
-|>{\raggedright\arraybackslash}p{3.5cm}
-|>{\raggedright\arraybackslash}p{3.5cm}|}
+|>{\raggedright\arraybackslash}p{0.16\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}|}
 \hline
 \textbf{Criterio} &
-\textbf{Cascada} &
+\textbf{Secuencial (cascada)} &
 \textbf{Iterativo e incremental} &
 \textbf{Ágil} \\
 \hline
@@ -31,37 +31,37 @@ Los requisitos presentan incertidumbre debido a posibles cambios en el flujo de 
 
 \hline
 \textbf{Criterio} &
-\textbf{Cascada} &
+\textbf{Secuencial (cascada)} &
 \textbf{Iterativo e incremental} &
 \textbf{Ágil} \\
 \hline
 \endhead
 
-\textbf{Gestión de cambios} &
+\textbf{K1. Estabilidad y cambios} &
 Permite establecer una línea base de requisitos para la aprobación contractual del mes 2. Sin embargo, los cambios en el flujo de aprobación o en las tasas municipales requerirían una evaluación formal de impacto y posiblemente una modificación contractual. &
 Permite revisar y ajustar los requisitos mediante ciclos de desarrollo, incorporando los cambios previstos para el cuarto mes. No obstante, los ajustes deben controlarse para respetar los entregables y pagos establecidos. &
 Facilita adaptar los requisitos mediante la revisión continua del backlog. Sin embargo, los cambios solicitados por los funcionarios no pueden incorporarse libremente si modifican el alcance contractual aprobado. \\
 \hline
 
-\textbf{Stakeholders} &
+\textbf{K2. Partes interesadas y disponibilidad} &
 La participación del administrador del contrato y de los funcionarios se concentra principalmente en la especificación, revisión y aceptación formal. La disponibilidad semanal del administrador favorece reuniones programadas, pero limita la retroalimentación continua. &
 Permite realizar validaciones periódicas con el administrador y los funcionarios de ventanilla y rentas. Las revisiones pueden organizarse según su disponibilidad y los hitos del contrato. &
 Requiere colaboración frecuente con representantes del municipio. La participación irregular de los funcionarios y la disponibilidad limitada del administrador dificultan mantener una retroalimentación ágil constante. \\
 \hline
 
-\textbf{Tipo de sistema} &
+\textbf{K3. Tipo de sistema y criticidad} &
 La secuencia de fases facilita documentar y verificar las funciones de permisos, patentes y certificados. Sin embargo, descubrir tardíamente problemas de integración con la base de datos antigua podría afectar el cronograma. &
 Permite desarrollar y validar progresivamente los módulos de trámites, cobros e integración. Las primeras iteraciones pueden utilizarse para investigar la base de datos antigua y comprobar la compatibilidad con los servidores municipales. &
 Permite entregar funcionalidades parciales y recibir observaciones tempranas. No obstante, el sistema necesita cumplir requisitos de seguridad, integración y aceptación contractual que exigen controles adicionales. \\
 \hline
 
-\textbf{Riesgo} &
+\textbf{K4. Riesgo principal} &
 Presenta un riesgo elevado de retrabajo si los cambios normativos aparecen después de aprobar la especificación. Los problemas técnicos descubiertos durante la implementación podrían ocasionar multas por retraso. &
 Permite identificar anticipadamente riesgos de integración, protección de datos y cálculos de tasas. Sin embargo, requiere planificar cuidadosamente las iteraciones para evitar incumplir los tres hitos contractuales. &
 Permite detectar problemas mediante pruebas y revisiones frecuentes. Sin embargo, una priorización inadecuada del backlog o la falta de disponibilidad del cliente podría comprometer las fechas y el alcance contratado. \\
 \hline
 
-\textbf{Documentación} &
+\textbf{K5. Documentación y marco normativo o contractual} &
 Favorece una especificación formal, trazabilidad de requisitos, registros de pruebas y actas de aceptación, necesarios para justificar los entregables y pagos del contrato público. &
 Permite mantener una especificación inicial aprobada y actualizar los artefactos mediante control de versiones, trazabilidad y registros de cambios, conservando la evidencia exigida por el contrato. &
 Utiliza historias de usuario, criterios de aceptación y un backlog priorizado. Para este contrato sería necesario complementar esos artefactos con especificaciones formales, trazabilidad y documentación de aceptación. \\
