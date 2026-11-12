@@ -1,0 +1,73 @@
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+
+{\bfseries UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\par}
+\vspace{0.7cm}
+
+FACULTAD DE CIENCIAS DE LA COMPUTACIÓN\par
+CARRERA DE SOFTWARE\par
+INGENIERÍA DE REQUERIMIENTOS\par
+
+\vfill
+
+{\Large\bfseries GA-PRAC-01 - FORM\par}
+\vspace{0.5cm}
+
+{\large Comparación entre modelos de proceso de requisitos en escenarios reales\par}
+
+\vspace{1cm}
+
+\textbf{Integrantes:}\par
+Córdova Carreño Mayra Lucila\par
+Herrera Morán Gilmar Javier\par
+Rivas Rodero Jordy Fabian\par
+
+\vfill
+
+Noviembre de 2026\par
+
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+% C1: Caracterización de modelos
+% Responsable: Córdova Carreño Mayra Lucila
+\input{01-Cordova/c1-caracterizacion.tex}
+
+% C2: Matrices comparativas
+% Responsable: Córdova Carreño Mayra Lucila
+\input{01-Cordova/c2-escenario-01.tex}
+\input{01-Cordova/c2-escenario-02.tex}
+\input{01-Cordova/c2-escenario-03.tex}
+\input{01-Cordova/c2-escenario-04.tex}
+
+% C3, C4 y C5:
+% Pendientes de integrar cuando los compañeros
+% suban sus respectivos archivos.
+
+\end{document}
