@@ -34,19 +34,42 @@ Cada actividad cuenta con una carpeta independiente que contiene su documentaci�
 ## Estructura del repositorio
 
 ```text
+
 ISR-401-CHR/
 │
 ├── README.md
 │
 └── GA-PRAC-01/
     ├── README.md
+    ├── main.tex
+    │
     ├── 01-Cordova/
-    │   └── README.md
+    │   ├── README.md
+    │   ├── c1-caracterizacion.tex
+    │   ├── c2-escenario-01.tex
+    │   ├── c2-escenario-02.tex
+    │   ├── c2-escenario-03.tex
+    │   └── c2-escenario-04.tex
+    │
     ├── 02-Herrera/
     │   └── README.md
+    │
     └── 03-Rivas/
         └── README.md
+
 ```
+### Documento principal de GA-PRAC-01
+
+El archivo `GA-PRAC-01/main.tex` constituye el documento principal en LaTeX de la actividad grupal.
+
+Actualmente integra los siguientes apartados:
+
+- **C1:** Caracterización de los modelos de proceso de requisitos.
+- **C2:** Matrices comparativas de los cuatro escenarios propuestos.
+
+Ambos apartados fueron desarrollados por Córdova Carreño Mayra Lucila y se encuentran organizados en la carpeta `01-Cordova`.
+
+Los apartados restantes (C3, C4 y C5) se incorporarán al documento principal cuando los integrantes responsables completen y registren sus contribuciones.
 
 ## Objetivos del repositorio
 
