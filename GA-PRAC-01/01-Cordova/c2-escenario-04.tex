@@ -21,14 +21,14 @@ El proyecto cuenta con financiamiento de un donante que exige informes semestral
 \renewcommand{\arraystretch}{1.35}
 
 \begin{longtable}{
-|>{\raggedright\arraybackslash}p{2.5cm}
-|>{\raggedright\arraybackslash}p{3.5cm}
-|>{\raggedright\arraybackslash}p{3.5cm}
-|>{\raggedright\arraybackslash}p{3.5cm}|}
+|>{\raggedright\arraybackslash}p{0.16\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}|}
 
 \hline
 \textbf{Criterio} &
-\textbf{Cascada} &
+\textbf{Secuencial (cascada)} &
 \textbf{Iterativo e incremental} &
 \textbf{Ágil} \\
 \hline
@@ -36,37 +36,37 @@ El proyecto cuenta con financiamiento de un donante que exige informes semestral
 
 \hline
 \textbf{Criterio} &
-\textbf{Cascada} &
+\textbf{Secuencial (cascada)} &
 \textbf{Iterativo e incremental} &
 \textbf{Ágil} \\
 \hline
 \endhead
 
-\textbf{Gestión de cambios} &
+\textbf{K1. Estabilidad y cambios} &
 Permite definir y documentar inicialmente las reglas de liquidación, que presentan baja volatilidad. Sin embargo, los cambios en trazabilidad y certificación solicitados por compradores exportadores podrían generar retrabajo y modificaciones formales de requisitos. &
 Permite establecer una línea base para las reglas de liquidación y revisar progresivamente los requisitos de trazabilidad y certificación. Los cambios pueden incorporarse en nuevas iteraciones, considerando su impacto en el plazo de doce meses. &
 Facilita actualizar y priorizar los requisitos de trazabilidad mediante un backlog. No obstante, los cambios importantes deben esperar la aprobación mensual de la directiva, lo que limita la capacidad de respuesta inmediata. \\
 \hline
 
-\textbf{Stakeholders} &
+\textbf{K2. Partes interesadas y disponibilidad} &
 Permite recopilar requisitos mediante entrevistas y reuniones iniciales con la gerente, la directiva y representantes de los socios. Sin embargo, la participación limitada de los productores podría ocasionar que sus necesidades reales se descubran durante las pruebas finales. &
 Permite validar periódicamente las funcionalidades con la gerente y aprovechar los días de acopio y las asambleas trimestrales para obtener retroalimentación de los socios. Las decisiones importantes se presentan a la directiva para su aprobación. &
 La disponibilidad casi diaria de la gerente favorece la colaboración continua. Sin embargo, ella no puede aprobar cambios importantes por sí sola y los socios dispersos no pueden participar frecuentemente en revisiones, lo que dificulta una validación ágil representativa. \\
 \hline
 
-\textbf{Tipo de sistema} &
+\textbf{K3. Tipo de sistema y criticidad} &
 Facilita especificar detalladamente los cálculos de liquidaciones, créditos y saldos antes de la implementación. Sin embargo, desarrollar la plataforma mediante fases principalmente consecutivas puede retrasar la validación del funcionamiento sin conexión y la sincronización de registros. &
 Permite construir progresivamente los módulos de entregas, liquidaciones, créditos, consultas y trazabilidad. Las primeras iteraciones pueden comprobar el registro sin conexión y la sincronización posterior, reduciendo la incertidumbre técnica. &
 Permite desarrollar funcionalidades prioritarias y demostrar avances frecuentes. Puede comenzar con el registro de entregas y continuar con pagos, créditos y trazabilidad, aunque requiere coordinar las dependencias entre módulos y las validaciones de los socios. \\
 \hline
 
-\textbf{Riesgo} &
+\textbf{K4. Riesgo principal} &
 Presenta riesgo de detectar tardíamente errores en liquidaciones o problemas de sincronización. Estos fallos podrían afectar los pagos a los productores y la integridad de los registros de entregas. &
 Permite identificar y corregir tempranamente errores de cálculo, duplicación de registros, pérdida de información y problemas de conectividad. Sin embargo, exige controlar las dependencias técnicas entre incrementos y mantener pruebas de integración. &
 Las pruebas frecuentes permiten detectar problemas de usabilidad y funcionamiento. Sin embargo, un backlog mal priorizado podría postergar controles críticos de liquidación, seguridad de datos o sincronización, especialmente con un equipo de cuatro personas. \\
 \hline
 
-\textbf{Documentación} &
+\textbf{K5. Documentación y marco normativo o contractual} &
 Favorece una especificación formal de requisitos, reglas de negocio, documentación de cálculos, pruebas y evidencias para los informes semestrales exigidos por el donante y el control institucional. &
 Permite mantener requisitos documentados y trazables, actualizar especificaciones por iteración y generar evidencias de pruebas y avances. Los resultados de cada incremento pueden respaldar los informes semestrales del donante. &
 Utiliza historias de usuario, criterios de aceptación y backlog priorizado. Para cumplir las condiciones del donante, el estatuto y el control institucional, sería necesario complementar estos artefactos con documentación formal, trazabilidad y evidencias verificables. \\
