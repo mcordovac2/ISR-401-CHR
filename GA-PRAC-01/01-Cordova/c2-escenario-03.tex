@@ -1,0 +1,80 @@
+
+% GA-PRAC-01
+% C2 - Escenario 3: Sistema de tramites municipales
+% Responsable: Cordova Carreno Mayra Lucila
+% Requiere: longtable y array
+
+\subsection{Escenario 3: Sistema de trámites municipales contratado por contratación pública}
+
+El GAD Municipal del cantón San Isidro de Baba, en la provincia de Los Ríos, requiere desarrollar un sistema web para gestionar aproximadamente 9\,000 trámites anuales relacionados con permisos de funcionamiento, patentes y certificados de no adeudar.
+
+El proyecto será ejecutado por una empresa contratista de seis personas, bajo un contrato público de siete meses. Se establecen tres entregables con fechas y pagos fijos: especificación de requisitos aprobada en el mes 2, sistema instalado y probado en el mes 6, y capacitación con acta de entrega-recepción definitiva en el mes 7. Cada día de retraso genera una multa.
+
+Los requisitos presentan incertidumbre debido a posibles cambios en el flujo de aprobación y a una nueva ordenanza de tasas que podría aprobarse en el cuarto mes. Además, el sistema debe proteger los datos personales, administrar cobros y conectarse con servidores municipales y una base de datos antigua sin documentación.
+
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.35}
+
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{2.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}|}
+\hline
+\textbf{Criterio} &
+\textbf{Cascada} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Criterio} &
+\textbf{Cascada} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endhead
+
+\textbf{Gestión de cambios} &
+Permite establecer una línea base de requisitos para la aprobación contractual del mes 2. Sin embargo, los cambios en el flujo de aprobación o en las tasas municipales requerirían una evaluación formal de impacto y posiblemente una modificación contractual. &
+Permite revisar y ajustar los requisitos mediante ciclos de desarrollo, incorporando los cambios previstos para el cuarto mes. No obstante, los ajustes deben controlarse para respetar los entregables y pagos establecidos. &
+Facilita adaptar los requisitos mediante la revisión continua del backlog. Sin embargo, los cambios solicitados por los funcionarios no pueden incorporarse libremente si modifican el alcance contractual aprobado. \\
+\hline
+
+\textbf{Stakeholders} &
+La participación del administrador del contrato y de los funcionarios se concentra principalmente en la especificación, revisión y aceptación formal. La disponibilidad semanal del administrador favorece reuniones programadas, pero limita la retroalimentación continua. &
+Permite realizar validaciones periódicas con el administrador y los funcionarios de ventanilla y rentas. Las revisiones pueden organizarse según su disponibilidad y los hitos del contrato. &
+Requiere colaboración frecuente con representantes del municipio. La participación irregular de los funcionarios y la disponibilidad limitada del administrador dificultan mantener una retroalimentación ágil constante. \\
+\hline
+
+\textbf{Tipo de sistema} &
+La secuencia de fases facilita documentar y verificar las funciones de permisos, patentes y certificados. Sin embargo, descubrir tardíamente problemas de integración con la base de datos antigua podría afectar el cronograma. &
+Permite desarrollar y validar progresivamente los módulos de trámites, cobros e integración. Las primeras iteraciones pueden utilizarse para investigar la base de datos antigua y comprobar la compatibilidad con los servidores municipales. &
+Permite entregar funcionalidades parciales y recibir observaciones tempranas. No obstante, el sistema necesita cumplir requisitos de seguridad, integración y aceptación contractual que exigen controles adicionales. \\
+\hline
+
+\textbf{Riesgo} &
+Presenta un riesgo elevado de retrabajo si los cambios normativos aparecen después de aprobar la especificación. Los problemas técnicos descubiertos durante la implementación podrían ocasionar multas por retraso. &
+Permite identificar anticipadamente riesgos de integración, protección de datos y cálculos de tasas. Sin embargo, requiere planificar cuidadosamente las iteraciones para evitar incumplir los tres hitos contractuales. &
+Permite detectar problemas mediante pruebas y revisiones frecuentes. Sin embargo, una priorización inadecuada del backlog o la falta de disponibilidad del cliente podría comprometer las fechas y el alcance contratado. \\
+\hline
+
+\textbf{Documentación} &
+Favorece una especificación formal, trazabilidad de requisitos, registros de pruebas y actas de aceptación, necesarios para justificar los entregables y pagos del contrato público. &
+Permite mantener una especificación inicial aprobada y actualizar los artefactos mediante control de versiones, trazabilidad y registros de cambios, conservando la evidencia exigida por el contrato. &
+Utiliza historias de usuario, criterios de aceptación y un backlog priorizado. Para este contrato sería necesario complementar esos artefactos con especificaciones formales, trazabilidad y documentación de aceptación. \\
+\hline
+
+\end{longtable}
+
+\normalsize
+
+\noindent\textbf{Síntesis comparativa.}
+
+El modelo cascada ofrece mayor correspondencia con la aprobación formal de requisitos y los entregables contractuales, pero presenta dificultades ante los cambios normativos y la incertidumbre técnica.
+
+El modelo iterativo e incremental permite reducir progresivamente los riesgos de integración y validar los requisitos con los funcionarios municipales, siempre que sus ciclos se ajusten a los hitos y procedimientos formales del contrato.
+
+El modelo ágil ofrece flexibilidad para responder a cambios, pero la disponibilidad limitada de los stakeholders y las restricciones de contratación pública dificultan su aplicación sin mecanismos adicionales de control documental y contractual.
