@@ -1,0 +1,85 @@
+
+% GA-PRAC-01
+% C2 - Escenario 4: Cooperativa Frutos del Estero
+% Responsable: Cordova Carreno Mayra Lucila
+% Requiere: longtable y array
+
+\subsection{Escenario 4: Plataforma web para una cooperativa de productores de cacao con socios dispersos}
+
+La Cooperativa Agroproductiva Frutos del Estero, ubicada en la provincia de Los Ríos, agrupa a 640 pequeños productores de cacao de recintos rurales de Mocache, Ventanas y Valencia.
+
+La cooperativa necesita una plataforma web que permita registrar las entregas de cacao según peso, humedad y calidad, calcular las liquidaciones y consultar entregas, pagos, créditos y saldos. Actualmente, estos procesos se realizan mediante tarjetas de papel y hojas de cálculo.
+
+El proyecto dispone de un equipo de cuatro personas y un plazo de doce meses. La gerente está disponible casi diariamente, pero los cambios importantes requieren aprobación de la directiva, que se reúne mensualmente. Los socios se encuentran dispersos y participan principalmente durante los días de acopio o las asambleas trimestrales.
+
+Las reglas de liquidación presentan baja volatilidad, mientras que los requisitos de trazabilidad y certificación del cacao pueden cambiar según las exigencias de los compradores exportadores. Además, el sistema debe proteger los datos personales, funcionar sin conexión durante el registro de entregas y sincronizar la información posteriormente.
+
+El proyecto cuenta con financiamiento de un donante que exige informes semestrales de avance y está sujeto al estatuto de la cooperativa y al control del organismo supervisor de la economía popular y solidaria.
+
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.35}
+
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{2.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}|}
+
+\hline
+\textbf{Criterio} &
+\textbf{Cascada} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Criterio} &
+\textbf{Cascada} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endhead
+
+\textbf{Gestión de cambios} &
+Permite definir y documentar inicialmente las reglas de liquidación, que presentan baja volatilidad. Sin embargo, los cambios en trazabilidad y certificación solicitados por compradores exportadores podrían generar retrabajo y modificaciones formales de requisitos. &
+Permite establecer una línea base para las reglas de liquidación y revisar progresivamente los requisitos de trazabilidad y certificación. Los cambios pueden incorporarse en nuevas iteraciones, considerando su impacto en el plazo de doce meses. &
+Facilita actualizar y priorizar los requisitos de trazabilidad mediante un backlog. No obstante, los cambios importantes deben esperar la aprobación mensual de la directiva, lo que limita la capacidad de respuesta inmediata. \\
+\hline
+
+\textbf{Stakeholders} &
+Permite recopilar requisitos mediante entrevistas y reuniones iniciales con la gerente, la directiva y representantes de los socios. Sin embargo, la participación limitada de los productores podría ocasionar que sus necesidades reales se descubran durante las pruebas finales. &
+Permite validar periódicamente las funcionalidades con la gerente y aprovechar los días de acopio y las asambleas trimestrales para obtener retroalimentación de los socios. Las decisiones importantes se presentan a la directiva para su aprobación. &
+La disponibilidad casi diaria de la gerente favorece la colaboración continua. Sin embargo, ella no puede aprobar cambios importantes por sí sola y los socios dispersos no pueden participar frecuentemente en revisiones, lo que dificulta una validación ágil representativa. \\
+\hline
+
+\textbf{Tipo de sistema} &
+Facilita especificar detalladamente los cálculos de liquidaciones, créditos y saldos antes de la implementación. Sin embargo, desarrollar la plataforma mediante fases principalmente consecutivas puede retrasar la validación del funcionamiento sin conexión y la sincronización de registros. &
+Permite construir progresivamente los módulos de entregas, liquidaciones, créditos, consultas y trazabilidad. Las primeras iteraciones pueden comprobar el registro sin conexión y la sincronización posterior, reduciendo la incertidumbre técnica. &
+Permite desarrollar funcionalidades prioritarias y demostrar avances frecuentes. Puede comenzar con el registro de entregas y continuar con pagos, créditos y trazabilidad, aunque requiere coordinar las dependencias entre módulos y las validaciones de los socios. \\
+\hline
+
+\textbf{Riesgo} &
+Presenta riesgo de detectar tardíamente errores en liquidaciones o problemas de sincronización. Estos fallos podrían afectar los pagos a los productores y la integridad de los registros de entregas. &
+Permite identificar y corregir tempranamente errores de cálculo, duplicación de registros, pérdida de información y problemas de conectividad. Sin embargo, exige controlar las dependencias técnicas entre incrementos y mantener pruebas de integración. &
+Las pruebas frecuentes permiten detectar problemas de usabilidad y funcionamiento. Sin embargo, un backlog mal priorizado podría postergar controles críticos de liquidación, seguridad de datos o sincronización, especialmente con un equipo de cuatro personas. \\
+\hline
+
+\textbf{Documentación} &
+Favorece una especificación formal de requisitos, reglas de negocio, documentación de cálculos, pruebas y evidencias para los informes semestrales exigidos por el donante y el control institucional. &
+Permite mantener requisitos documentados y trazables, actualizar especificaciones por iteración y generar evidencias de pruebas y avances. Los resultados de cada incremento pueden respaldar los informes semestrales del donante. &
+Utiliza historias de usuario, criterios de aceptación y backlog priorizado. Para cumplir las condiciones del donante, el estatuto y el control institucional, sería necesario complementar estos artefactos con documentación formal, trazabilidad y evidencias verificables. \\
+\hline
+
+\end{longtable}
+
+\normalsize
+
+\noindent\textbf{Síntesis comparativa.}
+
+El modelo cascada ofrece ventajas para documentar las reglas estables de liquidación y cumplir las obligaciones institucionales. Sin embargo, su menor flexibilidad frente a cambios en trazabilidad y certificación, junto con la validación tardía de la sincronización, representa una limitación importante.
+
+El modelo iterativo e incremental permite desarrollar y validar progresivamente los módulos de la plataforma, comprobar anticipadamente el funcionamiento sin conexión y adaptar los requisitos de trazabilidad. Además, facilita organizar revisiones con los socios según su disponibilidad y conservar evidencias para los informes semestrales.
+
+El modelo ágil favorece la adaptación a cambios y la colaboración frecuente con la gerente. No obstante, la aprobación mensual de la directiva, la dispersión de los socios y las exigencias documentales del donante requieren mecanismos adicionales de coordinación y control.
