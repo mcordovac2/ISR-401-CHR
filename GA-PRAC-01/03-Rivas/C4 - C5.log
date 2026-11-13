@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.7)  12 NOV 2026 21:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.7)  12 NOV 2026 21:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -318,8 +318,12 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 x.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count313
+) (C4 - C5.aux
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 28.
 )
-No file "C4 - C5".aux.
 \openout1 = `"C4 - C5.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -342,8 +346,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
-Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 9.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -379,64 +382,16 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 9.
+(C4 - C5.out) (C4 - C5.out)
 \@outlinefile=\write3
 \openout3 = `"C4 - C5.out"'.
 
+ [1
 
-LaTeX Warning: Citation `Pohl2024' on page 1 undefined on input line 13.
-
-
-LaTeX Warning: Citation `Inayat2015' on page 1 undefined on input line 17.
-
-
-LaTeX Warning: Citation `GA_Prac_01' on page 1 undefined on input line 20.
-
-
-LaTeX Warning: Citation `Pohl2024' on page 1 undefined on input line 20.
-
-
-LaTeX Warning: Citation `GA_Prac_01' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation `Inayat2015' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation `GA_Prac_01' on page 1 undefined on input line 22.
-
-
-LaTeX Warning: Citation `Sommerville2016' on page 1 undefined on input line 22.
-
-
-
-LaTeX Warning: Citation `Pohl2024' on page 1 undefined on input line 26.
-
-
-LaTeX Warning: Citation `GA_Prac_01' on page 1 undefined on input line 27.
-
-
-LaTeX Warning: Citation `Kuhrmann2019' on page 1 undefined on input line 29.
-
-
-LaTeX Warning: Citation `GA_Prac_01' on page 1 undefined on input line 37.
-
-
-LaTeX Warning: Citation `Pohl2024' on page 1 undefined on input line 38.
-
-
-LaTeX Warning: Citation `Inayat2015' on page 1 undefined on input line 42.
-
-
-LaTeX Warning: Citation `GA_Prac_01' on page 1 undefined on input line 43.
-
-
-LaTeX Warning: Citation `Pohl2024' on page 1 undefined on input line 43.
-
-[1
-
-{C:/Users/Ryu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-(C4 - C5.aux
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+{C:/Users/Ryu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] (C4 - C5.a
+ux
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -444,37 +399,31 @@ L3 programming layer <2025-12-24>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
 Package rerunfilecheck Warning: File `"C4 - C5".out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `"C4 - C5".out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0BBCC8E30746F966360EAA246DA96267;992.
+(rerunfilecheck)             Before: 0BBCC8E30746F966360EAA246DA96267;992
+(rerunfilecheck)             After:  5C83F8F197A7123A4077FD8ABCE24DAB;911.
  ) 
 Here is how much of TeX's memory you used:
- 10736 strings out of 467870
- 166557 string characters out of 5419323
- 607085 words of memory out of 5000000
- 39525 multiletter control sequences out of 15000+600000
+ 10748 strings out of 467870
+ 166969 string characters out of 5419323
+ 608317 words of memory out of 5000000
+ 39531 multiletter control sequences out of 15000+600000
  629920 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,392b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,394b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ryu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm10
 00.pk><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmbx10.pfb><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/type1/pub
 lic/amsfonts/cm/cmr10.pfb><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmti10.pfb>
-Output written on "C4 - C5.pdf" (2 pages, 82034 bytes).
+Output written on "C4 - C5.pdf" (2 pages, 86401 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 83 PDF objects out of 1000 (max. 8388607)
  17 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
