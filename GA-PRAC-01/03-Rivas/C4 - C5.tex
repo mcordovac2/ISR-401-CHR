@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{amsmath,amssymb}
+\usepackage{hyperref}
+
+\begin{document}
+
+\section{C4. Recomendación fundamentada del modelo de proceso}
+
+Para el desarrollo del sistema en el escenario correspondiente, la selección del modelo de proceso de requisitos se fundamenta en la evaluación de la estabilidad (K1), la disponibilidad de las partes interesadas (K2), la criticidad del sistema (K3), los riesgos principales (K4) y las exigencias normativas o contractuales (K5) \cite{Pohl2024}.
+
+\subsection{Escenario asignado: Recomendación y justificación}
+\begin{itemize}
+    \item \textbf{Modelo recomendado:} Modelo Ágil con un enfoque híbrido controlado para transacciones críticas y cumplimiento normativo \cite{Inayat2015}.
+    \item \textbf{Razones fundamentadas derivadas del escenario:}
+        \begin{enumerate}
+            \item \textit{K1 (Estabilidad y cambios):} La alta volatilidad de los requisitos del negocio y las modificaciones constantes en las necesidades operativas exigen un \emph{Product Backlog} vivo y flexible, descartando especificaciones estáticas \cite{GA_Prac_01, Pohl2024}.
+            \item \textit{K2 (Partes interesadas y disponibilidad):} La alta disponibilidad y participación frecuente de los actores principales para probar prototipos incrementales maximiza la efectividad de la validación iterativa continua propia de la IR ágil \cite{GA_Prac_01, Inayat2015}.
+            \item \textit{K4 (Riesgo principal y plazos):} Los plazos de entrega estrictos y la necesidad de valor operativo inmediato exigen ciclos de desarrollo cortos para mitigar el riesgo de descubrimiento tardío de omisiones \cite{GA_Prac_01, Sommerville2016}.
+        \end{enumerate}
+    \item \textbf{Descarte de los otros dos modelos:} 
+        \begin{itemize}
+            \item \textit{Modelo en Cascada:} Se descarta por su rigidez ante los cambios constantes del entorno, lo que volvería obsoleta la Especificación de Requisitos de Software (ERS) inicial y generaría costos elevados de control de cambios \cite{Pohl2024}.
+            \item \textit{Modelo Iterativo Tradicional:} Se descarta porque su burocracia de planificación y formalización por ciclos resulta excesivamente pesada para la dinámica de adaptación requerida en el escenario \cite{GA_Prac_01}.
+        \end{itemize}
+    \item \textbf{Tensión principal del escenario:} La coexistencia entre la alta volatilidad de las funciones orientadas al usuario y la necesidad de cumplir rigurosamente con normativas estáticas de seguridad y protección de datos, resuelta mediante la hibridación del proceso \cite{Kuhrmann2019}.
+\end{itemize}
+
+\section{C5. Análisis de riesgos del modelo elegido y mitigación}
+
+\begin{enumerate}
+    \item \textbf{Riesgo 1: Omisión de Requisitos No Funcionales (RNF) críticos de seguridad y cumplimiento legal.}
+        \begin{itemize}
+            \item \textit{Impacto:} La priorización de entregas visuales rápidas puede descuidar aspectos normativos e integridad de datos sensibles \cite{GA_Prac_01}.
+            \item \textit{Mitigación:} Incorporar historias de usuario transversales de seguridad y privacidad como criterios de aceptación obligatorios desde el primer sprint \cite{Pohl2024}.
+        \end{itemize}
+    \item \textbf{Riesgo 2: Deuda de requisitos e insuficiencia documental para la sostenibilidad técnica.}
+        \begin{itemize}
+            \item \textit{Impacto:} La excesiva informalidad y dependencia de la comunicación verbal pueden causar pérdida de trazabilidad en las reglas de negocio \cite{Inayat2015}.
+            \item \textit{Mitigación:} Mantener un repositorio centralizado de historias de usuario con plantillas estandarizadas (como EARS) y herramientas CASE para asegurar el control de cambios \cite{GA_Prac_01, Pohl2024}.
+        \end{itemize}
+\end{enumerate}
+
+\begin{thebibliography}{9}
+\bibitem{Pohl2024} Klaus Pohl. \emph{Requirements Engineering: Fundamentals, Principles, and Techniques}. Springer, 2nd edition, 2025.
+\bibitem{Inayat2015} Irum Inayat et al. A systematic literature review on agile requirements engineering practices and challenges. \emph{Computers in Human Behavior}, 51:915-929, 2015.
+\bibitem{Sommerville2016} Ian Sommerville. \emph{Software Engineering}. Pearson, 10th edition, 2016.
+\bibitem{Kuhrmann2019} Marco Kuhrmann et al. Hybrid software development approaches in practice: A European perspective. \emph{IEEE Software}, 36(4):20-31, 2019.
+\bibitem{GA_Prac_01} Universidad Técnica Estatal de Quevedo (UTEQ). \emph{Material complementario GA-PRAC-01: Proceso de requisitos}, 2026.
+\end{thebibliography}
+
+\end{document}
