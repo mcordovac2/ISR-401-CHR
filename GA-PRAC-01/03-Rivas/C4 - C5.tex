@@ -10,45 +10,90 @@
 
 \section{C4. Recomendación fundamentada del modelo de proceso}
 
-Para el desarrollo del sistema en el escenario asignado, la selección del modelo de proceso de requisitos se fundamenta en la evaluación de la estabilidad (K1), la disponibilidad de las partes interesadas (K2), la criticidad del sistema (K3), los riesgos principales (K4) y las exigencias normativas o contractuales (K5) \cite{Pohl2024}.
+Para cada uno de los cuatro escenarios analizados, la selección del modelo de proceso de requisitos se fundamenta en la evaluación de la estabilidad (K1), la disponibilidad de las partes interesadas (K2), la criticidad del sistema (K3), los riesgos principales (K4) y las exigencias normativas o contractuales (K5) \cite{Pohl2024}.
 
-\subsection{Modelo recomendado y justificación}
+\subsection{Escenario 1: Extractora Río Lindo (Sistema Embebido)}
 \begin{itemize}
-    \item \textbf{Modelo recomendado:} Modelo Ágil con un enfoque híbrido controlado para transacciones críticas y cumplimiento normativo \cite{Inayat2015}.
-    \item \textbf{Razones fundamentadas derivadas del escenario:}
+    \item \textbf{Modelo recomendado:} Modelo en Cascada (híbrido controlado), debido a la alta criticidad de seguridad física y la necesidad de cumplir especificaciones estrictas exigidas por la aseguradora y el fabricante de los esterilizadores \cite{GA_Prac_01}.
+    \item \textbf{Razones fundamentadas:}
         \begin{enumerate}
-            \item \textit{K1 (Estabilidad y cambios):} La alta volatilidad de los requisitos del negocio y las modificaciones constantes en las necesidades operativas exigen un \emph{Product Backlog} vivo y flexible, descartando especificaciones estáticas \cite{GA_Prac_01, Pohl2024}.
-            \item \textit{K2 (Partes interesadas y disponibilidad):} La alta disponibilidad y participación frecuente de los actores principales para probar prototipos incrementales maximiza la efectividad de la validación iterativa continua propia de la IR ágil \cite{GA_Prac_01, Inayat2015}.
-            \item \textit{K4 (Riesgo principal y plazos):} Los plazos de entrega estrictos y la necesidad de valor operativo inmediato exigen ciclos de desarrollo cortos para mitigar el riesgo de descubrimiento tardío de omisiones \cite{GA_Prac_01, Sommerville2016}.
+            \item \textit{K1 (Estabilidad):} Las reglas de seguridad de presión y temperatura son fijas del fabricante, lo que permite congelar una línea base de requisitos tempranamente \cite{Pohl2024}.
+            \item \textit{K5 (Normativa):} La aseguradora exige un documento de requisitos de seguridad aprobado formalmente antes de la puesta en marcha \cite{GA_Prac_01}.
+            \item \textit{K3 (Criticidad):} Un fallo en las funciones de protección pone en riesgo la vida de los operadores, exigiendo trazabilidad estricta y verificación formal \cite{SWEBOK_v4_2024}.
         \end{enumerate}
-    \item \textbf{Descarte de los otros dos modelos:} 
-        \begin{itemize}
-            \item \textit{Modelo en Cascada:} Se descarta por su rigidez ante los cambios constantes del entorno, lo que volvería obsoleta la Especificación de Requisitos de Software (ERS) inicial y generaría costos elevados de control de cambios \cite{Pohl2024}.
-            \item \textit{Modelo Iterativo Tradicional:} Se descarta porque su burocracia de planificación y formalización por ciclos resulta excesivamente pesada para la dinámica de adaptación requerida en el escenario \cite{GA_Prac_01}.
-        \end{itemize}
-    \item \textbf{Tensión principal del escenario:} La coexistencia entre la alta volatilidad de las funciones orientadas al usuario y la necesidad de cumplir rigurosamente con normativas estáticas de seguridad y protección de datos, resuelta mediante la hibridación del proceso \cite{Kuhrmann2019}.
+    \item \textbf{Descarte de los otros modelos:} El modelo ágil se descarta porque la alta volatilidad en la interfaz no compensa el riesgo de desatender las reglas críticas de seguridad; el iterativo resulta redundante ante requisitos de seguridad cerrados por el fabricante.
+    \item \textbf{Tensión principal:} La incertidumbre en la compra de sensores en el tercer mes frente a la necesidad de una especificación temprana de seguridad \cite{GA_Prac_01}.
+\end{itemize}
+
+\subsection{Escenario 2: Sabores de la Abuela Rosa (Aplicación Móvil)}
+\begin{itemize}
+    \item \textbf{Modelo recomendado:} Modelo Ágil con enfoque híbrido para pasarela de pagos y cumplimiento de la LOPDP \cite{Inayat2015}.
+    \item \textbf{Razones fundamentadas:}
+        \begin{enumerate}
+            \item \textit{K1 (Volatilidad):} El menú diario cambiante y las propuestas constantes de la propietaria y su hijo generan una alta volatilidad que exige un \emph{Product Backlog} vivo \cite{GA_Prac_01, Pohl2024}.
+            \item \textit{K2 (Disponibilidad):} Doña Rosa tiene disponibilidad diaria y prueba prototipos con frecuencia, maximizando la validación iterativa \cite{GA_Prac_01}.
+            \item \textit{K4 (Plazo):} El plazo cerrado de 14 semanas por las fiestas locales exige entregas incrementales de valor para mitigar el riesgo de descubrimiento tardío \cite{Sommerville2016}.
+        \end{enumerate}
+    \item \textbf{Descarte de los otros modelos:} El modelo en cascada se descarta por su rigidez ante los cambios diarios del negocio; el iterativo tradicional resulta excesivamente burocrático para un equipo de dos desarrolladores a medio tiempo \cite{GA_Prac_01}.
+    \item \textbf{Tensión principal:} La agilidad del negocio frente a la obligatoriedad estricta de proteger datos personales y transferencias bancarias \cite{GA_Prac_01}.
+\end{itemize}
+
+\subsection{Escenario 3: Sistema de Trámites Municipales (Contratación Pública)}
+\begin{itemize}
+    \item \textbf{Modelo recomendado:} Modelo Iterativo e Incremental estructurado por hitos contractuales.
+    \item \textbf{Razones fundamentadas:}
+        \begin{enumerate}
+            \item \textit{K5 (Contractual):} Los pliegos fijan tres entregables obligatorios con fechas y pagos fijos (mes 2, 6 y 7), lo que exige una especificación formal aprobada por fases \cite{GA_Prac_01}.
+            \item \textit{K4 (Riesgo técnico):} La necesidad de integrarse con una base de datos antigua sin documentación requiere ciclos de investigación y prototipado temprano \cite{GA_Prac_01, Pohl2024}.
+            \item \textit{K1 (Cambios normativos):} Permite absorber de manera controlada la posible nueva ordenanza de tasas prevista para el cuarto mes sin romper los entregables \cite{GA_Prac_01}.
+        \end{enumerate}
+    \item \textbf{Descarte de los otros modelos:} El modelo ágil puro se descarta por las restricciones legales y multas de la contratación pública; el cascada rígido se descarta porque la ordenanza futura del cuarto mes invalidaría una única especificación inicial \cite{GA_Prac_01}.
+    \item \textbf{Tensión principal:} La rigidez de las multas y pliegos de contratación pública frente a la incertidumbre técnica y normativa del municipio \cite{GA_Prac_01}.
+\end{itemize}
+
+\subsection{Escenario 4: Cooperativa Frutos del Estero (Plataforma Web Rural)}
+\begin{itemize}
+    \item \textbf{Modelo recomendado:} Modelo Iterativo e Incremental adaptado a la disponibilidad de los socios.
+    \item \textbf{Razones fundamentadas:}
+        \begin{enumerate}
+            \item \textit{K2 (Disponibilidad mixta):} Permite alinear las revisiones y validaciones con las asambleas trimestrales de los socios y las reuniones mensuales de la directiva \cite{GA_Prac_01}.
+            \item \textit{K3 (Criticidad técnica):} Facilita comprobar de forma anticipada el funcionamiento sin conexión y la posterior sincronización de datos en el centro de acopio \cite{GA_Prac_01}.
+            \item \textit{K5 (Informes):} La generación de incrementos funcionales periódicos respalda de forma directa los informes semestrales exigidos por el donante \cite{GA_Prac_01}.
+        \end{enumerate}
+    \item \textbf{Descarte de los otros modelos:} El modelo ágil se descarta porque la directiva se reúne solo una vez al mes y los socios están dispersos, imposibilitando la priorización continua; el cascada no permitiría validar a tiempo la sincronización offline \cite{GA_Prac_01}.
+    \item \textbf{Tensión principal:} Las exigencias de reportes semestrales del donante frente a la baja frecuencia de retroalimentación de los productores rurales \cite{GA_Prac_01}.
 \end{itemize}
 
 \section{C5. Análisis de riesgos del modelo elegido y mitigación}
 
 \begin{enumerate}
-    \item \textbf{Riesgo 1: Omisión de Requisitos No Funcionales (RNF) críticos de seguridad y cumplimiento legal.}
+    \item \textbf{Riesgo en Escenario 1 (Cascada):} Obsolecencia de los requisitos ante cambios en los sensores seleccionados en el tercer mes \cite{GA_Prac_01}.
         \begin{itemize}
-            \item \textit{Impacto:} La priorización de entregas visuales rápidas puede descuidar aspectos normativos e integridad de datos sensibles \cite{GA_Prac_01}.
-            \item \textit{Mitigación:} Incorporar historias de usuario transversales de seguridad y privacidad como criterios de aceptación obligatorios desde el primer sprint \cite{Pohl2024}.
+            \item \textit{Impacto:} Afecta el diseño del hardware y genera retrabajo en la integración.
+            \item \textit{Mitigación:} Establecer una capa de abstracción de hardware (HAI) que aísle el software de control de la marca específica de sensores.
         \end{itemize}
-    \item \textbf{Riesgo 2: Deuda de requisitos e insuficiencia documental para la sostenibilidad técnica.}
+    \item \textbf{Riesgo en Escenario 2 (Ágil):} Omisión de Requisitos No Funcionales de seguridad y cumplimiento de la LOPDP en la aplicación móvil \cite{GA_Prac_01}.
         \begin{itemize}
-            \item \textit{Impacto:} La excesiva informalidad y dependencia de la comunicación verbal pueden causar pérdida de trazabilidad en las reglas de negocio \cite{Inayat2015}.
-            \item \textit{Mitigación:} Mantener un repositorio centralizado de historias de usuario con plantillas estandarizadas (como EARS) y herramientas CASE para asegurar el control de cambios \cite{GA_Prac_01, Pohl2024}.
+            \item \textit{Impacto:} Incumplimiento de la normativa legal ecuatoriana de protección de datos personales.
+            \item \textit{Mitigación:} Incorporar historias de usuario de seguridad y privacidad como criterios de aceptación obligatorios desde el primer sprint \cite{Pohl2024}.
+        \end{itemize}
+    \item \textbf{Riesgo en Escenario 3 (Iterativo):} Desviación del alcance acordado en el entregable del mes 2 debido a modificaciones en el flujo de aprobación del GAD \cite{GA_Prac_01}.
+        \begin{itemize}
+            \item \textit{Impacto:} Riesgo de retrasos y multas contractuales estipuladas en los pliegos.
+            \item \textit{Mitigación:} Gestionar los cambios mediante un comité formal de control de cambios documentado en actas de iteración \cite{Pohl2024}.
+        \end{itemize}
+    \item \textbf{Riesgo en Escenario 4 (Iterativo):} Fallas en la sincronización de registros de cacao debido a la inestabilidad de internet en el centro de acopio de Mocache \cite{GA_Prac_01}.
+        \begin{itemize}
+            \item \textit{Impacto:} Pérdida de datos de entrega y descontento en los pagos a los productores.
+            \item \textit{Mitigación:} Priorizar pruebas tempranas de almacenamiento local offline (IndexedDB) y colas de sincronización robustas en los primeros incrementos.
         \end{itemize}
 \end{enumerate}
 
 \begin{thebibliography}{9}
 \bibitem{Pohl2024} Klaus Pohl. \emph{Requirements Engineering: Fundamentals, Principles, and Techniques}. Springer, 2nd edition, 2025.
+\bibitem{SWEBOK_v4_2024} Hironori Washizaki, editor. \emph{Guide to the Software Engineering Body of Knowledge (SWEBOK Guide)}, Version 4.0. IEEE Computer Society, 2024.
 \bibitem{Inayat2015} Irum Inayat et al. A systematic literature review on agile requirements engineering practices and challenges. \emph{Computers in Human Behavior}, 51:915-929, 2015.
 \bibitem{Sommerville2016} Ian Sommerville. \emph{Software Engineering}. Pearson, 10th edition, 2016.
-\bibitem{Kuhrmann2019} Marco Kuhrmann et al. Hybrid software development approaches in practice: A European perspective. \emph{IEEE Software}, 36(4):20-31, 2019.
 \bibitem{GA_Prac_01} Universidad Técnica Estatal de Quevedo (UTEQ). \emph{Material complementario GA-PRAC-01: Proceso de requisitos}, 2026.
 \end{thebibliography}
 

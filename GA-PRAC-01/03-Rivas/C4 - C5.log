@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.7)  12 NOV 2026 21:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.11.7)  12 NOV 2026 22:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -319,10 +319,10 @@ x.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count313
 ) (C4 - C5.aux
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported on input line 28.
+(babel)             Reported on input line 29.
 )
 \openout1 = `"C4 - C5.aux"'.
 
@@ -386,12 +386,16 @@ Package hyperref Info: Link coloring OFF on input line 9.
 \@outlinefile=\write3
 \openout3 = `"C4 - C5.out"'.
 
- [1
 
-{C:/Users/Ryu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] (C4 - C5.a
-ux
-LaTeX Info: Redefining \. on input line 29.
-LaTeX Info: Redefining \% on input line 29.
+
+LaTeX Warning: Citation `SWEBOK_v4_2024' on page 1 undefined on input line 22.
+
+[1
+
+{C:/Users/Ryu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2] [3]
+(C4 - C5.aux
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
 )
  ***********
 LaTeX2e <2025-11-01>
@@ -399,31 +403,36 @@ L3 programming layer <2025-12-24>
  ***********
 
 
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
 Package rerunfilecheck Warning: File `"C4 - C5".out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `"C4 - C5".out':
-(rerunfilecheck)             Before: 0BBCC8E30746F966360EAA246DA96267;992
-(rerunfilecheck)             After:  5C83F8F197A7123A4077FD8ABCE24DAB;911.
+(rerunfilecheck)             Before: 5C83F8F197A7123A4077FD8ABCE24DAB;911
+(rerunfilecheck)             After:  D56BB2E972DCC185A504032A58C1E80E;2234.
  ) 
 Here is how much of TeX's memory you used:
- 10748 strings out of 467870
- 166969 string characters out of 5419323
- 608317 words of memory out of 5000000
- 39531 multiletter control sequences out of 15000+600000
- 629920 words of font info for 47 fonts, out of 8000000 for 9000
+ 10763 strings out of 467870
+ 167088 string characters out of 5419323
+ 609317 words of memory out of 5000000
+ 39532 multiletter control sequences out of 15000+600000
+ 629585 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,394b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Ryu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm10
-00.pk><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmbx10.pfb><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmti10.pfb>
-Output written on "C4 - C5.pdf" (2 pages, 86401 bytes).
+ 75i,5n,79p,394b,637s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+bx10.pfb><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmbx12.pfb><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><C:/Users/Ryu/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmti10.pfb>
+Output written on "C4 - C5.pdf" (3 pages, 99913 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 17 named destinations out of 1000 (max. 500000)
+ 112 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
