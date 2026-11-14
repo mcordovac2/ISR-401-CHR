@@ -29,4 +29,14 @@ GA-PRAC-01 - Comparación entre modelos de proceso de requisitos en escenarios r
 - DESARROLLO DEL SÍLABO (páginas 31-48).
 
 ## Estado
-Pendiente de desarrollo y confirmación del escenario asignado.
+
+**Completado e integrado en `main.tex`.**
+
+Se desarrollaron satisfactoriamente los criterios C1 y C2:
+
+- **C1:** Caracterización de los modelos de proceso de requisitos en cascada, iterativo e incremental y ágil, considerando sus fases, supuestos y condiciones de aplicación.
+- **C2:** Elaboración de las matrices comparativas contextualizadas para los cuatro escenarios, evaluando los tres modelos mediante los criterios K1, K2, K3, K4 y K5.
+
+Se realizaron correcciones de formato y presentación de las matrices para mejorar su legibilidad y mantener la uniformidad de los criterios.
+
+Los archivos fuente individuales se encuentran disponibles en esta carpeta. Los resultados están incorporados en el documento grupal `GA-PRAC-01/main.tex` y en `GA-PRAC-01-Completo.pdf`.
