@@ -42,7 +42,7 @@ Comparar los modelos de proceso de Ingeniería de Requisitos en cascada, iterati
 - Determinación de los artefactos del framework de Ingeniería de Requisitos.
 - Contextualización de los elementos identificados según los escenarios analizados.
 
-**Estado:** Pendiente de integración al documento principal.
+**Estado:** Completado y registrado en GitHub.
 
 ### 3. Rivas – Recomendación y riesgos (C4 y C5)
 
