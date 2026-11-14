@@ -1,0 +1,88 @@
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+
+{\bfseries UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\par}
+\vspace{0.7cm}
+
+FACULTAD DE CIENCIAS DE LA COMPUTACIÓN\par
+CARRERA DE SOFTWARE\par
+INGENIERÍA DE REQUERIMIENTOS\par
+
+\vfill
+
+{\Large\bfseries GA-PRAC-01 - FORM\par}
+\vspace{0.5cm}
+
+{\large Comparación entre modelos de proceso de requisitos en escenarios reales\par}
+
+\vspace{1cm}
+
+\textbf{Integrantes:}\par
+Córdova Carreño Mayra Lucila\par
+Herrera Morán Gilmar Javier\par
+Rivas Rodero Jordy Fabian\par
+
+\vfill
+
+Noviembre de 2026\par
+
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+% C1: Caracterización de modelos
+% Responsable: Córdova Carreño Mayra Lucila
+\input{01-Cordova/c1-caracterizacion.tex}
+
+% C2: Matrices comparativas
+% Responsable: Córdova Carreño Mayra Lucila
+\input{01-Cordova/c2-escenario-01.tex}
+\input{01-Cordova/c2-escenario-02.tex}
+\input{01-Cordova/c2-escenario-03.tex}
+\input{01-Cordova/c2-escenario-04.tex}
+
+% C3: Actores del proceso y framework de IR
+% Responsable: Herrera Morán Gilmar Javier
+\input{02-Herrera/c3-actores-framework.tex}
+
+% C4 y C5:
+% Pendientes de integrar cuando Rivas suba su archivo.
+
+% Bibliografía consolidada del documento (C3 y C4-C5).
+% Si Rivas integra su archivo, debe quitar su propio
+% bloque thebibliography para no duplicar las referencias.
+\begin{thebibliography}{9}
+\bibitem{Pohl2025} Pohl, K. (2025). \emph{Requirements Engineering: Fundamentals, Principles, and Techniques} (2.ª ed.). Springer. ISBN 978-3-662-69204-2.
+\bibitem{IREB2026} Bühne, S., Glinz, M., van Loenhoud, H. y Staal, S. (2026). \emph{CPRE Foundation Level Syllabus, versión 3.3.0}. International Requirements Engineering Board (IREB). \url{https://www.ireb.org/en/downloads/}
+\bibitem{SWEBOK_v4_2024} Washizaki, H. (Ed.). (2024). \emph{Guide to the Software Engineering Body of Knowledge (SWEBOK Guide), Version 4.0}. IEEE Computer Society. \url{https://www.computer.org/education/bodies-of-knowledge/software-engineering}
+\bibitem{ISO29148} ISO/IEC/IEEE. (2018). \emph{ISO/IEC/IEEE 29148:2018, Systems and software engineering — Life cycle processes — Requirements engineering} (2.ª ed.). \url{https://webstore.iec.ch/en/publication/64315}
+\bibitem{Inayat2015} Inayat, I., Salim, S. S., Marczak, S., Daneva, M. y Shamshirband, S. (2015). A systematic literature review on agile requirements engineering practices and challenges. \emph{Computers in Human Behavior}, 51(B), 915--929. \url{https://doi.org/10.1016/j.chb.2014.10.046}
+\bibitem{Sommerville2016} Sommerville, I. (2016). \emph{Software Engineering} (10.ª ed.). Pearson. ISBN 978-0-13-394303-0.
+\end{thebibliography}
+
+\end{document}

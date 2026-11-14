@@ -1,0 +1,406 @@
+
+% GA-PRAC-01
+% C3 - Actores del proceso y framework de Ingenieria de Requisitos
+% Responsable: Herrera Moran Gilmar Javier
+% Requiere: \usepackage{longtable}
+%           \usepackage{array}
+
+\section{C3. Actores del proceso y framework de Ingeniería de Requisitos}
+
+\subsection{Marco de referencia}
+
+El framework de Ingeniería de Requisitos (IR) \cite{Pohl2025,RuppPohl2015} se organiza en tres grupos de elementos que se aplican a los cuatro escenarios, independientemente del modelo de proceso elegido:
+
+\begin{itemize}
+    \item \textbf{Actividades core:} elicitación, documentación y negociación o resolución de conflictos. Producen y consolidan los requisitos \cite{Pohl2025}.
+    \item \textbf{Actividades transversales:} validación y gestión de requisitos. Acompañan a las tres actividades core durante todo el proyecto \cite{Pohl2025,SWEBOK_v4_2024}.
+    \item \textbf{Artefactos:} metas, escenarios y requisitos orientados a solución, que representan el problema y la solución con distinto nivel de detalle \cite{Pohl2025}.
+\end{itemize}
+
+En cada escenario se identifican primero los \textbf{actores del proceso}, es decir, quienes aportan, deciden, analizan, validan o implementan requisitos. Luego se ubican las cinco actividades del framework y, finalmente, se indica cómo se concretan los tres artefactos. La identificación de actores como partes interesadas y la trazabilidad de los requisitos siguen además las prácticas de la norma ISO/IEC/IEEE 29148 \cite{ISO29148}. Las tablas siguientes usan únicamente los datos de cada escenario y los modelos recomendados en C4.
+
+% ---------------------------------------------------------------------
+% ESCENARIO 1
+% ---------------------------------------------------------------------
+\subsection{Escenario 1: Extractora Río Lindo}
+
+\textbf{Actores y responsabilidades.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.22\textwidth}
+|>{\raggedright\arraybackslash}p{0.16\textwidth}
+|>{\raggedright\arraybackslash}p{0.50\textwidth}|}
+\hline
+\textbf{Actor} & \textbf{Tipo} & \textbf{Responsabilidad en el proceso de IR} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Actor} & \textbf{Tipo} & \textbf{Responsabilidad en el proceso de IR} \\
+\hline
+\endhead
+Jefe de planta & Stakeholder / decisor & Aporta las reglas operativas del proceso, aprueba requisitos y prioriza. Está disponible solo dos mañanas por semana, por lo que sus sesiones deben planificarse. \\
+\hline
+Responsable de seguridad & Stakeholder / aprobador & Define y aprueba los requisitos de protección (alarmas, bloqueos, límites de temperatura y presión). \\
+\hline
+Operadores de turnos rotativos & Usuarios finales & Describen el uso real de la interfaz y de las alarmas. Validan escenarios de operación en cada turno. \\
+\hline
+Aseguradora & Stakeholder externo & Exige un documento de requisitos de seguridad aprobado y evidencias de pruebas antes de la puesta en marcha. \\
+\hline
+Fabricante de los esterilizadores & Fuente de requisitos & Establece los límites técnicos y de seguridad del equipo que el sistema debe respetar. \\
+\hline
+Proveedores de sensores y válvulas & Stakeholder técnico & Su selección (tercer mes) determina interfaces y restricciones de integración. \\
+\hline
+Analista de requisitos & Equipo del proyecto & Conduce la elicitación, redacta la especificación, gestiona conflictos y mantiene la trazabilidad. \\
+\hline
+Equipo de desarrollo e integración & Equipo del proyecto & Implementa el sistema embebido, estima la factibilidad y verifica los requisitos en cada incremento. \\
+\hline
+\end{longtable}
+}
+
+\textbf{Actividades del framework ubicadas en el escenario.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.20\textwidth}
+|>{\raggedright\arraybackslash}p{0.13\textwidth}
+|>{\raggedright\arraybackslash}p{0.55\textwidth}|}
+\hline
+\textbf{Actividad} & \textbf{Tipo} & \textbf{Aplicación en el escenario} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Actividad} & \textbf{Tipo} & \textbf{Aplicación en el escenario} \\
+\hline
+\endhead
+Elicitación & Core & Entrevistas con el jefe de planta en sus dos mañanas semanales, observación de operadores en distintos turnos y análisis de las especificaciones del fabricante y de la aseguradora. \\
+\hline
+Documentación & Core & Especificación formal de los requisitos de seguridad (umbrales, bloqueos y alarmas), seguida de la documentación incremental de interfaz, reportes y comunicación con sensores. \\
+\hline
+Negociación y resolución de conflictos & Core & Equilibrar el deseo de operadores de una interfaz cómoda con las restricciones de seguridad, y los plazos del proyecto con la incertidumbre de los sensores. \\
+\hline
+Validación & Transversal & Aprobación formal de los requisitos de seguridad por el responsable de seguridad y la aseguradora. Revisión de prototipos de interfaz con operadores de varios turnos al cierre de cada incremento. \\
+\hline
+Gestión de requisitos & Transversal & Línea base congelada para las reglas de seguridad, trazabilidad entre requisito, prueba y evidencia, y control formal de cambios cuando se definan los sensores. \\
+\hline
+\end{longtable}
+}
+
+\textbf{Artefactos del framework.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.20\textwidth}
+|>{\raggedright\arraybackslash}p{0.68\textwidth}|}
+\hline
+\textbf{Artefacto} & \textbf{Contenido en el escenario} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Artefacto} & \textbf{Contenido en el escenario} \\
+\hline
+\endhead
+Metas & Proteger a los operadores y la producción; controlar temperatura, presión y niveles de tanques dentro de los límites del fabricante; cumplir las exigencias de la aseguradora. \\
+\hline
+Escenarios & Un operador recibe una alarma por presión elevada y el sistema activa el bloqueo. Un operador de otro turno consulta el reporte del lote. Se pierde la lectura de un sensor y el sistema pasa a estado seguro. \\
+\hline
+Requisitos orientados a solución & Requisitos funcionales de lectura, alarma y bloqueo; requisitos de calidad como tiempo de respuesta y disponibilidad; restricciones de integración con los sensores y válvulas que se seleccionen. \\
+\hline
+\end{longtable}
+}
+
+% ---------------------------------------------------------------------
+% ESCENARIO 2
+% ---------------------------------------------------------------------
+\subsection{Escenario 2: Sabores de la Abuela Rosa}
+
+\textbf{Actores y responsabilidades.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.22\textwidth}
+|>{\raggedright\arraybackslash}p{0.16\textwidth}
+|>{\raggedright\arraybackslash}p{0.50\textwidth}|}
+\hline
+\textbf{Actor} & \textbf{Tipo} & \textbf{Responsabilidad en el proceso de IR} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Actor} & \textbf{Tipo} & \textbf{Responsabilidad en el proceso de IR} \\
+\hline
+\endhead
+Doña Rosa (propietaria) & Cliente / decisora & Aporta las necesidades del negocio, prioriza el contenido de cada ciclo y valida los incrementos. Está disponible a diario. \\
+\hline
+Hijo de la propietaria & Stakeholder & Propone ideas y mejoras. Sus solicitudes deben pasar por la priorización de Doña Rosa para evitar ampliar el alcance. \\
+\hline
+Clientes del emprendimiento & Usuarios finales & Realizan pedidos y pagos por transferencia desde teléfonos Android de gama baja. Sus datos personales deben protegerse. \\
+\hline
+Personal de cocina o entrega & Usuarios internos & Reciben y actualizan el estado de los pedidos. \\
+\hline
+Dos desarrolladores a medio tiempo & Equipo del proyecto & Asumen elicitación, análisis, implementación y pruebas, con capacidad limitada. Uno de ellos actúa como analista de requisitos. \\
+\hline
+Autoridad de protección de datos (LOPDP) & Marco normativo & Establece las obligaciones sobre el tratamiento de datos personales de los clientes. \\
+\hline
+\end{longtable}
+}
+
+\textbf{Actividades del framework ubicadas en el escenario.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.20\textwidth}
+|>{\raggedright\arraybackslash}p{0.13\textwidth}
+|>{\raggedright\arraybackslash}p{0.55\textwidth}|}
+\hline
+\textbf{Actividad} & \textbf{Tipo} & \textbf{Aplicación en el escenario} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Actividad} & \textbf{Tipo} & \textbf{Aplicación en el escenario} \\
+\hline
+\endhead
+Elicitación & Core & Conversaciones diarias breves con Doña Rosa, observación de cómo toma pedidos hoy, y consulta a algunos clientes sobre cómo piden y pagan. \\
+\hline
+Documentación & Core & Historias de usuario con criterios de aceptación en un \textit{backlog} vivo. Documentación breve y obligatoria de privacidad de datos y de conciliación de transferencias. \\
+\hline
+Negociación y resolución de conflictos & Core & Decidir qué ideas del hijo entran en cada ciclo y cuáles se aplazan, según presupuesto y plazo de 14 semanas. Resolver el choque entre agilidad comercial y cumplimiento legal. \\
+\hline
+Validación & Transversal & Doña Rosa prueba cada incremento en teléfonos de gama baja y con conexión intermitente. Se verifica la protección de datos y el control de pagos antes de cerrar cada ciclo. \\
+\hline
+Gestión de requisitos & Transversal & Priorización continua (por ejemplo, MoSCoW), control del alcance de cada ciclo y registro de cambios del menú y de las promociones. \\
+\hline
+\end{longtable}
+}
+
+\textbf{Artefactos del framework.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.20\textwidth}
+|>{\raggedright\arraybackslash}p{0.68\textwidth}|}
+\hline
+\textbf{Artefacto} & \textbf{Contenido en el escenario} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Artefacto} & \textbf{Contenido en el escenario} \\
+\hline
+\endhead
+Metas & Recibir y gestionar pedidos de comida típica de forma ordenada; controlar los pagos por transferencia; proteger los datos de los clientes; tener la aplicación lista para las fiestas dentro de 14 semanas y del presupuesto. \\
+\hline
+Escenarios & Un cliente elige un plato del menú del día y confirma el pedido. Un cliente con mala conexión intenta pagar y el sistema conserva el pedido. Doña Rosa cambia el menú y las promociones. \\
+\hline
+Requisitos orientados a solución & Funcionales: catálogo editable, carrito, registro de pedidos y de transferencias. De calidad: funcionamiento en Android de gama baja y con conectividad intermitente. Restricciones: protección de datos personales y presupuesto cerrado. \\
+\hline
+\end{longtable}
+}
+
+% ---------------------------------------------------------------------
+% ESCENARIO 3
+% ---------------------------------------------------------------------
+\subsection{Escenario 3: Sistema de trámites municipales}
+
+\textbf{Actores y responsabilidades.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.22\textwidth}
+|>{\raggedright\arraybackslash}p{0.16\textwidth}
+|>{\raggedright\arraybackslash}p{0.50\textwidth}|}
+\hline
+\textbf{Actor} & \textbf{Tipo} & \textbf{Responsabilidad en el proceso de IR} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Actor} & \textbf{Tipo} & \textbf{Responsabilidad en el proceso de IR} \\
+\hline
+\endhead
+Administrador del contrato (GAD) & Cliente / aprobador & Aprueba los entregables, firma las actas y coordina con el municipio. Tiene disponibilidad semanal. \\
+\hline
+Funcionarios de ventanilla y rentas & Usuarios finales & Describen los flujos de permisos, patentes y certificados, y los cobros. Participan de forma irregular. \\
+\hline
+Ciudadanos solicitantes & Usuarios finales & Realizan y consultan trámites, y entregan datos personales que deben protegerse. \\
+\hline
+Personal de tecnología municipal & Stakeholder técnico & Provee acceso a los servidores y conocimiento de la base de datos antigua sin documentación. \\
+\hline
+Autoridades municipales (ordenanza de tasas) & Stakeholder normativo & La posible ordenanza del cuarto mes puede cambiar tasas y flujos de aprobación. \\
+\hline
+Entes de contratación y control & Marco contractual & Los pliegos fijan los tres entregables, las fechas, los pagos y las multas por retraso. \\
+\hline
+Contratista: líder y analista de requisitos & Equipo del proyecto & Elicita, redacta la especificación aprobada en el mes 2, gestiona cambios y mantiene la trazabilidad. \\
+\hline
+Contratista: desarrollo y pruebas (seis personas en total) & Equipo del proyecto & Implementa e integra los módulos, investiga la base de datos antigua y genera evidencias de pruebas. \\
+\hline
+\end{longtable}
+}
+
+\textbf{Actividades del framework ubicadas en el escenario.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.20\textwidth}
+|>{\raggedright\arraybackslash}p{0.13\textwidth}
+|>{\raggedright\arraybackslash}p{0.55\textwidth}|}
+\hline
+\textbf{Actividad} & \textbf{Tipo} & \textbf{Aplicación en el escenario} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Actividad} & \textbf{Tipo} & \textbf{Aplicación en el escenario} \\
+\hline
+\endhead
+Elicitación & Core & Entrevistas con el administrador del contrato, observación del trabajo en ventanilla y rentas, análisis de los pliegos y de la ordenanza vigente, e ingeniería inversa de la base de datos antigua. \\
+\hline
+Documentación & Core & Especificación de requisitos formal para el mes 2, con trazabilidad, actas de aceptación y registros de pruebas necesarios para justificar los entregables y los pagos. \\
+\hline
+Negociación y resolución de conflictos & Core & Acordar con el municipio qué cambios (flujo de aprobación, nueva ordenanza) caben dentro del alcance contratado y cuáles requieren una modificación contractual. \\
+\hline
+Validación & Transversal & Aceptación formal de la especificación en el mes 2, validación periódica de módulos con funcionarios, pruebas de integración y acta de entrega-recepción en el mes 7. \\
+\hline
+Gestión de requisitos & Transversal & Línea base contractual, control formal de cambios con evaluación de impacto, versionado de la especificación y trazabilidad entre requisitos, pruebas y entregables. \\
+\hline
+\end{longtable}
+}
+
+\textbf{Artefactos del framework.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.20\textwidth}
+|>{\raggedright\arraybackslash}p{0.68\textwidth}|}
+\hline
+\textbf{Artefacto} & \textbf{Contenido en el escenario} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Artefacto} & \textbf{Contenido en el escenario} \\
+\hline
+\endhead
+Metas & Gestionar cerca de 9\,000 trámites anuales; cumplir los tres hitos contractuales sin multas; proteger los datos personales; integrar el sistema con los servidores y la base de datos municipales. \\
+\hline
+Escenarios & Un ciudadano solicita un permiso de funcionamiento. Un funcionario de rentas cobra una patente con las tasas vigentes. Se aprueba la nueva ordenanza y las tasas cambian. Se emite un certificado de no adeudar consultando la base antigua. \\
+\hline
+Requisitos orientados a solución & Funcionales: registro, flujo de aprobación, cobro y emisión de documentos. De calidad: seguridad y protección de datos. Restricciones: integración con la base antigua y servidores municipales, y entregables contractuales. \\
+\hline
+\end{longtable}
+}
+
+% ---------------------------------------------------------------------
+% ESCENARIO 4
+% ---------------------------------------------------------------------
+\subsection{Escenario 4: Cooperativa Frutos del Estero}
+
+\textbf{Actores y responsabilidades.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.22\textwidth}
+|>{\raggedright\arraybackslash}p{0.16\textwidth}
+|>{\raggedright\arraybackslash}p{0.50\textwidth}|}
+\hline
+\textbf{Actor} & \textbf{Tipo} & \textbf{Responsabilidad en el proceso de IR} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Actor} & \textbf{Tipo} & \textbf{Responsabilidad en el proceso de IR} \\
+\hline
+\endhead
+Gerente de la cooperativa & Cliente / enlace & Disponible casi a diario. Aporta las reglas de negocio y valida funcionalidades, pero no aprueba cambios importantes por sí sola. \\
+\hline
+Directiva & Decisor & Se reúne mensualmente y aprueba los cambios importantes de alcance. \\
+\hline
+Socios productores (640) & Usuarios finales & Consultan entregas, pagos, créditos y saldos. Participan principalmente en días de acopio y en asambleas trimestrales. \\
+\hline
+Personal de acopio & Usuarios internos & Registran peso, humedad y calidad de las entregas, incluso sin conexión. \\
+\hline
+Compradores exportadores & Stakeholder externo & Sus exigencias de trazabilidad y certificación del cacao pueden cambiar. \\
+\hline
+Donante & Financiador & Exige informes semestrales de avance, por lo que condiciona los hitos y las evidencias. \\
+\hline
+Organismo supervisor de la economía popular y solidaria & Marco normativo & Control institucional y cumplimiento del estatuto de la cooperativa. \\
+\hline
+Equipo de cuatro personas & Equipo del proyecto & Elicita en campo, especifica los cálculos de liquidación, implementa el registro sin conexión y la sincronización, y prepara los informes. \\
+\hline
+\end{longtable}
+}
+
+\textbf{Actividades del framework ubicadas en el escenario.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.20\textwidth}
+|>{\raggedright\arraybackslash}p{0.13\textwidth}
+|>{\raggedright\arraybackslash}p{0.55\textwidth}|}
+\hline
+\textbf{Actividad} & \textbf{Tipo} & \textbf{Aplicación en el escenario} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Actividad} & \textbf{Tipo} & \textbf{Aplicación en el escenario} \\
+\hline
+\endhead
+Elicitación & Core & Entrevistas con la gerente y la directiva, observación del proceso actual (tarjetas de papel y hojas de cálculo) en los días de acopio, y consulta a socios en asambleas y recintos. \\
+\hline
+Documentación & Core & Especificación detallada de reglas de liquidación, créditos y saldos; requisitos de funcionamiento sin conexión y sincronización; documentación de trazabilidad y evidencias para los informes semestrales. \\
+\hline
+Negociación y resolución de conflictos & Core & Conciliar las prioridades de la gerente, de la directiva y de los socios, y los cambios que piden los compradores con el plazo de doce meses y la aprobación mensual de la directiva. \\
+\hline
+Validación & Transversal & Validación periódica de incrementos con la gerente, con socios durante los días de acopio y en asambleas trimestrales, y aprobación de la directiva en los cambios importantes. \\
+\hline
+Gestión de requisitos & Transversal & Línea base para las reglas de liquidación (baja volatilidad), control de cambios de trazabilidad y certificación, y vínculo de cada incremento con los informes del donante. \\
+\hline
+\end{longtable}
+}
+
+\textbf{Artefactos del framework.}
+
+{\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.3}
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.20\textwidth}
+|>{\raggedright\arraybackslash}p{0.68\textwidth}|}
+\hline
+\textbf{Artefacto} & \textbf{Contenido en el escenario} \\
+\hline
+\endfirsthead
+\hline
+\textbf{Artefacto} & \textbf{Contenido en el escenario} \\
+\hline
+\endhead
+Metas & Registrar las entregas de cacao con exactitud; calcular liquidaciones correctas; permitir a los socios consultar entregas, pagos, créditos y saldos; cumplir con el donante y el organismo de control. \\
+\hline
+Escenarios & Un encargado registra una entrega sin conexión en un recinto y la sincroniza después. Un socio consulta su saldo. La gerente calcula una liquidación. Un comprador exige un nuevo dato de trazabilidad. \\
+\hline
+Requisitos orientados a solución & Funcionales: registro de entregas, liquidaciones, créditos y consultas. De calidad: exactitud de cálculos, integridad de los datos y protección de datos personales. Restricciones: trabajo sin conexión, sincronización posterior y estatuto de la cooperativa. \\
+\hline
+\end{longtable}
+}
+
+\subsection{Síntesis}
+
+En los cuatro escenarios, el análisis de los actores muestra dónde se concentran las decisiones y qué limita la participación: el jefe de planta y la aseguradora en la Extractora Río Lindo, la propietaria en Sabores de la Abuela Rosa, el administrador del contrato en el GAD Municipal y la directiva junto con el donante en la Cooperativa Frutos del Estero.
+
+Las cinco actividades del framework son las mismas en todos los casos, pero cambia su peso. Cuando predominan la criticidad y las obligaciones formales (Escenarios 1 y 3), destacan la documentación y la gestión de requisitos. Cuando predominan el cambio y la disponibilidad del cliente (Escenario 2), destacan la elicitación continua y la negociación del alcance. En el Escenario 4 la validación debe adaptarse a los días de acopio y a las asambleas. Esta lectura es coherente con los modelos recomendados en C4.
