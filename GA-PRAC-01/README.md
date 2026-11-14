@@ -1,111 +1,70 @@
-# GA-PRAC-01 – Comparación entre modelos de proceso de requisitos en escenarios reales
+# GA-PRAC-01 — Comparación entre modelos de proceso de requisitos en escenarios reales
 
-## Información general
-
-- **Universidad:** Universidad Técnica Estatal de Quevedo (UTEQ)
-- **Asignatura:** Ingeniería de Requisitos (ISR-401)
-- **Unidad:** 1
-- **Semana:** 2
-- **Modalidad:** Grupal
-- **Actividad:** GA-PRAC-01
-
-## Integrantes
-
-- Córdova Carreño Mayra Lucila
-- Herrera Morán Gilmar Javier
-- Rivas Bodero Jordy Fabian
+**Universidad:** Universidad Técnica Estatal de Quevedo  
+**Carrera:** Ingeniería de Software  
+**Asignatura:** Ingeniería de Requisitos (ISR-401)  
+**Actividad:** GA-PRAC-01 - FORM  
+**Modalidad:** Grupal  
+**Estado:** Documento integrado — pendiente de revisión final.
 
 ## Objetivo
 
-Comparar los modelos de proceso de Ingeniería de Requisitos en cascada, iterativo e incremental y ágil, considerando sus características, ventajas, limitaciones y aplicación en cuatro escenarios reales, para seleccionar el modelo más adecuado para cada caso mediante una recomendación fundamentada.
+Analizar y comparar los modelos de proceso de requisitos secuencial (cascada), iterativo e incremental y ágil, considerando su aplicabilidad en cuatro escenarios reales de desarrollo de software.
 
-## Distribución del trabajo
+El análisis contempla los criterios K1–K5, la identificación de actores y actividades de Ingeniería de Requisitos, la recomendación fundamentada de modelos y los riesgos asociados a su aplicación.
 
-### 1. Córdova – Caracterización y matrices comparativas (C1 y C2)
+## Integrantes y responsabilidades
 
-**Responsable:** Córdova Carreño Mayra Lucila.
+| Integrante | Responsabilidad | Estado |
+|---|---|---|
+| Córdova Carreño Mayra Lucila | C1: Caracterización de modelos. C2: Matrices comparativas contextualizadas de los cuatro escenarios. Integración y corrección del documento grupal. | Completado |
+| Herrera Morán Gilmar Javier | C3: Identificación de actores, actividades centrales y transversales, y artefactos del framework de Ingeniería de Requisitos. | Completado |
+| Rivas Bodero Jordy Fabian | C4: Recomendación fundamentada de modelos. C5: Identificación de riesgos y propuestas de mitigación. | Completado |
 
-- Caracterización de los modelos cascada, iterativo e incremental y ágil.
-- Identificación de fases, supuestos, condiciones de aplicación y limitaciones.
-- Elaboración de las matrices comparativas correspondientes a los cuatro escenarios.
-- Evaluación de los criterios K1–K5: cambios, stakeholders, tipo de sistema, riesgos y documentación.
-- Organización de los archivos LaTeX correspondientes a C1 y C2.
+## Escenarios analizados
 
-**Estado:** Completado y registrado en GitHub.
+1. **Extractora Río Lindo:** Sistema embebido para el control de procesos industriales.
+2. **Sabores de la Abuela Rosa:** Aplicación móvil para gestionar pedidos de comida típica.
+3. **Sistema de trámites municipales:** Plataforma web para la gestión de trámites bajo contratación pública.
+4. **Cooperativa Frutos del Estero:** Plataforma web para productores de cacao con conectividad intermitente.
 
-### 2. Herrera – Actores y framework de Ingeniería de Requisitos (C3)
+## Criterios de comparación
 
-**Responsable:** Herrera Morán Gilmar Javier.
+- **K1:** Estabilidad y cambios.
+- **K2:** Partes interesadas y disponibilidad.
+- **K3:** Tipo de sistema y criticidad.
+- **K4:** Riesgo principal.
+- **K5:** Documentación y marco normativo o contractual.
 
-- Identificación de actores y responsabilidades.
-- Identificación de actividades core y transversales de Ingeniería de Requisitos.
-- Determinación de los artefactos del framework de Ingeniería de Requisitos.
-- Contextualización de los elementos identificados según los escenarios analizados.
-
-**Estado:** Completado y registrado en GitHub.
-
-### 3. Rivas – Recomendación y riesgos (C4 y C5)
-
-**Responsable:** Rivas Bodero Jordy Fabian.
-
-- Selección del modelo más adecuado para cada escenario.
-- Justificación mediante al menos tres razones específicas.
-- Descarte fundamentado de los modelos alternativos.
-- Identificación de riesgos asociados al modelo seleccionado.
-- Propuesta de medidas de mitigación.
-
-**Estado:** Pendiente de integración al documento principal.
-
-## Estructura de archivos
+## Estructura del repositorio
 
 ```text
 GA-PRAC-01/
-├── README.md
-├── main.tex
-│
 ├── 01-Cordova/
-│   ├── README.md
-│   ├── c1-caracterizacion.tex
-│   ├── c2-escenario-01.tex
-│   ├── c2-escenario-02.tex
-│   ├── c2-escenario-03.tex
-│   └── c2-escenario-04.tex
-│
+│   └── Archivos individuales de C1 y C2
 ├── 02-Herrera/
-│   └── README.md
-│
-└── 03-Rivas/
-    └── README.md
+│   └── Archivos individuales de C3
+├── 03-Rivas/
+│   └── Archivos individuales de C4 y C5
+├── GA-PRAC-01-Completo.pdf
+├── main.tex
+└── README.md
 ```
 
-## Documento principal
+## Documentación principal
 
-El archivo `main.tex`, ubicado en la carpeta `GA-PRAC-01`, constituye el documento principal de la actividad grupal.
+- **`main.tex`:** Código fuente LaTeX del documento integrado, con los apartados C1–C5 y sus referencias bibliográficas.
+- **`GA-PRAC-01-Completo.pdf`:** Documento compilado que reúne los aportes de los tres integrantes.
+- **Carpetas individuales:** Archivos fuente y documentación de los trabajos realizados por cada integrante.
 
-Actualmente integra los apartados C1 y C2, desarrollados por Córdova Carreño Mayra Lucila.
+## Evidencia de participación
 
-Los apartados C3, C4 y C5 se incorporarán mediante archivos LaTeX independientes cuando los integrantes responsables completen sus contribuciones.
+La participación grupal se respalda mediante los archivos individuales y el historial de commits de GitHub.
+
+Cada integrante dispone de una carpeta correspondiente a sus responsabilidades. El historial del repositorio permite consultar las contribuciones, correcciones y actualizaciones realizadas durante el desarrollo de la actividad.
 
 ## Estado de la actividad
 
-**Estado general: En desarrollo.**
+Los apartados C1, C2, C3, C4 y C5 se encuentran integrados en el documento grupal. Las matrices comparativas incluyen los criterios K1–K5 para los cuatro escenarios.
 
-| Apartado | Responsable | Estado |
-|---|---|---|
-| C1 – Caracterización de modelos | Córdova | Completado |
-| C2 – Matrices de cuatro escenarios | Córdova | Completado |
-| C3 – Actores y framework de IR | Herrera | Pendiente de integración |
-| C4 – Recomendación fundamentada | Rivas | Pendiente de integración |
-| C5 – Riesgos y mitigaciones | Rivas | Pendiente de integración |
-| Documento principal `main.tex` | Integración grupal | Creado; integración parcial |
-| Revisión final | Equipo completo | Pendiente |
-
-## Colaboración y control de versiones
-
-Cada integrante desarrolla los apartados asignados dentro de su carpeta correspondiente.
-
-GitHub permite mantener un historial de modificaciones mediante commits individuales, facilitando la identificación de las contribuciones realizadas.
-
-El documento principal se consolidará progresivamente, respetando las responsabilidades establecidas y los criterios de evaluación de la actividad.
-
-Los tres integrantes participarán en la revisión y validación del trabajo final antes de su entrega.
+Queda pendiente la verificación final del criterio C6, correspondiente a la consistencia terminológica, claridad de presentación y evidencia de participación grupal, así como la comprobación de las condiciones de entrega en el SGA.
