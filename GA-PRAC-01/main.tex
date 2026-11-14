@@ -1,6 +1,4 @@
-
 \documentclass[12pt,a4paper]{article}
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish,es-tabla]{babel}
@@ -10,64 +8,585 @@
 \usepackage{longtable}
 \usepackage{microtype}
 \usepackage{hyperref}
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    urlcolor=blue
-}
-
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
-
 \begin{document}
-
 \begin{titlepage}
 \centering
-
 {\bfseries UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\par}
 \vspace{0.7cm}
-
 FACULTAD DE CIENCIAS DE LA COMPUTACIÓN\par
 CARRERA DE SOFTWARE\par
-INGENIERÍA DE REQUERIMIENTOS\par
-
+INGENIERÍA DE REQUISITOS (ISR-401)\par
 \vfill
-
 {\Large\bfseries GA-PRAC-01 - FORM\par}
 \vspace{0.5cm}
-
 {\large Comparación entre modelos de proceso de requisitos en escenarios reales\par}
-
 \vspace{1cm}
-
 \textbf{Integrantes:}\par
 Córdova Carreño Mayra Lucila\par
 Herrera Morán Gilmar Javier\par
-Rivas Rodero Jordy Fabian\par
-
+Rivas Bodero Jordy Fabian\par
+\vspace{0.8cm}
+\textbf{Avance integrado:} C1, C2, C4 y C5\par
+\textit{C3 pendiente de incorporación}\par
 \vfill
-
 Noviembre de 2026\par
-
 \end{titlepage}
-
 \tableofcontents
 \clearpage
 
-% C1: Caracterización de modelos
-% Responsable: Córdova Carreño Mayra Lucila
-\input{01-Cordova/c1-caracterizacion.tex}
+% GA-PRAC-01
+% C1 - Caracterizacion de los modelos de proceso
+% Responsable: Cordova Carreno Mayra Lucila
 
-% C2: Matrices comparativas
-% Responsable: Córdova Carreño Mayra Lucila
-\input{01-Cordova/c2-escenario-01.tex}
-\input{01-Cordova/c2-escenario-02.tex}
-\input{01-Cordova/c2-escenario-03.tex}
-\input{01-Cordova/c2-escenario-04.tex}
+\section{C1. Caracterización de los modelos de proceso de requisitos}
 
-% C3, C4 y C5:
-% Pendientes de integrar cuando los compañeros
-% suban sus respectivos archivos.
+\subsection{Modelo secuencial o cascada}
+
+El modelo secuencial o cascada organiza el desarrollo del software mediante fases principalmente consecutivas. Las actividades de Ingeniería de Requisitos se realizan de manera planificada y sus resultados sirven como base para las etapas posteriores.
+
+\textbf{Fases del desarrollo:} análisis de requisitos, diseño, implementación, pruebas, despliegue y mantenimiento. Las actividades de elicitación, análisis, especificación y validación permiten establecer los requisitos que orientan el desarrollo. La gestión de requisitos acompaña el proceso.
+
+\textbf{Supuestos:} se considera que los requisitos pueden identificarse y documentarse con suficiente estabilidad durante las etapas iniciales. Los cambios posteriores deben gestionarse mediante procedimientos de control.
+
+\textbf{Condiciones de aplicación:} resulta favorable cuando los requisitos son relativamente estables, existen obligaciones documentales, se necesitan aprobaciones formales y las actividades deben seguir una planificación definida.
+
+\textbf{Limitaciones:} los cambios tardíos pueden provocar retrabajo y afectar los costos y plazos. Además, una validación funcional realizada demasiado tarde puede dificultar la detección oportuna de errores.
+
+\subsection{Modelo iterativo e incremental}
+
+El modelo iterativo e incremental organiza el desarrollo mediante ciclos sucesivos. En cada iteración se revisan y perfeccionan los requisitos, mientras que los incrementos permiten incorporar progresivamente funcionalidades al sistema.
+
+\textbf{Fases o actividades:} planificación de la iteración, elicitación y análisis de requisitos, especificación, diseño, implementación, pruebas y evaluación de resultados. Estas actividades pueden repetirse durante diferentes ciclos.
+
+\textbf{Supuestos:} los requisitos pueden comprenderse y perfeccionarse progresivamente mediante la evaluación de resultados parciales y la retroalimentación de las partes interesadas.
+
+\textbf{Condiciones de aplicación:} resulta favorable cuando existe incertidumbre sobre algunos requisitos, se necesitan validaciones progresivas y es posible organizar el sistema en incrementos funcionales.
+
+\textbf{Limitaciones:} requiere coordinación entre iteraciones, gestión de dependencias, control de cambios y planificación de las funcionalidades que se incorporarán en cada incremento.
+
+\subsection{Modelo ágil}
+
+El modelo ágil se caracteriza por su capacidad de adaptación, la colaboración frecuente con las partes interesadas y la entrega continua o frecuente de valor. Los requisitos se refinan y priorizan conforme evoluciona el conocimiento del problema.
+
+\textbf{Fases o actividades:} identificación de necesidades, elicitación continua, priorización y refinamiento de requisitos, planificación de ciclos cortos, desarrollo, pruebas y validación frecuente. Estas actividades no necesariamente siguen una secuencia rígida.
+
+\textbf{Supuestos:} los requisitos pueden cambiar durante el proyecto y existe disponibilidad suficiente de las partes interesadas para proporcionar retroalimentación y participar en las decisiones.
+
+\textbf{Condiciones de aplicación:} resulta favorable cuando existe alta volatilidad de requisitos, se necesita responder rápidamente a cambios y es posible mantener una colaboración frecuente con los stakeholders.
+
+\textbf{Limitaciones:} la participación insuficiente de los stakeholders, la falta de priorización y un control inadecuado del alcance pueden dificultar el cumplimiento de los objetivos. Los proyectos con exigencias contractuales o normativas requieren mecanismos adicionales de documentación y trazabilidad.
+
+\subsection{Comparación general}
+
+El modelo secuencial prioriza la planificación y la definición temprana de requisitos; el modelo iterativo e incremental permite perfeccionarlos y validar resultados progresivamente; mientras que el modelo ágil enfatiza la adaptación continua y la colaboración frecuente.
+
+La elección del modelo debe considerar la estabilidad de los requisitos, la disponibilidad de las partes interesadas, la criticidad del sistema, los riesgos y las obligaciones documentales del proyecto.
+
+\clearpage
+
+% GA-PRAC-01
+% C2 - Escenario 1: Extractora Rio Lindo
+% Responsable: Cordova Carreno Mayra Lucila
+% Requiere: \usepackage{longtable}
+%           \usepackage{array}
+
+\section{C2. Matriz comparativa contextualizada}
+
+\subsection{Escenario 1: Extractora Río Lindo}
+
+La Extractora Río Lindo requiere un sistema embebido
+para controlar temperatura, presión y niveles de
+tanques. El proyecto presenta requisitos de seguridad
+estables e incertidumbre en sensores, interfaz y
+reportes. Su criticidad es muy alta debido a los
+riesgos para los operadores y la producción.
+
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.35}
+
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.16\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}|}
+\hline
+\textbf{Criterio} &
+\textbf{Secuencial (cascada)} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Criterio} &
+\textbf{Secuencial (cascada)} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endhead
+
+\textbf{K1. Estabilidad y cambios} &
+Favorece la especificación temprana de temperaturas,
+presiones y bloqueos, pero dificulta incorporar
+cambios posteriores en sensores e interfaz. &
+Permite mantener estables los requisitos de seguridad
+y refinar por iteraciones la comunicación con sensores
+y los reportes. &
+Facilita adaptar interfaz y reportes, pero los cambios
+frecuentes no aportan la misma ventaja a las reglas
+de seguridad ya definidas. \\
+\hline
+
+\textbf{K2. Partes interesadas y disponibilidad} &
+Permite planificar reuniones con el jefe de planta
+dos mañanas por semana y obtener aprobaciones
+formales del responsable de seguridad. &
+Permite programar revisiones con el jefe de planta
+y operadores de distintos turnos al finalizar
+cada iteración. &
+La colaboración frecuente resulta difícil por la
+disponibilidad limitada del jefe de planta y los
+turnos rotativos de los operadores. \\
+\hline
+
+\textbf{K3. Tipo de sistema y criticidad} &
+Favorece la trazabilidad de los requisitos de
+protección del sistema embebido, aunque puede
+retrasar pruebas de integración. &
+Permite comprobar progresivamente alarmas, bloqueos
+y comunicación con dispositivos, conservando
+requisitos de seguridad verificables. &
+Facilita ajustar la interfaz, pero necesita controles
+rigurosos para evitar que cambios rápidos comprometan
+funciones críticas de protección. \\
+\hline
+
+\textbf{K4. Riesgo principal} &
+La selección de sensores en el tercer mes podría
+invalidar decisiones técnicas anteriores y
+generar retrabajo. &
+Permite verificar tempranamente la integración
+con sensores y válvulas, reduciendo incertidumbre
+antes de la puesta en marcha. &
+Existe riesgo de priorizar mejoras visibles de
+interfaz sobre verificaciones críticas si no se
+establecen prioridades y criterios de seguridad
+estrictos. \\
+\hline
+
+\textbf{K5. Documentación y marco normativo o contractual} &
+Favorece la aprobación formal de requisitos de
+seguridad y la documentación de pruebas exigidas
+por la aseguradora. &
+Permite conservar versiones de requisitos y
+evidencias de pruebas por incremento, manteniendo
+la trazabilidad de funciones de protección. &
+Requiere complementar la documentación habitual
+de trabajo con requisitos de seguridad aprobados
+y evidencias verificables de cada función de
+protección. \\
+\hline
+
+\end{longtable}
+
+\normalsize
+
+\clearpage
+
+% GA-PRAC-01
+% C2 - Escenario 2: Sabores de la Abuela Rosa
+% Responsable: Cordova Carreno Mayra Lucila
+% Requiere: longtable y array
+
+\subsection{Escenario 2: Sabores de la Abuela Rosa}
+
+El emprendimiento Sabores de la Abuela Rosa necesita
+una aplicación móvil para gestionar pedidos de comida
+típica. El proyecto presenta alta volatilidad de
+requisitos, disponibilidad frecuente de la propietaria,
+un presupuesto pequeño y un plazo de 14 semanas.
+
+El sistema debe proteger los datos personales de los
+clientes, controlar los pagos por transferencia y
+funcionar en teléfonos Android de gama baja con
+conectividad intermitente.
+
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.35}
+
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{0.16\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}
+|>{\raggedright\arraybackslash}p{0.25\textwidth}|}
+\hline
+\textbf{Criterio} &
+\textbf{Secuencial (cascada)} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Criterio} &
+\textbf{Secuencial (cascada)} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endhead
+
+\textbf{K1. Estabilidad y cambios} &
+Una especificación inicial quedaría desactualizada
+por los cambios diarios del menú y las nuevas ideas
+de Doña Rosa y su hijo. &
+Permite incorporar progresivamente cambios en
+promociones, menú y funcionalidades mediante
+ciclos de revisión. &
+Favorece la repriorización frecuente de requisitos
+según los cambios del menú y las decisiones
+de Doña Rosa. \\
+\hline
+
+\textbf{K2. Partes interesadas y disponibilidad} &
+Doña Rosa podría aprobar requisitos al inicio,
+pero su disponibilidad diaria quedaría poco
+aprovechada durante el desarrollo. &
+Permite que Doña Rosa pruebe los incrementos
+y comunique correcciones al finalizar cada ciclo. &
+Aprovecha su disponibilidad diaria para validar
+funcionalidades y decidir prioridades, aunque
+deben controlarse las solicitudes adicionales
+de su hijo. \\
+\hline
+
+\textbf{K3. Tipo de sistema y criticidad} &
+Permite documentar requisitos de pagos y protección
+de datos, pero podría detectar tarde problemas
+de uso en teléfonos económicos. &
+Facilita probar progresivamente pedidos, pagos
+y funcionamiento con conexiones intermitentes. &
+Permite validar tempranamente la experiencia móvil,
+pero exige criterios de aceptación para pagos,
+privacidad y funcionamiento sin conexión estable. \\
+\hline
+
+\textbf{K4. Riesgo principal} &
+Los cambios frecuentes podrían provocar retrabajo
+y comprometer la entrega dentro de las 14 semanas. &
+Existe riesgo de no completar los incrementos
+previstos con dos desarrolladores a medio tiempo. &
+Las nuevas ideas pueden ampliar excesivamente
+el alcance y agotar el presupuesto antes
+de las fiestas. \\
+\hline
+
+\textbf{K5. Documentación y marco normativo o contractual} &
+Favorece una especificación formal de datos
+personales y pagos, aunque requiere actualizarla
+ante cambios frecuentes. &
+Permite mantener requisitos y evidencias
+de pruebas actualizados por incremento. &
+Puede utilizar historias de usuario y criterios
+de aceptación, complementados con documentación
+de privacidad y conciliación de transferencias. \\
+\hline
+
+\end{longtable}
+
+\normalsize
+
+\clearpage
+
+% GA-PRAC-01
+% C2 - Escenario 3: Sistema de tramites municipales
+% Responsable: Cordova Carreno Mayra Lucila
+% Requiere: longtable y array
+
+\subsection{Escenario 3: Sistema de trámites municipales contratado por contratación pública}
+
+El GAD Municipal del cantón San Isidro de Baba, en la provincia de Los Ríos, requiere desarrollar un sistema web para gestionar aproximadamente 9\,000 trámites anuales relacionados con permisos de funcionamiento, patentes y certificados de no adeudar.
+
+El proyecto será ejecutado por una empresa contratista de seis personas, bajo un contrato público de siete meses. Se establecen tres entregables con fechas y pagos fijos: especificación de requisitos aprobada en el mes 2, sistema instalado y probado en el mes 6, y capacitación con acta de entrega-recepción definitiva en el mes 7. Cada día de retraso genera una multa.
+
+Los requisitos presentan incertidumbre debido a posibles cambios en el flujo de aprobación y a una nueva ordenanza de tasas que podría aprobarse en el cuarto mes. Además, el sistema debe proteger los datos personales, administrar cobros y conectarse con servidores municipales y una base de datos antigua sin documentación.
+
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.35}
+
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{2.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}|}
+\hline
+\textbf{Criterio} &
+\textbf{Cascada} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Criterio} &
+\textbf{Cascada} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endhead
+
+\textbf{Gestión de cambios} &
+Permite establecer una línea base de requisitos para la aprobación contractual del mes 2. Sin embargo, los cambios en el flujo de aprobación o en las tasas municipales requerirían una evaluación formal de impacto y posiblemente una modificación contractual. &
+Permite revisar y ajustar los requisitos mediante ciclos de desarrollo, incorporando los cambios previstos para el cuarto mes. No obstante, los ajustes deben controlarse para respetar los entregables y pagos establecidos. &
+Facilita adaptar los requisitos mediante la revisión continua del backlog. Sin embargo, los cambios solicitados por los funcionarios no pueden incorporarse libremente si modifican el alcance contractual aprobado. \\
+\hline
+
+\textbf{Stakeholders} &
+La participación del administrador del contrato y de los funcionarios se concentra principalmente en la especificación, revisión y aceptación formal. La disponibilidad semanal del administrador favorece reuniones programadas, pero limita la retroalimentación continua. &
+Permite realizar validaciones periódicas con el administrador y los funcionarios de ventanilla y rentas. Las revisiones pueden organizarse según su disponibilidad y los hitos del contrato. &
+Requiere colaboración frecuente con representantes del municipio. La participación irregular de los funcionarios y la disponibilidad limitada del administrador dificultan mantener una retroalimentación ágil constante. \\
+\hline
+
+\textbf{Tipo de sistema} &
+La secuencia de fases facilita documentar y verificar las funciones de permisos, patentes y certificados. Sin embargo, descubrir tardíamente problemas de integración con la base de datos antigua podría afectar el cronograma. &
+Permite desarrollar y validar progresivamente los módulos de trámites, cobros e integración. Las primeras iteraciones pueden utilizarse para investigar la base de datos antigua y comprobar la compatibilidad con los servidores municipales. &
+Permite entregar funcionalidades parciales y recibir observaciones tempranas. No obstante, el sistema necesita cumplir requisitos de seguridad, integración y aceptación contractual que exigen controles adicionales. \\
+\hline
+
+\textbf{Riesgo} &
+Presenta un riesgo elevado de retrabajo si los cambios normativos aparecen después de aprobar la especificación. Los problemas técnicos descubiertos durante la implementación podrían ocasionar multas por retraso. &
+Permite identificar anticipadamente riesgos de integración, protección de datos y cálculos de tasas. Sin embargo, requiere planificar cuidadosamente las iteraciones para evitar incumplir los tres hitos contractuales. &
+Permite detectar problemas mediante pruebas y revisiones frecuentes. Sin embargo, una priorización inadecuada del backlog o la falta de disponibilidad del cliente podría comprometer las fechas y el alcance contratado. \\
+\hline
+
+\textbf{Documentación} &
+Favorece una especificación formal, trazabilidad de requisitos, registros de pruebas y actas de aceptación, necesarios para justificar los entregables y pagos del contrato público. &
+Permite mantener una especificación inicial aprobada y actualizar los artefactos mediante control de versiones, trazabilidad y registros de cambios, conservando la evidencia exigida por el contrato. &
+Utiliza historias de usuario, criterios de aceptación y un backlog priorizado. Para este contrato sería necesario complementar esos artefactos con especificaciones formales, trazabilidad y documentación de aceptación. \\
+\hline
+
+\end{longtable}
+
+\normalsize
+
+\noindent\textbf{Síntesis comparativa.}
+
+El modelo cascada ofrece mayor correspondencia con la aprobación formal de requisitos y los entregables contractuales, pero presenta dificultades ante los cambios normativos y la incertidumbre técnica.
+
+El modelo iterativo e incremental permite reducir progresivamente los riesgos de integración y validar los requisitos con los funcionarios municipales, siempre que sus ciclos se ajusten a los hitos y procedimientos formales del contrato.
+
+El modelo ágil ofrece flexibilidad para responder a cambios, pero la disponibilidad limitada de los stakeholders y las restricciones de contratación pública dificultan su aplicación sin mecanismos adicionales de control documental y contractual.
+
+\clearpage
+
+% GA-PRAC-01
+% C2 - Escenario 4: Cooperativa Frutos del Estero
+% Responsable: Cordova Carreno Mayra Lucila
+% Requiere: longtable y array
+
+\subsection{Escenario 4: Plataforma web para una cooperativa de productores de cacao con socios dispersos}
+
+La Cooperativa Agroproductiva Frutos del Estero, ubicada en la provincia de Los Ríos, agrupa a 640 pequeños productores de cacao de recintos rurales de Mocache, Ventanas y Valencia.
+
+La cooperativa necesita una plataforma web que permita registrar las entregas de cacao según peso, humedad y calidad, calcular las liquidaciones y consultar entregas, pagos, créditos y saldos. Actualmente, estos procesos se realizan mediante tarjetas de papel y hojas de cálculo.
+
+El proyecto dispone de un equipo de cuatro personas y un plazo de doce meses. La gerente está disponible casi diariamente, pero los cambios importantes requieren aprobación de la directiva, que se reúne mensualmente. Los socios se encuentran dispersos y participan principalmente durante los días de acopio o las asambleas trimestrales.
+
+Las reglas de liquidación presentan baja volatilidad, mientras que los requisitos de trazabilidad y certificación del cacao pueden cambiar según las exigencias de los compradores exportadores. Además, el sistema debe proteger los datos personales, funcionar sin conexión durante el registro de entregas y sincronizar la información posteriormente.
+
+El proyecto cuenta con financiamiento de un donante que exige informes semestrales de avance y está sujeto al estatuto de la cooperativa y al control del organismo supervisor de la economía popular y solidaria.
+
+\small
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.35}
+
+\begin{longtable}{
+|>{\raggedright\arraybackslash}p{2.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}
+|>{\raggedright\arraybackslash}p{3.5cm}|}
+
+\hline
+\textbf{Criterio} &
+\textbf{Cascada} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Criterio} &
+\textbf{Cascada} &
+\textbf{Iterativo e incremental} &
+\textbf{Ágil} \\
+\hline
+\endhead
+
+\textbf{Gestión de cambios} &
+Permite definir y documentar inicialmente las reglas de liquidación, que presentan baja volatilidad. Sin embargo, los cambios en trazabilidad y certificación solicitados por compradores exportadores podrían generar retrabajo y modificaciones formales de requisitos. &
+Permite establecer una línea base para las reglas de liquidación y revisar progresivamente los requisitos de trazabilidad y certificación. Los cambios pueden incorporarse en nuevas iteraciones, considerando su impacto en el plazo de doce meses. &
+Facilita actualizar y priorizar los requisitos de trazabilidad mediante un backlog. No obstante, los cambios importantes deben esperar la aprobación mensual de la directiva, lo que limita la capacidad de respuesta inmediata. \\
+\hline
+
+\textbf{Stakeholders} &
+Permite recopilar requisitos mediante entrevistas y reuniones iniciales con la gerente, la directiva y representantes de los socios. Sin embargo, la participación limitada de los productores podría ocasionar que sus necesidades reales se descubran durante las pruebas finales. &
+Permite validar periódicamente las funcionalidades con la gerente y aprovechar los días de acopio y las asambleas trimestrales para obtener retroalimentación de los socios. Las decisiones importantes se presentan a la directiva para su aprobación. &
+La disponibilidad casi diaria de la gerente favorece la colaboración continua. Sin embargo, ella no puede aprobar cambios importantes por sí sola y los socios dispersos no pueden participar frecuentemente en revisiones, lo que dificulta una validación ágil representativa. \\
+\hline
+
+\textbf{Tipo de sistema} &
+Facilita especificar detalladamente los cálculos de liquidaciones, créditos y saldos antes de la implementación. Sin embargo, desarrollar la plataforma mediante fases principalmente consecutivas puede retrasar la validación del funcionamiento sin conexión y la sincronización de registros. &
+Permite construir progresivamente los módulos de entregas, liquidaciones, créditos, consultas y trazabilidad. Las primeras iteraciones pueden comprobar el registro sin conexión y la sincronización posterior, reduciendo la incertidumbre técnica. &
+Permite desarrollar funcionalidades prioritarias y demostrar avances frecuentes. Puede comenzar con el registro de entregas y continuar con pagos, créditos y trazabilidad, aunque requiere coordinar las dependencias entre módulos y las validaciones de los socios. \\
+\hline
+
+\textbf{Riesgo} &
+Presenta riesgo de detectar tardíamente errores en liquidaciones o problemas de sincronización. Estos fallos podrían afectar los pagos a los productores y la integridad de los registros de entregas. &
+Permite identificar y corregir tempranamente errores de cálculo, duplicación de registros, pérdida de información y problemas de conectividad. Sin embargo, exige controlar las dependencias técnicas entre incrementos y mantener pruebas de integración. &
+Las pruebas frecuentes permiten detectar problemas de usabilidad y funcionamiento. Sin embargo, un backlog mal priorizado podría postergar controles críticos de liquidación, seguridad de datos o sincronización, especialmente con un equipo de cuatro personas. \\
+\hline
+
+\textbf{Documentación} &
+Favorece una especificación formal de requisitos, reglas de negocio, documentación de cálculos, pruebas y evidencias para los informes semestrales exigidos por el donante y el control institucional. &
+Permite mantener requisitos documentados y trazables, actualizar especificaciones por iteración y generar evidencias de pruebas y avances. Los resultados de cada incremento pueden respaldar los informes semestrales del donante. &
+Utiliza historias de usuario, criterios de aceptación y backlog priorizado. Para cumplir las condiciones del donante, el estatuto y el control institucional, sería necesario complementar estos artefactos con documentación formal, trazabilidad y evidencias verificables. \\
+\hline
+
+\end{longtable}
+
+\normalsize
+
+\noindent\textbf{Síntesis comparativa.}
+
+El modelo cascada ofrece ventajas para documentar las reglas estables de liquidación y cumplir las obligaciones institucionales. Sin embargo, su menor flexibilidad frente a cambios en trazabilidad y certificación, junto con la validación tardía de la sincronización, representa una limitación importante.
+
+El modelo iterativo e incremental permite desarrollar y validar progresivamente los módulos de la plataforma, comprobar anticipadamente el funcionamiento sin conexión y adaptar los requisitos de trazabilidad. Además, facilita organizar revisiones con los socios según su disponibilidad y conservar evidencias para los informes semestrales.
+
+El modelo ágil favorece la adaptación a cambios y la colaboración frecuente con la gerente. No obstante, la aprobación mensual de la directiva, la dispersión de los socios y las exigencias documentales del donante requieren mecanismos adicionales de coordinación y control.
+
+\clearpage
+
+
+\section{C4. Recomendación fundamentada del modelo de proceso}
+
+Para cada uno de los cuatro escenarios analizados, la selección del modelo de proceso de requisitos se fundamenta en la evaluación de la estabilidad (K1), la disponibilidad de las partes interesadas (K2), la criticidad del sistema (K3), los riesgos principales (K4) y las exigencias normativas o contractuales (K5) \cite{Pohl2025}.
+
+\subsection{Escenario 1: Extractora Río Lindo (Sistema Embebido)}
+\begin{itemize}
+    \item \textbf{Modelo recomendado:} Modelo Híbrido Controlado (Cascada e Iterativo/Incremental) \cite{GA_Prac_01}.
+    \item \textbf{Desglose del modelo híbrido:} Se aplica un enfoque en \textbf{cascada} para los requisitos de seguridad críticos, límites de presión, temperatura y bloqueos definidos por el fabricante de los esterilizadores y exigidos por la aseguradora; y un enfoque \textbf{iterativo e incremental} para el desarrollo de la interfaz de operador, reportes y la integración con los sensores y válvulas aún pendientes de compra \cite{GA_Prac_01}.
+    \item \textbf{Razones fundamentadas:}
+        \begin{enumerate}
+            \item \textit{K1 (Estabilidad):} Las reglas de seguridad y umbrales máximos son estables y fijas del fabricante, permitiendo congelar una línea base temprana \cite{Pohl2025}.
+            \item \textit{K5 (Normativa):} La aseguradora exige formalmente un documento de requisitos de seguridad aprobado antes de la puesta en marcha \cite{GA_Prac_01}.
+            \item \textit{K3 (Criticidad):} La alta criticidad por la seguridad física de los operadores exige una verificación formal estricta de las funciones de protección \cite{SWEBOK_v4_2024}.
+        \end{enumerate}
+    \item \textbf{Descarte de los otros modelos:} El modelo ágil puro se descarta porque la alta volatilidad en la interfaz no compensa el riesgo de desatender las reglas críticas de seguridad; el cascada puro resulta inflexible ante la incertidumbre de la selección de sensores en el tercer mes \cite{GA_Prac_01}.
+    \item \textbf{Tensión principal:} La incertidumbre en la elección de los proveedores de sensores en el tercer mes frente a la exigencia de una especificación temprana de seguridad \cite{GA_Prac_01}.
+\end{itemize}
+
+\subsection{Escenario 2: Sabores de la Abuela Rosa (Aplicación Móvil)}
+\begin{itemize}
+    \item \textbf{Modelo recomendado:} Modelo Híbrido (Ágil e Iterativo Controlado) \cite{Inayat2015}.
+    \item \textbf{Desglose del modelo híbrido:} Se aplica un enfoque \textbf{ágil} basado en un \emph{Product Backlog} vivo para la gestión del catálogo diario de menús, interfaz de usuario y promociones propuestas por la propietaria y su hijo; y un enfoque \textbf{iterativo controlado} para la pasarela de pagos por transferencia y los módulos de seguridad de datos personales conforme a la LOPDP \cite{GA_Prac_01}.
+    \item \textbf{Razones fundamentadas:}
+        \begin{enumerate}
+            \item \textit{K1 (Volatilidad):} El menú diario cambiante y las ideas recurrentes de la dueña generan alta volatilidad que requiere repriorización continua \cite{GA_Prac_01, Pohl2025}.
+            \item \textit{K2 (Disponibilidad):} La disponibilidad diaria de Doña Rosa para probar versiones maximiza la validación iterativa frecuente \cite{GA_Prac_01}.
+            \item \textit{K4 (Plazo):} El plazo estricto de 14 semanas por las fiestas locales exige entregas incrementales de valor para mitigar el riesgo de descubrimiento tardío \cite{Sommerville2016}.
+        \end{enumerate}
+    \item \textbf{Descarte de los otros modelos:} El modelo en cascada se descarta por su rigidez ante los cambios diarios del negocio; el iterativo tradicional resulta excesivamente burocrático para un equipo reducido de dos desarrolladores a medio tiempo \cite{GA_Prac_01}.
+    \item \textbf{Tensión principal:} La alta agilidad comercial requerida frente a la obligatoriedad estricta de cumplir con la protección legal de datos y conciliación de pagos \cite{GA_Prac_01}.
+\end{itemize}
+
+\subsection{Escenario 3: Sistema de Trámites Municipales (Contratación Pública)}
+\begin{itemize}
+    \item \textbf{Modelo recomendado:} Modelo Híbrido (Iterativo por Hitos Contractuales y Prototipado) \cite{GA_Prac_01}.
+    \item \textbf{Desglose del modelo híbrido:} Se aplica un enfoque de \textbf{cascada por fases formales} para cumplir estrictamente con los tres entregables contractuales y de pago (mes 2, 6 y 7); y un enfoque \textbf{iterativo con prototipos} para investigar y resolver la integración técnica con la base de datos municipal antigua y no documentada \cite{GA_Prac_01}.
+    \item \textbf{Razones fundamentadas:}
+        \begin{enumerate}
+            \item \textit{K5 (Contractual):} Los pliegos de contratación pública imponen fechas fijas, entregables aprobados y multas por cada día de retraso \cite{GA_Prac_01}.
+            \item \textit{K4 (Riesgo técnico):} La integración con una base de datos heredada sin documentación requiere ciclos de investigación temprana \cite{GA_Prac_01, Pohl2025}.
+            \item \textit{K1 (Cambios normativos):} Permite absorber de manera controlada la posible nueva ordenanza de tasas del cuarto mes sin romper la estructura de los entregables \cite{GA_Prac_01}.
+        \end{enumerate}
+    \item \textbf{Descarte de los otros modelos:} El modelo ágil puro se descarta por las restricciones legales, multas y la inflexibilidad de alcance de la contratación pública; el cascada rígido se descarta porque la ordenanza futura invalidaría una única especificación inicial \cite{GA_Prac_01}.
+    \item \textbf{Tensión principal:} La rigidez normativa de los pliegos y multas de contratación pública frente a la incertidumbre técnica de la base de datos heredada \cite{GA_Prac_01}.
+\end{itemize}
+
+\subsection{Escenario 4: Cooperativa Frutos del Estero (Plataforma Web Rural)}
+\begin{itemize}
+    \item \textbf{Modelo recomendado:} Modelo Híbrido (Iterativo-Incremental y Ágil de Campo) \cite{GA_Prac_01}.
+    \item \textbf{Desglose del modelo híbrido:} Se aplica un enfoque \textbf{iterativo e incremental} para el núcleo de cálculos de liquidación y créditos (reglas estables del estatuto), combinado con ciclos \textbf{ágiles y de prototipado offline} para el registro de entregas en los centros de acopio rurales con conectividad intermitente \cite{GA_Prac_01}.
+    \item \textbf{Razones fundamentadas:}
+        \begin{enumerate}
+            \item \textit{K2 (Disponibilidad mixta):} Permite sincronizar las revisiones formales con la directiva mensual y la validación de los socios en asambleas trimestrales y días de acopio \cite{GA_Prac_01}.
+            \item \textit{K3 (Criticidad técnica):} Facilita comprobar de manera anticipada el funcionamiento sin conexión y la posterior sincronización de datos \cite{GA_Prac_01}.
+            \item \textit{K5 (Informes):} La generación de incrementos funcionales semestrales respalda directamente los informes exigidos por el donante \cite{GA_Prac_01}.
+        \end{enumerate}
+    \item \textbf{Descarte de los otros modelos:} El modelo ágil se descarta porque la directiva se reúne solo una vez al mes y los socios están dispersos, impidiendo la priorización continua; el cascada no permitiría validar oportunamente el funcionamiento offline \cite{GA_Prac_01}.
+    \item \textbf{Tensión principal:} Las exigencias de reportes formales semestrales del donante frente a la baja frecuencia de retroalimentación directa de los productores rurales \cite{GA_Prac_01}.
+\end{itemize}
+
+\section{C5. Análisis de riesgos del modelo elegido y mitigación}
+
+\begin{enumerate}
+    \item \textbf{Riesgo 1 en Escenario 1 (Híbrido controlado: Cascada + Iterativo/Incremental):} Obsolescencia de los requisitos ante cambios en los sensores seleccionados en el tercer mes \cite{GA_Prac_01}.
+        \begin{itemize}
+            \item \textit{Impacto:} Afecta el diseño del hardware y genera retrabajo en la integración del sistema embebido.
+            \item \textit{Mitigación:} Establecer una capa de abstracción de hardware (HAI) que aísle el software de control de la marca específica de sensores.
+        \end{itemize}
+    \item \textbf{Riesgo 2 en Escenario 1 (Híbrido controlado: Cascada + Iterativo/Incremental):} Dificultad de validación continua por la disponibilidad baja a media del jefe de planta (dos mañanas por semana) y turnos rotativos de operadores \cite{GA_Prac_01}.
+        \begin{itemize}
+            \item \textit{Impacto:} Retrasos en la aprobación formal de los flujos de control y detección tardía de malentendidos operativos.
+            \item \textit{Mitigación:} Programar revisiones estructuradas fijas al cierre de cada incremento y validar mediante prototipos de interfaz antes de la codificación final.
+        \end{itemize}
+
+    \item \textbf{Riesgo 1 en Escenario 2 (Híbrido: Ágil + Iterativo controlado):} Omisión de Requisitos No Funcionales (RNF) de seguridad y cumplimiento de la LOPDP en la aplicación móvil \cite{GA_Prac_01}.
+        \begin{itemize}
+            \item \textit{Impacto:} Incumplimiento de la normativa legal ecuatoriana de protección de datos personales de los clientes.
+            \item \textit{Mitigación:} Incorporar historias de usuario de seguridad y privacidad como criterios de aceptación obligatorios desde el primer sprint \cite{Pohl2025}.
+        \end{itemize}
+    \item \textbf{Riesgo 2 en Escenario 2 (Híbrido: Ágil + Iterativo controlado):} Expansión descontrolada del alcance (\emph{scope creep}) debido a las ideas recurrentes de la propietaria y su hijo en cada reunión \cite{GA_Prac_01}.
+        \begin{itemize}
+            \item \textit{Impacto:} Agotamiento prematuro del presupuesto cerrado y retraso en la entrega para las fiestas locales.
+            \item \textit{Mitigación:} Gestionar rigurosamente el \emph{Product Backlog} aplicando priorización estricta (técnica MoSCoW) para congelar el alcance de cada incremento.
+        \end{itemize}
+
+    \item \textbf{Riesgo 1 en Escenario 3 (Híbrido: Cascada por hitos + Iterativo con prototipado):} Desviación del alcance acordado en el entregable del mes 2 debido a modificaciones en el flujo de aprobación del GAD \cite{GA_Prac_01}.
+        \begin{itemize}
+            \item \textit{Impacto:} Riesgo de retrasos y aplicación de multas contractuales estipuladas en los pliegos.
+            \item \textit{Mitigación:} Gestionar los cambios mediante un comité formal de control de cambios (CCB) documentado en actas de iteración \cite{Pohl2025}.
+        \end{itemize}
+    \item \textbf{Riesgo 2 en Escenario 3 (Híbrido: Cascada por hitos + Iterativo con prototipado):} Incompatibilidad o errores de lectura en la base de datos municipal antigua y no documentada \cite{GA_Prac_01}.
+        \begin{itemize}
+            \item \textit{Impacto:} Fallas críticas en la consulta de datos catastrales durante la emisión de trámites.
+            \item \textit{Mitigación:} Dedicar la primera iteración del contrato a realizar ingeniería inversa y pruebas de concepto (PoC) sobre la estructura de la base de datos heredada.
+        \end{itemize}
+
+    \item \textbf{Riesgo 1 en Escenario 4 (Híbrido: Iterativo-Incremental + Ágil de campo):} Fallas en la sincronización de registros de cacao debido a la inestabilidad de internet en el centro de acopio de Mocache \cite{GA_Prac_01}.
+        \begin{itemize}
+            \item \textit{Impacto:} Pérdida temporal de datos de entrega y descontento en los pagos a los productores.
+            \item \textit{Mitigación:} Priorizar pruebas tempranas de almacenamiento local offline (IndexedDB/SQLite) y colas de sincronización robustas en los primeros incrementos.
+        \end{itemize}
+    \item \textbf{Riesgo 2 en Escenario 4 (Híbrido: Iterativo-Incremental + Ágil de campo):} Desalineación entre los requerimientos de la directiva (reunión mensual) y las necesidades reales de los socios dispersos (asambleas trimestrales) \cite{GA_Prac_01}.
+        \begin{itemize}
+            \item \textit{Impacto:} Rechazo de la plataforma por parte de los usuarios finales por no ajustarse a su operación en recintos rurales.
+            \item \textit{Mitigación:} Nombrar comités de enlace durante los días de acopio para validar incrementos funcionales periódicos que respalden los informes semestrales del donante.
+        \end{itemize}
+\end{enumerate}
+
+\begin{thebibliography}{9}
+\bibitem{Pohl2025} Klaus Pohl. \emph{Requirements Engineering: Fundamentals, Principles, and Techniques}. Springer, 2nd edition, 2025.
+\bibitem{SWEBOK_v4_2024} Hironori Washizaki, editor. \emph{Guide to the Software Engineering Body of Knowledge (SWEBOK Guide)}, Version 4.0. IEEE Computer Society, 2024.
+\bibitem{Inayat2015} Irum Inayat et al. A systematic literature review on agile requirements engineering practices and challenges. \emph{Computers in Human Behavior}, 51:915-929, 2015.
+\bibitem{Sommerville2016} Ian Sommerville. \emph{Software Engineering}. Pearson, 10th edition, 2016.
+\bibitem{GA_Prac_01} Universidad Técnica Estatal de Quevedo (UTEQ). \emph{Material complementario GA-PRAC-01: Proceso de requisitos}, 2026.
+\end{thebibliography}
+
 
 \end{document}
