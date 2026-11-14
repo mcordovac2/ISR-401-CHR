@@ -1,0 +1,98 @@
+
+\documentclass[12pt,a4paper]{article}
+
+% Configuración del idioma y codificación
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+
+% Márgenes y formato
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{pdflscape}
+
+\onehalfspacing
+
+\begin{document}
+
+% PORTADA
+\begin{titlepage}
+    \centering
+
+    {\Large UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\par}
+    \vspace{0.5cm}
+
+    {\large FACULTAD DE CIENCIAS DE LA COMPUTACIÓN\par}
+    \vspace{0.3cm}
+
+    {\large CARRERA DE SOFTWARE\par}
+    \vspace{1.5cm}
+
+    {\Large\bfseries INGENIERÍA DE REQUISITOS\par}
+    \vspace{1cm}
+
+    {\Large\bfseries PRÁCTICA EXPERIMENTAL UNIDAD I\par}
+    \vspace{0.5cm}
+
+    {\large Proceso de requisitos aplicado a un sistema real\par}
+    \vspace{1.5cm}
+
+    {\large\bfseries Integrantes:\par}
+    \vspace{0.4cm}
+
+    Córdova Carreño Mayra Lucila\\
+    Herrera Moran Gilmar Javier\\
+    Rivas Bodero Jordy Fabian
+
+    \vspace{1.5cm}
+
+    {\large Sistema analizado:\par}
+    {\large Plataforma de comercio electrónico de Almacenes Tía\par}
+
+    \vfill
+
+    {\large Quevedo -- Ecuador\par}
+    {\large 2026\par}
+
+\end{titlepage}
+
+% ÍNDICE
+\tableofcontents
+\newpage
+
+% INTRODUCCIÓN
+\section{Introducción}
+
+El presente informe aborda la aplicación del
+proceso de Ingeniería de Requisitos a la
+plataforma de comercio electrónico de
+Almacenes Tía, considerando la identificación,
+clasificación, evaluación y documentación de
+requisitos de software.
+
+% DESARROLLO POR INTEGRANTE
+\input{identificacion_requisitos}
+
+\input{calidad_requisitos}
+
+\input{aplicacion_proceso}
+
+% CONCLUSIONES
+\section{Conclusiones}
+
+Las conclusiones se redactarán una vez
+integrados y revisados los resultados del
+trabajo grupal.
+
+% REFERENCIAS
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+\end{document}
