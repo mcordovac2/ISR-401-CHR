@@ -1,4 +1,3 @@
-
 \documentclass[12pt,a4paper]{article}
 
 % Configuración del idioma y codificación
@@ -17,6 +16,22 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{pdflscape}
+
+% Paquetes adicionales para el trabajo de Rivas
+\usepackage{tikz}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\usepackage{enumitem}
+\usepackage{caption}
+
+% Librerías para diagramas TikZ
+\usetikzlibrary{
+    arrows.meta,
+    positioning,
+    shapes.geometric,
+    fit,
+    backgrounds
+}
 
 \onehalfspacing
 
@@ -67,15 +82,37 @@
 \tableofcontents
 \newpage
 
+
 % INTRODUCCIÓN
 \section{Introducción}
 
-El presente informe aborda la aplicación del
-proceso de Ingeniería de Requisitos a la
-plataforma de comercio electrónico de
-Almacenes Tía, considerando la identificación,
-clasificación, evaluación y documentación de
-requisitos de software.
+La Ingeniería de Requisitos constituye una actividad fundamental
+en el desarrollo de software, debido a que permite identificar,
+analizar, especificar y validar las necesidades y restricciones
+de los interesados. Según Pohl \cite{pohl2010}, este proceso
+contribuye a establecer una comprensión compartida de los
+requisitos que debe satisfacer un sistema.
+
+La norma ISO/IEC/IEEE 29148:2018 \cite{iso29148}
+establece lineamientos para la ingeniería de requisitos
+durante el ciclo de vida de los sistemas y productos de software.
+Asimismo, SWEBOK v4.0 \cite{swebok2024} reconoce la Ingeniería
+de Requisitos como un área de conocimiento esencial
+dentro de la Ingeniería de Software.
+
+El presente informe aborda la aplicación del proceso
+de Ingeniería de Requisitos a la plataforma de comercio
+electrónico de Almacenes Tía \cite{tia2026}, considerando
+la identificación, clasificación, evaluación y
+documentación de requisitos de software.
+
+El análisis se desarrolla mediante la exploración
+de las funcionalidades públicas de la plataforma,
+tomando como referencia el contexto de San Carlos,
+cantón Quevedo, provincia de Los Ríos, Ecuador.
+Se distinguen las funcionalidades observadas de los
+requisitos propuestos que requieren verificación posterior.
+
 
 % DESARROLLO POR INTEGRANTE
 
@@ -174,7 +211,6 @@ las funcionalidades observadas de aquellas
 que requieren verificación adicional.
 
 
-\begin{landscape}
 \begingroup
 \footnotesize
 \setlength{\tabcolsep}{3pt}
@@ -182,7 +218,7 @@ que requieren verificación adicional.
 
 
 \begin{longtable}{
-|p{1.4cm}|p{8cm}|p{2.5cm}|p{5.5cm}|p{3cm}|}
+|>{\raggedright\arraybackslash}p{1.25cm}|>{\raggedright\arraybackslash}p{4.6cm}|>{\raggedright\arraybackslash}p{1.85cm}|>{\raggedright\arraybackslash}p{4.2cm}|>{\raggedright\arraybackslash}p{2.6cm}|}
 \caption{Matriz de identificación y clasificación de requisitos}
 \label{tab:matriz_requisitos}\\
 \hline
@@ -311,11 +347,11 @@ Alcance definido. \\
 \hline
 
 
-\multicolumn{5}{l}{\footnotesize\textit{Fuente: Elaboración propia a partir de la exploración del sistema y propuestas de análisis.}}\\
+\multicolumn{5}{|p{14.9cm}|}{\footnotesize\textit{Fuente: Elaboración propia a partir de la exploración del sistema y propuestas de análisis.}}\\
 
 \end{longtable}
 \endgroup
-\end{landscape}
+
 
 \subsection{Consideraciones sobre la verificación}
 
@@ -506,8 +542,6 @@ de Almacenes Tía, noviembre de 2026.}
 
 
 \input{calidad_requisitos}
-
-\input{aplicacion_proceso}
 
 % CONCLUSIONES
 \section{Conclusiones}
