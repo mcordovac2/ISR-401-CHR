@@ -1,4 +1,3 @@
-
 # INFORME FINAL — PRÁCTICA EXPERIMENTAL UNIDAD I
 
 ### GA-PE-U · SUM — Ingeniería de Requisitos
@@ -37,7 +36,7 @@ Integrar los resultados de la aplicación del proceso de Ingeniería de Requisit
 
 ## 4. CONTENIDO DEL INFORME FINAL
 
-El documento integrará los siguientes apartados:
+El documento contempla los siguientes apartados:
 
 1. Introducción.
 2. Objetivos.
@@ -58,11 +57,15 @@ El documento integrará los siguientes apartados:
 
 ## 5. ARCHIVOS DEL ENTREGABLE
 
-| Archivo | Descripción | Estado |
+| Archivo o carpeta | Descripción | Estado |
 |---|---|---|
-| Informe_Final.pdf | Informe grupal consolidado | Pendiente |
-| Referencias.bib | Referencias bibliográficas | Pendiente |
-| Anexos/ | Evidencias complementarias | Pendiente |
+| `main.tex` | Archivo principal del informe en LaTeX | Disponible |
+| `identificacion_requisitos.tex` | Identificación y clasificación de requisitos | Disponible |
+| `calidad_requisitos.tex` | Evaluación de calidad de requisitos | Pendiente de completar |
+| `aplicacion_proceso.tex` | Aplicación del proceso de Ingeniería de Requisitos | Pendiente de completar |
+| `referencias.bib` | Base de referencias bibliográficas | Pendiente de completar |
+| `imagenes/` | Nueve evidencias de exploración de Almacenes Tía | Disponible |
+| `Informe_Final.pdf` | Informe grupal consolidado | Pendiente |
 
 ---
 
@@ -82,11 +85,27 @@ El documento integrará los siguientes apartados:
 
 ## 7. OBSERVACIONES
 
-El informe final será elaborado a partir de los documentos desarrollados por los tres integrantes.
+El informe final se desarrolla en LaTeX y se integra a partir de los aportes de los tres integrantes del equipo.
 
-Se verificará la coherencia entre los requisitos identificados, sus propiedades de calidad y los artefactos del proceso.
+La identificación y clasificación de requisitos se fundamenta en la exploración de la plataforma de comercio electrónico de Almacenes Tía.
 
-Las evidencias deberán corresponder a observaciones o actividades realmente realizadas.
+Se han incorporado nueve capturas de pantalla que documentan las funcionalidades exploradas, incluyendo búsqueda de productos, navegación por categorías, consulta de información de productos y operaciones relacionadas con el carrito de compras.
+
+Los requisitos funcionales observados se diferencian de aquellos pendientes de verificación. Los requisitos no funcionales cuantificados representan objetivos propuestos y no resultados de mediciones efectuadas.
+
+No se realizaron compras reales ni pruebas de procesamiento de pagos.
+
+La evaluación de calidad y la aplicación del proceso de requisitos se integrarán con los aportes correspondientes de los demás integrantes.
+
+---
+
+## 8. ORGANIZACIÓN Y ENTREGA
+
+El repositorio GitHub conserva los archivos fuente LaTeX, las evidencias y la documentación del proyecto.
+
+El informe final se consolidará una vez completadas y revisadas todas las secciones.
+
+La entrega en el Sistema de Gestión Académica (SGA) se realizará mediante el enlace al repositorio GitHub, de acuerdo con las indicaciones del docente.
 
 ---
 
