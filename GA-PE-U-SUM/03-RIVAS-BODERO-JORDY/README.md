@@ -1,71 +1,51 @@
+# GA-PE-U-SUM — Aporte individual de Jordy Rivas
 
-# FRAMEWORK Y APLICACIÓN DEL PROCESO DE REQUISITOS
+**Asignatura:** Ingeniería de Requisitos (ISR-401)  
+**Estudiante:** Rivas Bodero Jordy Fabian  
+**Actividad:** Práctica Experimental — Unidad I  
+**Sistema analizado:** Plataforma de comercio electrónico de Almacenes Tía
 
-## Responsable
-RIVAS BODERO JORDY FABIAN
+## 1. Descripción del aporte
 
-## Sistema seleccionado
-Plataforma de Comercio Electrónico de Almacenes Tía.
+Este apartado contiene el trabajo individual correspondiente a la identificación de actores y al framework de Ingeniería de Requisitos, así como la aplicación del proceso de requisitos al sistema seleccionado.
 
-## Actividad
-GA-PE-U · SUM — Práctica Experimental Unidad I.
+El análisis se fundamenta en el framework de Klaus Pohl y considera las funcionalidades públicas de la plataforma de Almacenes Tía.
 
----
+## 2. Criterios desarrollados
 
-## Responsabilidades asignadas
+### C3. Actores y framework de Ingeniería de Requisitos (15 %)
 
-### 1. Framework de Ingeniería de Requisitos
-- Explicar el framework según Pohl.
-- Identificar actividades principales.
-- Identificar actividades transversales.
-- Relacionar las actividades con el sistema Tía.
+- Descripción del framework de Ingeniería de Requisitos según Pohl.
+- Identificación de las actividades principales (core).
+- Identificación de las actividades transversales.
+- Identificación de actores y stakeholders.
+- Relación del framework con el sistema seleccionado.
 
-### 2. Elicitación de requisitos
-- Seleccionar técnicas de elicitación.
-- Documentar la observación del sistema.
-- Identificar necesidades de los usuarios.
-- Presentar evidencias de aplicación.
+### C4. Aplicación del proceso de requisitos (25 %)
 
-### 3. Análisis de requisitos
-- Analizar los requisitos identificados.
-- Detectar ambigüedades y conflictos.
-- Establecer prioridades.
-- Identificar dependencias.
+- **Elicitación:** técnicas seleccionadas, observación e identificación de necesidades.
+- **Análisis:** ambigüedades, conflictos, priorización MoSCoW y dependencias.
+- **Especificación:** requisitos funcionales y no funcionales, criterios de aceptación y trazabilidad.
+- **Validación:** lista de verificación y revisión documental.
+- **Representación:** diagrama del proceso de Ingeniería de Requisitos.
+- **Resultados:** matrices y artefactos elaborados durante el análisis.
 
-### 4. Especificación de requisitos
-- Documentar los requisitos.
-- Incorporar criterios de aceptación.
-- Relacionar los requisitos con sus fuentes.
-- Presentar artefactos parciales.
+## 3. Archivos entregados
 
-### 5. Validación de requisitos
-- Establecer criterios de validación.
-- Aplicar una lista de verificación.
-- Contrastar requisitos con evidencias.
-- Documentar los resultados obtenidos.
+- `c3 - c4.tex`: código fuente LaTeX del aporte individual.
+- `c3 - c4.pdf`: documento generado a partir del código LaTeX.
+- `README.md`: descripción del trabajo realizado.
 
-### 6. Diagrama del proceso
-- Elaborar un diagrama de las actividades.
-- Representar la secuencia aplicada.
-- Numerar y describir la figura.
+Los archivos auxiliares generados durante la compilación no forman parte del contenido académico principal.
 
-### 7. Evidencias
-- Matriz de aplicación del proceso.
-- Artefactos de cada etapa.
-- Diagrama del proceso.
-- Resultados de validación.
+## 4. Integración en el informe grupal
 
----
+El contenido desarrollado se incorporó al archivo `main.tex` del informe general, junto con la identificación y clasificación de requisitos.
 
-## Criterios de evaluación
+Las evidencias fotográficas se encuentran documentadas en el apartado correspondiente del informe grupal, evitando su duplicación.
 
-**C3. Actores y framework — 15 % (parte del framework).**
+## 5. Estado del trabajo
 
-**C4. Aplicación del proceso — 25 %.**
+**Estado: Completado e integrado al informe grupal.**
 
-## Entregable
-
-Archivo LaTeX:
-`aplicacion_proceso.tex`
-
-**Estado:** Pendiente de completar.
+El aporte individual se encuentra desarrollado. El informe general permanece en proceso de integración hasta incorporar y revisar las contribuciones de todos los integrantes.
