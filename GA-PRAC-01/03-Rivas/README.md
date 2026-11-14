@@ -29,4 +29,14 @@ GA-PRAC-01 - Comparación entre modelos de proceso de requisitos en escenarios r
 - DESARROLLO DEL SÍLABO (páginas 31-48).
 
 ## Estado
-Pendiente de desarrollo y confirmación del escenario asignado.
+
+**Completado e integrado en `main.tex`.**
+
+Se desarrollaron satisfactoriamente los criterios C4 y C5 para los cuatro escenarios:
+
+- **C4:** Recomendación fundamentada del modelo de proceso de requisitos más adecuado para cada escenario, incluyendo tres razones contextualizadas, descarte de modelos alternativos y análisis de la tensión principal.
+- **C5:** Identificación de dos riesgos específicos del modelo recomendado para cada escenario, acompañados de sus respectivas medidas de mitigación.
+
+Se incorporaron las correcciones realizadas durante la revisión grupal, incluyendo la explicación de los enfoques híbridos y la ampliación del análisis de riesgos.
+
+El código fuente individual se encuentra disponible en `C4 - C5.tex`. Los resultados están incorporados en el documento grupal `GA-PRAC-01/main.tex` y en `GA-PRAC-01-Completo.pdf`.
