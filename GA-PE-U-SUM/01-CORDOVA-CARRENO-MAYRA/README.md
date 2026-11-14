@@ -56,4 +56,6 @@ Elaborar una matriz que contenga:
 Archivo LaTeX:
 `identificacion_requisitos.tex`
 
-**Estado:** Pendiente de completar.
+**Estado:** Completado.
+
+**Observación:** Se realizó la identificación y clasificación de 15 requisitos de la plataforma de comercio electrónico de Almacenes Tía, incluyendo requisitos funcionales, no funcionales y restricciones. Se incorporaron justificaciones, criterios cuantificables para los requisitos no funcionales y evidencias de la exploración del sistema.
