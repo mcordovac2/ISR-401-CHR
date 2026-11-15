@@ -65,7 +65,8 @@ Identificar:
 
 ## Entregable
 
-Archivo LaTeX:
-`calidad_requisitos.tex`
+Archivo LaTeX: `calidad_requisitos.tex`
 
-**Estado:** Pendiente de completar.
+**Estado:** Completado.
+
+**Observación:** Se evaluó la calidad de los 15 requisitos de la plataforma de comercio electrónico de Almacenes Tía conforme a ISO/IEC/IEEE 29148, considerando necesidad, ausencia de ambigüedad, completitud, consistencia, verificabilidad, factibilidad, trazabilidad y singularidad. Se elaboró una matriz de evaluación con justificaciones verificables, apoyadas en las evidencias de la exploración, y correcciones propuestas para cada requisito. El resultado global fue de 1 requisito que cumple, 9 que cumplen con ajustes y 5 que requieren corrección. Se identificaron los actores del proceso (ingeniero de requisitos, cliente, usuario y desarrollador), sus roles y responsabilidades, diferenciando actores reales de roles propuestos. Se incluyeron las fuentes en formato IEEE.
