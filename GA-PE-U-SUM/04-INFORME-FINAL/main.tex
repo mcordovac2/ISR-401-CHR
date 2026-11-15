@@ -21,6 +21,7 @@
 \usepackage{tikz}
 \usepackage{tabularx}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \usepackage{enumitem}
 \usepackage{caption}
 
@@ -541,7 +542,559 @@ la exploración académica del sitio web
 de Almacenes Tía, noviembre de 2026.}
 
 
-\input{calidad_requisitos}
+\section{Propiedades de calidad y actores del proceso}
+
+\subsection{Marco de evaluación}
+
+La calidad de cada uno de los quince requisitos de la
+matriz de identificación de requisitos se evaluó conforme a
+ISO/IEC/IEEE 29148 \cite{iso29148}, complementada con
+Pohl \cite{pohl2010} y SWEBOK v4 \cite{swebok2024}. La norma
+define características que debe tener un requisito bien
+formulado (necesario, no ambiguo, completo, singular,
+factible y verificable) y la consistencia como característica
+del conjunto; la trazabilidad se trata como atributo del
+requisito. Las ocho propiedades de la práctica se adaptaron
+a esas características según se resume en la
+Tabla~\ref{tab:propiedades}.
+
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{longtable}{|L{0.17\textwidth}|L{0.09\textwidth}|L{0.62\textwidth}|}
+\caption{Propiedades de calidad y criterio de evaluación aplicado}
+\label{tab:propiedades}\\
+\hline
+\textbf{Propiedad} & \textbf{Abrev.} & \textbf{Criterio aplicado} \\
+\hline
+\endfirsthead
+
+\multicolumn{3}{c}{\textit{Continuación de la Tabla~\ref{tab:propiedades}}}\\
+\hline
+\textbf{Propiedad} & \textbf{Abrev.} & \textbf{Criterio aplicado} \\
+\hline
+\endhead
+
+Necesidad & Nec. &
+El requisito define una capacidad, característica o restricción
+que responde a una necesidad identificada; no es un añadido
+prescindible. \\
+\hline
+
+Ausencia de ambigüedad & Amb. &
+El enunciado admite una sola interpretación; no usa términos
+vagos ni sin definir (``adecuado'', ``aplicable'', ``seleccionados''
+con dos sentidos). \\
+\hline
+
+Completitud & Comp. &
+El enunciado contiene la información necesaria para
+implementarlo y comprobarlo (datos, condiciones, límites,
+comportamiento esperado). \\
+\hline
+
+Consistencia & Cons. &
+No contradice a otros requisitos ni usa términos distintos para
+el mismo concepto. \\
+\hline
+
+Verificabilidad & Ver. &
+Existe un procedimiento finito (inspección, prueba o medición)
+que permite comprobar si se cumple. \\
+\hline
+
+Factibilidad & Fac. &
+Es alcanzable con la tecnología, el alcance y la información
+disponibles para el equipo. \\
+\hline
+
+Trazabilidad & Tra. &
+Puede vincularse con una necesidad de origen y con una evidencia
+o prueba; tiene identificador único. \\
+\hline
+
+Singularidad & Sin. &
+Expresa una sola capacidad, característica o restricción; no
+agrupa varios requisitos en uno. \\
+\hline
+
+\multicolumn{3}{@{}L{0.9\textwidth}@{}}{\footnotesize\textit{Fuente: Elaboración propia a partir de \cite{iso29148,pohl2010,swebok2024}.}}\\
+\end{longtable}
+\endgroup
+
+Cada propiedad se calificó con tres niveles: \textbf{C}
+(cumple), \textbf{P} (cumple parcialmente) y \textbf{N}
+(no cumple). El resultado global de cada requisito se asignó
+con esta regla: \emph{Cumple} si todas las propiedades son C;
+\emph{Cumple con ajustes} si tiene una o dos calificaciones P;
+y \emph{Requiere corrección} si tiene tres o más P o
+cualquier N.
+
+La evaluación se basó en el texto de cada requisito, en las
+necesidades identificadas y en las capturas de la exploración
+(Figs.~1 a 9). No se midió rendimiento,
+disponibilidad ni accesibilidad, por lo que esos aspectos se
+evalúan como requisitos escritos, no como funcionamiento del
+sistema.
+
+\subsection{Matriz de evaluación de calidad}
+
+La Tabla~\ref{tab:matriz_calidad} resume la calificación de
+los quince requisitos y la Tabla~\ref{tab:justificaciones}
+presenta la justificación verificable y las correcciones
+propuestas para cada uno.
+
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.15}
+
+\begin{longtable}{|L{0.09\textwidth}|*{8}{>{\centering\arraybackslash}p{0.062\textwidth}|}L{0.2\textwidth}|}
+\caption{Matriz de evaluación de calidad de los requisitos}
+\label{tab:matriz_calidad}\\
+\hline
+\textbf{ID} & \textbf{Nec.} & \textbf{Amb.} & \textbf{Comp.} &
+\textbf{Cons.} & \textbf{Ver.} & \textbf{Fac.} & \textbf{Tra.} &
+\textbf{Sin.} & \textbf{Resultado} \\
+\hline
+\endfirsthead
+
+\multicolumn{10}{c}{\textit{Continuación de la Tabla~\ref{tab:matriz_calidad}}}\\
+\hline
+\textbf{ID} & \textbf{Nec.} & \textbf{Amb.} & \textbf{Comp.} &
+\textbf{Cons.} & \textbf{Ver.} & \textbf{Fac.} & \textbf{Tra.} &
+\textbf{Sin.} & \textbf{Resultado} \\
+\hline
+\endhead
+
+RF-01 & C & P & P & C & C & C & C & C & Cumple con ajustes \\ \hline
+RF-02 & C & P & P & C & C & C & C & C & Cumple con ajustes \\ \hline
+RF-03 & C & C & C & C & C & C & C & C & Cumple \\ \hline
+RF-04 & C & P & P & C & C & C & C & C & Cumple con ajustes \\ \hline
+RF-05 & C & P & P & C & C & C & C & C & Cumple con ajustes \\ \hline
+RF-06 & C & P & P & C & C & C & C & C & Cumple con ajustes \\ \hline
+RF-07 & C & P & C & C & C & C & C & C & Cumple con ajustes \\ \hline
+RF-08 & C & P & P & C & C & C & C & C & Cumple con ajustes \\ \hline
+RNF-01 & C & P & P & C & P & C & P & C & Requiere corrección \\ \hline
+RNF-02 & C & P & P & C & P & C & P & C & Requiere corrección \\ \hline
+RNF-03 & C & P & P & C & C & C & P & C & Requiere corrección \\ \hline
+RNF-04 & C & C & P & C & C & P & P & P & Requiere corrección \\ \hline
+RES-01 & C & P & P & C & C & C & C & C & Cumple con ajustes \\ \hline
+RES-02 & C & P & P & C & P & C & P & C & Requiere corrección \\ \hline
+RES-03 & C & C & C & C & C & C & C & P & Cumple con ajustes \\ \hline
+\textbf{Total C} & 15 & 3 & 3 & 15 & 12 & 14 & 10 & 13 & \textbf{1 Cumple} \\ \hline
+\textbf{Total P} & 0 & 12 & 12 & 0 & 3 & 1 & 5 & 2 & \textbf{9 con ajustes} \\ \hline
+\textbf{Total N} & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & \textbf{5 con corrección} \\ \hline
+
+\multicolumn{10}{@{}L{0.9\textwidth}@{}}{\footnotesize\textit{C = cumple; P = cumple parcialmente; N = no cumple. Fuente: Elaboración propia a partir de la matriz de identificación de requisitos y de las evidencias de la exploración.}}\\
+\end{longtable}
+\endgroup
+
+Las propiedades con más calificaciones parciales son la
+completitud y la ausencia de ambigüedad (12 de 15 cada una),
+seguidas de la trazabilidad (5 de 15). No se encontró
+ninguna contradicción entre requisitos, por lo que la
+consistencia cumple en los quince casos.
+
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.15}
+
+\begin{longtable}{|L{0.075\textwidth}|L{0.11\textwidth}|L{0.40\textwidth}|L{0.31\textwidth}|}
+\caption{Justificación verificable y correcciones propuestas}
+\label{tab:justificaciones}\\
+\hline
+\textbf{ID} & \textbf{Resultado} & \textbf{Justificación verificable} &
+\textbf{Observaciones o corrección necesaria} \\
+\hline
+\endfirsthead
+
+\multicolumn{4}{c}{\textit{Continuación de la Tabla~\ref{tab:justificaciones}}}\\
+\hline
+\textbf{ID} & \textbf{Resultado} & \textbf{Justificación verificable} &
+\textbf{Observaciones o corrección necesaria} \\
+\hline
+\endhead
+
+RF-01 & Cumple con ajustes &
+Define una sola operación y se vincula con la necesidad
+``Localizar productos mediante palabras clave''. Evidencia: búsqueda
+de ``Arroz'' (Fig.~2). No indica sobre qué datos
+se busca ni qué ocurre cuando no hay coincidencias. &
+Reformular: ``El sistema deberá permitir buscar productos por
+palabra clave aplicada al nombre y la marca del producto y mostrar
+el listado de coincidencias; si no existen coincidencias, deberá
+mostrar un mensaje informativo.'' Confirmar en el sitio los
+campos que realmente se buscan. \\
+\hline
+
+RF-02 & Cumple con ajustes &
+Se vincula con la necesidad ``Explorar artículos organizados por
+categorías''. Evidencia: Figs.~3 y~4. La
+captura de la categoría Supermercado muestra filtros por Categoría,
+Precio y Fabricante y un total de 2948 artículos, que el enunciado
+no recoge; ``navegar'' no precisa qué se presenta al elegir una
+categoría. &
+Reformular: ``El sistema deberá permitir seleccionar una categoría
+desde el menú de categorías y mostrar los productos que contiene,
+con opciones de filtrado por categoría, precio y fabricante.''
+Si se quiere conservar la singularidad, separar el filtrado en
+un requisito propio. \\
+\hline
+
+RF-03 & Cumple &
+Enuncia los tres datos a mostrar (nombre, precio e imagen) y se
+comprueba por inspección visual en la Fig.~5: nombre
+``Arroz Real 2 kg'', imagen del producto y precio de \$3,73.
+Se vincula con la necesidad ``Consultar información de los
+productos''. &
+La verificación se hizo en un solo producto; conviene repetirla
+en una muestra de productos de varias categorías. Opcionalmente
+incluir la marca, que también aparece en la ficha del producto. \\
+\hline
+
+RF-04 & Cumple con ajustes &
+Operación única vinculada con ``Agregar productos al carrito de
+compras''. Evidencia: mensaje de confirmación de producto agregado
+(Fig.~6). La ficha del producto incluye un selector de
+cantidad que el enunciado no menciona, ni tampoco la confirmación
+al usuario. &
+Reformular: ``El sistema deberá permitir agregar al carrito un
+producto en la cantidad indicada por el usuario y mostrar un
+mensaje de confirmación.'' \\
+\hline
+
+RF-05 & Cumple con ajustes &
+Define la consulta del carrito, vinculada con la necesidad de
+seleccionar productos de interés. Evidencia: Fig.~7
+(productos, cantidades y precios). El enunciado no especifica qué
+datos se muestran. &
+Reformular: ``El sistema deberá mostrar en el carrito, para cada
+producto agregado, su nombre, cantidad y precio, y el total de la
+compra.'' \\
+\hline
+
+RF-06 & Cumple con ajustes &
+Operación de actualización vinculada con ``Modificar las
+cantidades de productos en el carrito''. Evidencia:
+Fig.~8, donde cambian las cantidades y los importes.
+El enunciado no indica límites de cantidad ni el recálculo de
+importes. &
+Reformular: ``El sistema deberá permitir modificar la cantidad
+de unidades de un producto en el carrito y recalcular el importe
+del producto y el total.'' Definir y verificar los límites de
+cantidad (mínimo y máximo). \\
+\hline
+
+RF-07 & Cumple con ajustes &
+Operación única, verificada en la Fig.~9, donde el
+carrito se actualiza tras eliminar un producto. El término
+``seleccionados'' se usa en RF-04 para productos elegidos del
+catálogo y aquí para productos del carrito, lo que admite dos
+lecturas. &
+Reformular: ``El sistema deberá permitir eliminar del carrito un
+producto agregado previamente.'' Unificar la terminología en
+RF-04 a RF-07 (``agregado'' para lo que está en el carrito). \\
+\hline
+
+RF-08 & Cumple con ajustes &
+Vinculado con ``Consultar la tienda seleccionada''. Evidencia:
+Figs.~1 y~9 y la ficha del producto, que
+muestra el retiro en Tienda Tía San Carlos. No precisa dónde se
+muestra ni qué datos de la tienda se presentan; la ficha del
+producto incluye además el enlace ``Cambiar Tienda'', que no está
+cubierto. &
+Reformular: ``El sistema deberá mostrar el nombre de la tienda
+seleccionada por el usuario en la barra superior del sitio.''
+Crear un requisito independiente para cambiar de tienda. \\
+\hline
+
+RNF-01 & Requiere corrección &
+La meta es cuantificable (95\,\% de las búsquedas en un máximo
+de 3 s), pero depende de ``condiciones de prueba definidas'' que
+no se definen en el documento (red, dispositivo, carga, palabras
+clave): dos evaluadores obtendrían resultados no comparables.
+Tampoco se vincula a una de las nueve necesidades ni a RF-01
+por identificador. Estado en la matriz: ``Propuesto; no medido''. &
+Definir las condiciones, por ejemplo: ``Con una conexión de
+velocidad definida, un navegador de escritorio y un conjunto
+fijo de búsquedas de prueba, el 95\,\% de las búsquedas de RF-01
+deberá mostrar resultados en un máximo de 3 s.'' Registrar la
+necesidad de origen. \\
+\hline
+
+RNF-02 & Requiere corrección &
+Una disponibilidad mensual de 99,5\,\% equivale a unas
+3,6 horas de indisponibilidad en un mes de 30 días
+(\(0{,}005 \times 720 = 3{,}6\) h), cifra verificable con monitoreo. Sin
+embargo, el equipo no tiene acceso a los registros del proveedor y
+el texto no define el punto de medición ni qué cuenta como
+``mantenimiento programado''. &
+Definir el punto de medición (por ejemplo, respuesta exitosa de la
+página principal a intervalos fijos), la ventana y el aviso de
+mantenimiento y la fuente de datos. Dirigir el requisito al
+proveedor del servicio e indicar el origen de la necesidad. \\
+\hline
+
+RNF-03 & Requiere corrección &
+La meta es medible (90\,\% de participantes, 60 s) y existe un
+procedimiento estándar de prueba de usabilidad. Faltan el número
+y el perfil de los participantes, el producto a localizar y el
+punto de partida. No se vincula por identificador con RF-01 o
+RF-02 ni con una necesidad. &
+Completar: ``Al menos el 90\,\% de los participantes de la prueba
+(número y perfil definidos) localizará, desde la página principal,
+un producto asignado en un máximo de 60 s, por búsqueda o por
+categorías.'' Vincular con RF-01 y RF-02. \\
+\hline
+
+RNF-04 & Requiere corrección &
+WCAG 2.2 nivel AA \cite{wcag22} es un criterio externo y auditable
+(por eso cumple Ambigüedad y Verificabilidad). Sin embargo, agrupa
+numerosos criterios de éxito en un solo enunciado (Singularidad
+parcial), ``páginas evaluadas'' no define la muestra
+(Completitud) y el cumplimiento total puede depender de componentes
+ajenos al control del equipo (Factibilidad parcial). No se vincula a
+una necesidad registrada. &
+Acotar a un conjunto de páginas (inicio, resultados de búsqueda,
+categoría, ficha de producto y carrito) y definir el procedimiento
+de auditoría. Si se requiere seguimiento individual, separar por
+principio de accesibilidad. \\
+\hline
+
+RES-01 & Cumple con ajustes &
+Es comprobable: el sitio se abre en un navegador (la barra de
+direcciones es visible en las capturas,
+Figs.~1 a~9). ``Navegadores'' no indica
+cuáles ni qué versiones. &
+Reformular: ``La plataforma deberá poder utilizarse desde las
+versiones vigentes de los navegadores definidos por el equipo (por
+ejemplo, Chrome, Firefox, Edge y Safari).'' \\
+\hline
+
+RES-02 & Requiere corrección &
+``Normativa ecuatoriana aplicable'' no identifica la norma. La Ley
+Orgánica de Protección de Datos Personales \cite{lopdp} y su
+Reglamento General \cite{reglamento_lopdp} permiten concretarla,
+pero el requisito no enumera obligaciones comprobables, no se
+vincula a una necesidad ni a un requisito funcional concreto, y su
+estado es ``Restricción propuesta''. &
+Citar la ley y el reglamento y enumerar obligaciones verificables
+(por ejemplo, la obtención del consentimiento del titular, que el
+reglamento regula en su art.~5). Indicar qué requisitos funcionales
+tratan datos personales (cuenta de usuario, sesión). \\
+\hline
+
+RES-03 & Cumple con ajustes &
+Coincide con la sección ``Alcance de la observación'' y se
+comprueba porque las evidencias no incluyen pagos reales ni
+módulos administrativos. Agrupa tres límites (solo funcionalidades
+públicas, sin pagos reales, sin módulos administrativos), y limita
+el estudio más que al sistema. &
+Separar en tres restricciones o reformular como una sola condición
+de alcance. Aclarar que es una restricción del estudio y no del
+sistema. \\
+\hline
+
+\multicolumn{4}{@{}L{0.9\textwidth}@{}}{\footnotesize\textit{Fuente: Elaboración propia a partir de la matriz de identificación de requisitos, las evidencias de la exploración y las referencias citadas.}}\\
+\end{longtable}
+\endgroup
+
+\subsection{Hallazgos sobre el conjunto de requisitos}
+
+Además de la evaluación individual, la revisión del conjunto
+permitió identificar los siguientes aspectos:
+
+\begin{itemize}
+    \item \textbf{Necesidad sin requisito.} La necesidad
+    ``Identificar promociones disponibles'' no tiene ningún
+    requisito asociado (RF-01 a RF-08). El sitio muestra una
+    sección de ofertas en su barra de navegación, por lo que
+    se recomienda agregar un requisito funcional.
+    \item \textbf{Funcionalidades observadas y no cubiertas.}
+    Las capturas muestran filtros y ordenamiento en las categorías,
+    el enlace para cambiar de tienda y las opciones de entrega
+    (entrega a domicilio, retiro en tienda y envío express) con la
+    forma de pago. Las dos primeras pueden incorporarse a RF-02 y
+    RF-08. Las opciones de entrega y pago quedan fuera del alcance
+    declarado (RES-03) y deben registrarse como exclusión.
+    \item \textbf{Requisitos no funcionales sin origen.} Las nueve
+    necesidades identificadas son de interacción; ninguna
+    corresponde a rendimiento, disponibilidad, usabilidad o
+    accesibilidad. RNF-01 a RNF-04 deben justificarse como
+    propuestas del equipo o vincularse con una necesidad.
+    \item \textbf{Prioridad.} Ningún requisito indica su
+    prioridad, lo que dificulta decidir el orden de corrección.
+\end{itemize}
+
+\subsection{Actores del proceso}
+
+El proceso de requisitos del sistema involucra cuatro actores.
+Para cada uno se distingue si participa de forma real en este
+estudio o si se propone como rol necesario para continuar el
+proceso.
+
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.15}
+
+\begin{longtable}{|L{0.12\textwidth}|L{0.21\textwidth}|L{0.27\textwidth}|L{0.27\textwidth}|}
+\caption{Actores del proceso de requisitos}
+\label{tab:actores}\\
+\hline
+\textbf{Actor} & \textbf{Condición} & \textbf{Función en el proceso} &
+\textbf{Relación con el sistema} \\
+\hline
+\endfirsthead
+
+\multicolumn{4}{c}{\textit{Continuación de la Tabla~\ref{tab:actores}}}\\
+\hline
+\textbf{Actor} & \textbf{Condición} & \textbf{Función en el proceso} &
+\textbf{Relación con el sistema} \\
+\hline
+\endhead
+
+Ingeniero de requisitos &
+Real: equipo de estudiantes que realiza la práctica. &
+Elicita las necesidades a partir de la exploración, las analiza,
+las especifica en la matriz de requisitos y las valida con las
+propiedades de calidad. &
+Autor de la matriz de identificación de requisitos y de la
+evaluación de calidad. Trabaja sobre el sistema publicado, sin
+acceso a su código ni a sus módulos internos. \\
+\hline
+
+Cliente &
+Real: Almacenes Tía como organización propietaria de la plataforma.
+No se identifica su participación en la exploración. &
+Aprobaría los requisitos, definiría prioridades y aceptaría los
+resultados de las verificaciones. &
+Es dueño del negocio de comercio electrónico; los requisitos
+RNF-01 a RNF-04 y RES-02 le corresponden como objetivos o
+condiciones de negocio. \\
+\hline
+
+Usuario &
+Real: consumidor que usa la plataforma. Las capturas muestran una
+sesión de usuario autenticada. Propuesto: participantes de la
+prueba de usabilidad de RNF-03. &
+Fuente de las necesidades de búsqueda, navegación, carrito y
+retiro; valida que los requisitos describen su uso real. &
+Usa directamente RF-01 a RF-08. En el contexto local, son
+consumidores de San Carlos, cantón Quevedo, que consultan
+productos y organizan su compra. \\
+\hline
+
+Desarrollador &
+Real: equipo técnico que mantiene la plataforma; no fue contactado.
+Rol propuesto: responsable de implementar los ajustes. &
+Evalúa la factibilidad de los requisitos, los implementa y diseña
+las pruebas de aceptación. &
+Responsable de RF-01 a RF-08 y de medir o cumplir RNF-01, RNF-02,
+RNF-04, RES-01 y RES-02. \\
+\hline
+
+\multicolumn{4}{@{}L{0.9\textwidth}@{}}{\footnotesize\textit{Fuente: Elaboración propia a partir de \cite{iso29148,pohl2010,swebok2024} y del alcance de la exploración.}}\\
+\end{longtable}
+\endgroup
+
+\subsection{Roles y responsabilidades}
+
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\renewcommand{\arraystretch}{1.15}
+
+\begin{longtable}{|L{0.13\textwidth}|L{0.5\textwidth}|L{0.28\textwidth}|}
+\caption{Responsabilidades de los actores y requisitos relacionados}
+\label{tab:roles}\\
+\hline
+\textbf{Actor} & \textbf{Responsabilidades} & \textbf{Requisitos relacionados} \\
+\hline
+\endfirsthead
+
+\multicolumn{3}{c}{\textit{Continuación de la Tabla~\ref{tab:roles}}}\\
+\hline
+\textbf{Actor} & \textbf{Responsabilidades} & \textbf{Requisitos relacionados} \\
+\hline
+\endhead
+
+Ingeniero de requisitos &
+Identificar y clasificar los requisitos; evaluar su calidad;
+documentar justificaciones y evidencias; proponer correcciones;
+mantener la trazabilidad entre necesidades, requisitos y
+evidencias. &
+Los quince requisitos (RF-01 a RF-08, RNF-01 a RNF-04 y
+RES-01 a RES-03). \\
+\hline
+
+Cliente &
+Confirmar que los requisitos reflejan sus objetivos de negocio;
+definir prioridades; aprobar metas de rendimiento, disponibilidad
+y protección de datos; aceptar los resultados. &
+RNF-01, RNF-02, RNF-03, RNF-04 y RES-02. \\
+\hline
+
+Usuario &
+Expresar sus necesidades de uso; participar en pruebas de
+usabilidad; validar que las funciones de búsqueda, carrito y
+tienda responden a su forma de comprar. &
+RF-01 a RF-08 y RNF-03. \\
+\hline
+
+Desarrollador &
+Estimar la factibilidad; implementar las correcciones; definir
+los casos de prueba y los procedimientos de medición;
+informar el resultado de cada verificación. &
+RF-01 a RF-08, RNF-01, RNF-02, RNF-04, RES-01 y RES-02. \\
+\hline
+
+\multicolumn{3}{@{}L{0.9\textwidth}@{}}{\footnotesize\textit{Fuente: Elaboración propia.}}\\
+\end{longtable}
+\endgroup
+
+\subsubsection{Actores reales y roles propuestos}
+
+En este estudio, los \textbf{actores reales} son el equipo que
+realiza la práctica (que actúa como ingeniero de requisitos), el
+usuario cuyo uso del sitio quedó registrado en las capturas, y
+Almacenes Tía, que existe como organización propietaria y como
+equipo de desarrollo pero no intervino en la exploración. Por
+esa razón, las necesidades se obtuvieron por observación de la
+interfaz y no mediante entrevistas.
+
+Los \textbf{roles propuestos} son los que el proceso requiere para
+validar los requisitos y que el estudio no pudo cumplir:
+representantes de Almacenes Tía que aprueben requisitos y
+prioridades (cliente), participantes de la prueba de usabilidad
+de RNF-03 (usuario), un equipo que mida RNF-01, RNF-02 y RNF-04
+(desarrollador) y, por RES-02, una persona responsable de la
+protección de datos personales. Mientras estos roles no
+intervengan, los requisitos no funcionales y las restricciones
+normativas continúan como propuestas sin validar.
+
+\subsection{Evidencias}
+
+Las evidencias de esta sección son:
+
+\begin{itemize}
+    \item \textbf{Matriz de evaluación de calidad:}
+    Tabla~\ref{tab:matriz_calidad}.
+    \item \textbf{Justificaciones de las propiedades y correcciones:}
+    Tabla~\ref{tab:justificaciones}.
+    \item \textbf{Actores y responsabilidades:}
+    Tablas~\ref{tab:actores} y~\ref{tab:roles}.
+    \item \textbf{Capturas de la exploración} usadas para verificar
+    la información de los requisitos funcionales:
+    Figs.~1 a~9, en particular la ficha de
+    producto con selector de cantidad y confirmación de agregado
+    (Figs.~5 y~6) y la categoría Supermercado
+    con filtros (Fig.~4).
+    \item \textbf{Fuentes utilizadas:} las que se listan a continuación.
+\end{itemize}
 
 \section{Aplicación del proceso de requisitos}
 
