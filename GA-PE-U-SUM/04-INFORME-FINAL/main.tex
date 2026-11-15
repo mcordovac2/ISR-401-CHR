@@ -34,49 +34,80 @@
     backgrounds
 }
 
+
+% ESTILO EDITORIAL DEL INFORME (sin cambios en el contenido)
+\usepackage[table]{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\definecolor{AzulInforme}{HTML}{17324F}
+\definecolor{TurquesaInforme}{HTML}{237C89}
+\definecolor{GrisInforme}{HTML}{596775}
+\definecolor{LineaInforme}{HTML}{D6E1E8}
+\hypersetup{colorlinks=true,linkcolor=AzulInforme,citecolor=TurquesaInforme,urlcolor=TurquesaInforme,pdfborder={0 0 0}}
+\titleformat{\section}{\Large\bfseries\color{AzulInforme}}{\thesection}{0.8em}{}[\vspace{0.25ex}{\color{TurquesaInforme}\titlerule[0.8pt]}]
+\titleformat{\subsection}{\large\bfseries\color{AzulInforme}}{\thesubsection}{0.7em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{TurquesaInforme}}{\thesubsubsection}{0.6em}{}
+\titlespacing*{\section}{0pt}{2.4ex plus 0.8ex minus 0.3ex}{1.5ex}
+\titlespacing*{\subsection}{0pt}{2.0ex plus 0.6ex minus 0.2ex}{0.9ex}
+\titlespacing*{\subsubsection}{0pt}{1.5ex plus 0.4ex}{0.6ex}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+\setlength{\arrayrulewidth}{0.45pt}
+\renewcommand{\arraystretch}{1.17}
+\setlength{\LTpre}{0.7em}
+\setlength{\LTpost}{0.7em}
+\captionsetup{font=small,labelfont={bf,color=AzulInforme},textfont=it,justification=centering}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\color{GrisInforme} Ingeniería de Requisitos}
+\fancyhead[R]{\footnotesize\color{GrisInforme} Práctica Experimental · Unidad I}
+\fancyfoot[C]{\footnotesize\color{GrisInforme}\thepage}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{15pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\footnotesize\color{GrisInforme}\thepage}\renewcommand{\headrulewidth}{0pt}}
+
 \onehalfspacing
 
 \begin{document}
 
-% PORTADA
+% PORTADA (mismo texto, presentación renovada)
 \begin{titlepage}
+    \thispagestyle{empty}
     \centering
-
-    {\Large UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\par}
-    \vspace{0.5cm}
-
-    {\large FACULTAD DE CIENCIAS DE LA COMPUTACIÓN\par}
+    \vspace*{1.0cm}
+    {\color{TurquesaInforme}\rule{0.86\textwidth}{2.2pt}\par}
+    \vspace{0.65cm}
+    {\large\bfseries\color{AzulInforme} UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\par}
+    \vspace{0.35cm}
+    {\normalsize FACULTAD DE CIENCIAS DE LA COMPUTACIÓN\par}
+    \vspace{0.2cm}
+    {\normalsize CARRERA DE SOFTWARE\par}
+    \vspace{1.35cm}
+    {\Large\bfseries\color{AzulInforme} INGENIERÍA DE REQUISITOS\par}
+    \vspace{0.65cm}
+    {\LARGE\bfseries\color{AzulInforme} PRÁCTICA EXPERIMENTAL UNIDAD I\par}
+    \vspace{0.45cm}
+    {\large\color{GrisInforme} Proceso de requisitos aplicado a un sistema real\par}
+    \vspace{0.85cm}
+    {\color{LineaInforme}\rule{0.72\textwidth}{0.8pt}\par}
+    \vspace{0.75cm}
+    {\large\bfseries\color{AzulInforme} Integrantes:\par}
     \vspace{0.3cm}
-
-    {\large CARRERA DE SOFTWARE\par}
-    \vspace{1.5cm}
-
-    {\Large\bfseries INGENIERÍA DE REQUISITOS\par}
-    \vspace{1cm}
-
-    {\Large\bfseries PRÁCTICA EXPERIMENTAL UNIDAD I\par}
-    \vspace{0.5cm}
-
-    {\large Proceso de requisitos aplicado a un sistema real\par}
-    \vspace{1.5cm}
-
-    {\large\bfseries Integrantes:\par}
-    \vspace{0.4cm}
-
-    Córdova Carreño Mayra Lucila\\
-    Herrera Moran Gilmar Javier\\
+    Córdova Carreño Mayra Lucila\\[0.18cm]
+    Herrera Moran Gilmar Javier\\[0.18cm]
     Rivas Bodero Jordy Fabian
+    \vspace{0.9cm}
 
-    \vspace{1.5cm}
-
-    {\large Sistema analizado:\par}
+    {\large\bfseries\color{AzulInforme} Sistema analizado:\par}
+    \vspace{0.2cm}
     {\large Plataforma de comercio electrónico de Almacenes Tía\par}
-
     \vfill
-
-    {\large Quevedo -- Ecuador\par}
-    {\large 2026\par}
-
+    {\color{TurquesaInforme}\rule{0.86\textwidth}{1.2pt}\par}
+    \vspace{0.4cm}
+    {\normalsize Quevedo -- Ecuador\par}
+    {\normalsize 2026\par}
 \end{titlepage}
 
 % ÍNDICE
@@ -2371,9 +2402,13 @@ Representacion de la secuencia de trabajo. \\
 % CONCLUSIONES
 \section{Conclusiones}
 
-Las conclusiones se redactarán una vez
-integrados y revisados los resultados del
-trabajo grupal.
+La exploración de la plataforma de comercio electrónico de Almacenes Tía permitió identificar y clasificar quince requisitos: ocho funcionales, cuatro no funcionales y tres restricciones. Las nueve evidencias recopiladas respaldan las funcionalidades públicas observadas, principalmente la búsqueda y consulta de productos y las operaciones del carrito de compras. Los requisitos no funcionales se formularon como objetivos de calidad propuestos, por lo que sus valores aún requieren pruebas específicas para comprobar su cumplimiento.
+
+La evaluación de las propiedades de calidad permitió reconocer oportunidades de mejora en la claridad, completitud, verificabilidad y trazabilidad de los enunciados. Este análisis evidenció que identificar una funcionalidad no es suficiente: cada requisito debe expresarse de manera precisa y relacionarse con una necesidad, una fuente y un procedimiento de comprobación.
+
+Asimismo, la aplicación de actividades de elicitación, análisis, especificación y validación documental, apoyadas en el enfoque de Ingeniería de Requisitos estudiado, facilitó la organización de los artefactos del informe y la identificación de actores involucrados en el sistema. No obstante, el alcance de la práctica se limitó a la exploración de funcionalidades públicas; no se realizaron entrevistas con representantes de la empresa, pruebas de rendimiento, auditorías de accesibilidad ni transacciones reales.
+
+En conjunto, la práctica permitió relacionar los fundamentos de Ingeniería de Requisitos con un sistema existente y reconocer la importancia de mantener consistencia entre la identificación, la evaluación de calidad y la especificación de los requisitos. Como trabajo posterior, se recomienda validar los objetivos propuestos mediante pruebas controladas y contrastar los requisitos con los interesados correspondientes.
 
 % REFERENCIAS
 \bibliographystyle{IEEEtran}
