@@ -1603,117 +1603,83 @@ identificadas durante el analisis. No se afirma que
 hayan sido reportados por personal de la empresa.
 
 \subsubsection{Priorizacion mediante MoSCoW}
-
-Se utiliza el modelo MoSCoW para clasificar
-la importancia de los requisitos.
-
-\begin{itemize}
-    \item \textbf{Must:} requisito indispensable.
-    \item \textbf{Should:} requisito importante.
-    \item \textbf{Could:} requisito conveniente.
-    \item \textbf{Won't:} requisito fuera del alcance
-    de esta practica.
-\end{itemize}
+Se utiliza el modelo MoSCoW para clasificar la importancia propuesta de los requisitos. \textbf{Must} indica indispensable; \textbf{Should}, importante; \textbf{Could}, conveniente; y \textbf{Won't}, fuera del alcance de esta práctica. La prioridad es una valoración académica preliminar, no una decisión validada por la empresa.
 
 \begingroup
 \footnotesize
 \setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.25}
-\begin{longtable}{|>{\raggedright\arraybackslash}p{2.65cm}|>{\raggedright\arraybackslash}p{6.05cm}|>{\raggedright\arraybackslash}p{5.65cm}|}
-\caption{Priorizacion de requisitos}\\
+\renewcommand{\arraystretch}{1.22}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{1.65cm}|>{\raggedright\arraybackslash}p{9.25cm}|>{\raggedright\arraybackslash}p{3.1cm}|}
+\caption{Priorización de requisitos (MoSCoW)}\\
 \hline
-\textbf{ID} &
-\textbf{Requisito} &
-\textbf{Prioridad} \\
+\textbf{ID} & \textbf{Requisito} & \textbf{Prioridad} \\
 \hline
 \endfirsthead
-\multicolumn{3}{c}{\textit{Continuación: Priorizacion de requisitos}}\\
+\multicolumn{3}{c}{\textit{Continuación: Priorización de requisitos (MoSCoW)}}\\
 \hline
-\textbf{ID} &
-\textbf{Requisito} &
-\textbf{Prioridad} \\
+\textbf{ID} & \textbf{Requisito} & \textbf{Prioridad} \\
 \hline
 \endhead
-RF-01 & Consultar el catalogo de productos. & Must \\
+RF-01 & Buscar productos mediante palabras clave & Must \\
 \hline
-RF-02 & Buscar productos por nombre. & Must \\
+RF-02 & Navegar por categorías de productos & Must \\
 \hline
-RF-03 & Consultar informacion del producto. & Should \\
+RF-03 & Mostrar nombre, precio e imagen de cada producto & Should \\
 \hline
-RF-04 & Agregar productos al carrito. & Must \\
+RF-04 & Agregar productos al carrito & Must \\
 \hline
-RF-05 & Modificar cantidades del carrito. & Should \\
+RF-05 & Mostrar productos agregados al carrito & Must \\
 \hline
-RF-06 & Seleccionar una tienda. & Should \\
+RF-06 & Modificar cantidades en el carrito & Should \\
 \hline
-RNF-01 & Mantener tiempos de respuesta medibles. & Should \\
+RF-07 & Eliminar productos del carrito & Should \\
 \hline
-RNF-02 & Presentar una interfaz comprensible. & Should \\
+RF-08 & Mostrar la tienda seleccionada & Should \\
+\hline
+RNF-01 & Rendimiento de búsquedas: 95\% en máximo 3 segundos (objetivo propuesto) & Should \\
+\hline
+RNF-02 & Disponibilidad mensual mínima de 99,5\% (objetivo propuesto) & Should \\
+\hline
+RNF-03 & Usabilidad: 90\% localiza un producto en máximo 60 segundos (objetivo propuesto) & Should \\
+\hline
+RNF-04 & Accesibilidad: nivel AA de WCAG 2.2 aplicable (objetivo propuesto) & Should \\
 \hline
 \end{longtable}
 \endgroup
 
 \subsubsection{Analisis de dependencias}
-
-Las dependencias permiten determinar que
-funcionalidades necesitan de otras para
-ejecutarse correctamente.
+Las dependencias siguientes son relaciones funcionales propuestas a partir de la observación del sitio; no describen necesariamente la arquitectura interna de la plataforma.
 
 \begingroup
 \footnotesize
 \setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.25}
-\begin{longtable}{|>{\raggedright\arraybackslash}p{1.55cm}|>{\raggedright\arraybackslash}p{3.05cm}|>{\raggedright\arraybackslash}p{6.05cm}|>{\raggedright\arraybackslash}p{3.45cm}|}
+\renewcommand{\arraystretch}{1.22}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{1.4cm}|>{\raggedright\arraybackslash}p{3.4cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{6.65cm}|}
 \caption{Matriz de dependencias}\\
 \hline
-\textbf{ID} &
-\textbf{Requisito} &
-\textbf{Dependencia} &
-\textbf{Justificacion} \\
+\textbf{ID} & \textbf{Requisito} & \textbf{Dependencia} & \textbf{Justificación} \\
 \hline
 \endfirsthead
 \multicolumn{4}{c}{\textit{Continuación: Matriz de dependencias}}\\
 \hline
-\textbf{ID} &
-\textbf{Requisito} &
-\textbf{Dependencia} &
-\textbf{Justificacion} \\
+\textbf{ID} & \textbf{Requisito} & \textbf{Dependencia} & \textbf{Justificación} \\
 \hline
 \endhead
-RF-01 &
-Catalogo &
-Ninguna identificada &
-Permite consultar los productos. \\
+RF-01 & Búsqueda & RF-03 & Requiere información de productos para presentar coincidencias. \\
 \hline
-RF-02 &
-Busqueda &
-RF-01 &
-La busqueda requiere informacion
-de los productos. \\
+RF-02 & Navegación por categorías & RF-03 & La navegación presenta productos clasificados por categoría. \\
 \hline
-RF-03 &
-Informacion &
-RF-01 &
-La informacion corresponde a un
-producto del catalogo. \\
+RF-03 & Información de productos & Ninguna identificada & Es información de base para las consultas. \\
 \hline
-RF-04 &
-Carrito &
-RF-03 &
-El usuario selecciona un producto
-para agregarlo. \\
+RF-04 & Agregar al carrito & RF-03 & El usuario selecciona un producto identificado. \\
 \hline
-RF-05 &
-Cantidad &
-RF-04 &
-Se necesita un producto previamente
-incorporado al carrito. \\
+RF-05 & Mostrar carrito & RF-04 & Requiere productos agregados previamente. \\
 \hline
-RF-06 &
-Seleccion de tienda &
-Ninguna identificada &
-Permite establecer un contexto
-de consulta. \\
+RF-06 & Modificar cantidades & RF-05 & Requiere consultar un producto existente en el carrito. \\
+\hline
+RF-07 & Eliminar productos & RF-05 & Requiere identificar el producto en el carrito. \\
+\hline
+RF-08 & Mostrar tienda seleccionada & Ninguna identificada & Presenta el establecimiento elegido por el usuario. \\
 \hline
 \end{longtable}
 \endgroup
@@ -1743,267 +1709,153 @@ de los requisitos.
 
 \subsubsection{Requisitos funcionales}
 
-\begin{longtable}{|>{\raggedright\arraybackslash}p{1.5cm}|>{\raggedright\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}p{7.7cm}|>{\raggedright\arraybackslash}p{2.1cm}|}
-\caption{Especificacion de requisitos funcionales}\\
-\toprule
-\textbf{ID} &
-\textbf{Nombre} &
-\textbf{Descripcion} &
-\textbf{Prioridad} \\
-\midrule
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.22}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{1.35cm}|>{\raggedright\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}p{8.3cm}|>{\raggedright\arraybackslash}p{1.5cm}|}
+\caption{Especificación de requisitos funcionales}\\
+\hline
+\textbf{ID} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Prioridad} \\
+\hline
 \endfirsthead
-
-\toprule
-\textbf{ID} &
-\textbf{Nombre} &
-\textbf{Descripcion} &
-\textbf{Prioridad} \\
-\midrule
+\multicolumn{4}{c}{\textit{Continuación: Especificación de requisitos funcionales}}\\
+\hline
+\textbf{ID} & \textbf{Nombre} & \textbf{Descripción} & \textbf{Prioridad} \\
+\hline
 \endhead
-
-RF-01 &
-Consultar catalogo &
-El sistema debera permitir al cliente consultar
-los productos presentados en el catalogo. &
-Must \\
-
-RF-02 &
-Buscar productos &
-Cuando el cliente introduzca un termino de busqueda,
-el sistema debera presentar los productos que
-coincidan con la consulta, segun la funcionalidad
-disponible. &
-Must \\
-
-RF-03 &
-Consultar informacion &
-El sistema debera permitir al cliente visualizar
-la informacion disponible de un producto
-seleccionado. &
-Should \\
-
-RF-04 &
-Agregar al carrito &
-Cuando el cliente seleccione la opcion de agregar
-un producto, el sistema debera incorporarlo
-al carrito. &
-Must \\
-
-RF-05 &
-Modificar cantidades &
-El sistema debera permitir modificar la cantidad
-de los productos incorporados al carrito,
-cuando esta funcionalidad se encuentre disponible. &
-Should \\
-
-RF-06 &
-Seleccionar tienda &
-El sistema debera permitir seleccionar un
-establecimiento mediante las opciones disponibles
-en la plataforma. &
-Should \\
-
-\bottomrule
+RF-01 & Buscar productos & Cuando el usuario introduzca palabras clave, el sistema deberá presentar los productos relacionados con la consulta. & Must \\
+\hline
+RF-02 & Navegar por categorías & El sistema deberá permitir explorar los productos agrupados por categorías. & Must \\
+\hline
+RF-03 & Información del producto & El sistema deberá mostrar nombre, precio e imagen de cada producto del catálogo. & Should \\
+\hline
+RF-04 & Agregar al carrito & Cuando el usuario seleccione agregar un producto, el sistema deberá incorporarlo al carrito. & Must \\
+\hline
+RF-05 & Visualizar carrito & El sistema deberá mostrar los productos incorporados al carrito. & Must \\
+\hline
+RF-06 & Modificar cantidades & Cuando exista un producto en el carrito, el sistema deberá permitir modificar su cantidad. & Should \\
+\hline
+RF-07 & Eliminar del carrito & Cuando el usuario solicite eliminar un producto, el sistema deberá retirarlo del carrito. & Should \\
+\hline
+RF-08 & Mostrar tienda & El sistema deberá mostrar la tienda seleccionada por el usuario. & Should \\
+\hline
 \end{longtable}
+\endgroup
 
 \subsubsection{Criterios de aceptacion}
-
-Los siguientes criterios establecen condiciones
-observables para determinar si los requisitos
-funcionales se cumplen.
+Los siguientes criterios describen resultados observables; su definición no implica que se hayan ejecutado pruebas formales de aceptación.
 
 \begingroup
 \footnotesize
 \setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.25}
-\begin{longtable}{|>{\raggedright\arraybackslash}p{2.65cm}|>{\raggedright\arraybackslash}p{6.05cm}|>{\raggedright\arraybackslash}p{5.65cm}|}
-\caption{Criterios de aceptacion de requisitos}\\
+\renewcommand{\arraystretch}{1.22}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{1.55cm}|>{\raggedright\arraybackslash}p{6.0cm}|>{\raggedright\arraybackslash}p{6.4cm}|}
+\caption{Criterios de aceptación de requisitos}\\
 \hline
-\textbf{ID} &
-\textbf{Condicion} &
-\textbf{Resultado esperado} \\
+\textbf{ID} & \textbf{Condición} & \textbf{Resultado esperado} \\
 \hline
 \endfirsthead
-\multicolumn{3}{c}{\textit{Continuación: Criterios de aceptacion de requisitos}}\\
+\multicolumn{3}{c}{\textit{Continuación: Criterios de aceptación de requisitos}}\\
 \hline
-\textbf{ID} &
-\textbf{Condicion} &
-\textbf{Resultado esperado} \\
+\textbf{ID} & \textbf{Condición} & \textbf{Resultado esperado} \\
 \hline
 \endhead
-RF-01 &
-Dado que el cliente accede al catalogo. &
-El sistema presenta los productos disponibles
-en la interfaz. \\
+RF-01 & El usuario ingresa palabras clave en el buscador. & Se muestran resultados relacionados o un aviso de ausencia de coincidencias. \\
 \hline
-RF-02 &
-Dado que el cliente introduce un termino
-de busqueda. &
-El sistema presenta resultados relacionados
-con el termino ingresado o informa que no
-se encontraron coincidencias. \\
+RF-02 & El usuario selecciona una categoría. & Se muestran productos pertenecientes a la categoría seleccionada. \\
 \hline
-RF-03 &
-Dado que el cliente selecciona un producto. &
-El sistema presenta la informacion disponible
-de dicho producto. \\
+RF-03 & El usuario consulta un producto. & Se muestran su nombre, precio e imagen. \\
 \hline
-RF-04 &
-Dado que el cliente selecciona un producto
-y solicita agregarlo al carrito. &
-El producto se incorpora al carrito y se
-actualiza su contenido. \\
+RF-04 & El usuario selecciona agregar un producto. & El producto aparece incorporado al carrito. \\
 \hline
-RF-05 &
-Dado que existe un producto en el carrito. &
-El sistema permite modificar su cantidad
-y actualiza el contenido. \\
+RF-05 & El usuario abre el carrito después de agregar productos. & Se visualizan los productos incorporados. \\
 \hline
-RF-06 &
-Dado que el cliente accede a la seleccion
-de establecimientos. &
-El sistema presenta las opciones disponibles
-para seleccionar una tienda. \\
+RF-06 & El usuario cambia la cantidad de un producto del carrito. & La cantidad presentada se actualiza. \\
+\hline
+RF-07 & El usuario elimina un producto del carrito. & El producto deja de aparecer en el carrito. \\
+\hline
+RF-08 & El usuario selecciona una tienda. & La interfaz muestra la tienda seleccionada. \\
 \hline
 \end{longtable}
 \endgroup
 
 \subsubsection{Requisitos no funcionales}
-
-Los requisitos no funcionales establecen condiciones
-de calidad que debe satisfacer el sistema.
-
-\begin{longtable}{|>{\raggedright\arraybackslash}p{1.5cm}|>{\raggedright\arraybackslash}p{2.8cm}|>{\raggedright\arraybackslash}p{7.7cm}|>{\raggedright\arraybackslash}p{2.1cm}|}
-\caption{Especificacion de requisitos no funcionales}\\
-\toprule
-\textbf{ID} &
-\textbf{Categoria} &
-\textbf{Descripcion} &
-\textbf{Prioridad} \\
-\midrule
-\endfirsthead
-
-\toprule
-\textbf{ID} &
-\textbf{Categoria} &
-\textbf{Descripcion} &
-\textbf{Prioridad} \\
-\midrule
-\endhead
-
-RNF-01 &
-Rendimiento &
-El sistema debera establecer un tiempo objetivo
-de respuesta para las operaciones de consulta.
-Este valor debera definirse y comprobarse
-mediante pruebas de rendimiento. &
-Should \\
-
-RNF-02 &
-Usabilidad &
-La interfaz debera presentar etiquetas,
-opciones y mensajes comprensibles para
-facilitar la interaccion del usuario. &
-Should \\
-
-RNF-03 &
-Compatibilidad &
-La plataforma debera poder utilizarse desde
-navegadores web compatibles y dispositivos
-con diferentes resoluciones. &
-Could \\
-
-RNF-04 &
-Seguridad &
-La plataforma debera proteger la informacion
-del usuario y controlar el acceso a las
-funcionalidades que requieran autenticacion. &
-Must \\
-
-\bottomrule
-\end{longtable}
-
-Los requisitos no funcionales anteriores representan
-objetivos propuestos para la especificacion.
-Su cumplimiento no se considera demostrado mediante
-la observacion visual de la interfaz.
-
-\subsubsection{Trazabilidad de requisitos}
-
-La trazabilidad permite relacionar cada requisito
-con la necesidad que lo origina y con la evidencia
-que permite justificar su identificacion.
+Los requisitos no funcionales siguientes conservan los objetivos cuantificados de la matriz inicial. \textbf{Son propuestas no medidas ni auditadas} durante la exploración visual.
 
 \begingroup
 \footnotesize
 \setlength{\tabcolsep}{3pt}
-\renewcommand{\arraystretch}{1.25}
-\begin{longtable}{|>{\raggedright\arraybackslash}p{1.55cm}|>{\raggedright\arraybackslash}p{3.05cm}|>{\raggedright\arraybackslash}p{6.05cm}|>{\raggedright\arraybackslash}p{3.45cm}|}
-\caption{Matriz de trazabilidad}\\
+\renewcommand{\arraystretch}{1.22}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{1.4cm}|>{\raggedright\arraybackslash}p{2.5cm}|>{\raggedright\arraybackslash}p{8.65cm}|>{\raggedright\arraybackslash}p{1.45cm}|}
+\caption{Especificación de requisitos no funcionales}\\
 \hline
-\textbf{Requisito} &
-\textbf{Necesidad} &
-\textbf{Fuente} &
-\textbf{Evidencia requerida} \\
+\textbf{ID} & \textbf{Categoría} & \textbf{Descripción} & \textbf{Prioridad} \\
 \hline
 \endfirsthead
-\multicolumn{4}{c}{\textit{Continuación: Matriz de trazabilidad}}\\
+\multicolumn{4}{c}{\textit{Continuación: Especificación de requisitos no funcionales}}\\
 \hline
-\textbf{Requisito} &
-\textbf{Necesidad} &
-\textbf{Fuente} &
-\textbf{Evidencia requerida} \\
+\textbf{ID} & \textbf{Categoría} & \textbf{Descripción} & \textbf{Prioridad} \\
 \hline
 \endhead
-RF-01 &
-NE-01 &
-Observacion del catalogo &
-EV-01 \\
+RNF-01 & Rendimiento & Como objetivo propuesto, el 95\% de las búsquedas deberá presentar resultados en un máximo de 3 segundos, bajo condiciones de prueba definidas. & Should \\
 \hline
-RF-02 &
-NE-02 &
-Observacion del buscador &
-EV-02 \\
+RNF-02 & Disponibilidad & Como objetivo propuesto, la plataforma deberá alcanzar una disponibilidad mensual mínima del 99,5\%, excluyendo mantenimiento programado. & Should \\
 \hline
-RF-03 &
-NE-03 &
-Observacion del producto &
-EV-03 \\
+RNF-03 & Usabilidad & Como objetivo propuesto, al menos el 90\% de participantes de una prueba de usabilidad deberá localizar un producto en un máximo de 60 segundos. & Should \\
 \hline
-RF-04 &
-NE-04 &
-Observacion del carrito &
-EV-04 \\
+RNF-04 & Accesibilidad & Como objetivo propuesto, las páginas evaluadas deberán cumplir los criterios de nivel AA de WCAG 2.2 aplicables a su contenido y funcionalidad. & Should \\
 \hline
-RF-05 &
-NE-04 &
-Exploracion del carrito &
-EV-04 \\
+\end{longtable}
+\endgroup
+
+\subsubsection{Trazabilidad de requisitos}
+La trazabilidad relaciona los 15 identificadores de la matriz inicial con las necesidades preliminares y las evidencias. Los códigos E01--E09 corresponden a las capturas incluidas en el informe; EV-01--EV-05 son agrupaciones documentales definidas en la elicitación. Las asociaciones de requisitos no funcionales y restricciones son propuestas analíticas, no validaciones empresariales.
+
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.22}
+\begin{longtable}{|>{\raggedright\arraybackslash}p{1.55cm}|>{\raggedright\arraybackslash}p{2.0cm}|>{\raggedright\arraybackslash}p{6.0cm}|>{\raggedright\arraybackslash}p{4.45cm}|}
+\caption{Matriz de trazabilidad unificada}\\
 \hline
-RF-06 &
-NE-05 &
-Observacion de tiendas &
-EV-05 \\
+\textbf{Requisito} & \textbf{Necesidad} & \textbf{Fuente} & \textbf{Evidencia} \\
 \hline
-RNF-01 &
-NE-01 &
-Objetivo de rendimiento &
-Prueba futura \\
+\endfirsthead
+\multicolumn{4}{c}{\textit{Continuación: Matriz de trazabilidad unificada}}\\
 \hline
-RNF-02 &
-NE-01 &
-Objetivo de usabilidad &
-Evaluacion futura \\
+\textbf{Requisito} & \textbf{Necesidad} & \textbf{Fuente} & \textbf{Evidencia} \\
 \hline
-RNF-03 &
-NE-01 &
-Objetivo de compatibilidad &
-Prueba futura \\
+\endhead
+RF-01 & NE-02 & Observación del buscador & E02 / EV-02 \\
 \hline
-RNF-04 &
-NE-06 &
-Objetivo de seguridad &
-Auditoria futura \\
+RF-02 & NE-01 & Observación de categorías & E03--E04; EV-01 \\
+\hline
+RF-03 & NE-03 & Observación del detalle del producto & E05 / EV-03 \\
+\hline
+RF-04 & NE-04 & Observación de agregar al carrito & E06 / EV-04 \\
+\hline
+RF-05 & NE-04 & Observación del carrito & E07 / EV-04 \\
+\hline
+RF-06 & NE-04 & Observación de cambio de cantidades & E08 / EV-04 \\
+\hline
+RF-07 & NE-04 & Observación de eliminación & E09 / EV-04 \\
+\hline
+RF-08 & NE-05 & Observación de tienda seleccionada & E01, E09 / EV-05 \\
+\hline
+RNF-01 & NE-02 & Objetivo propuesto de rendimiento & Prueba futura \\
+\hline
+RNF-02 & NE-06 & Objetivo propuesto de disponibilidad & Monitoreo futuro \\
+\hline
+RNF-03 & NE-02 & Objetivo propuesto de usabilidad & Prueba futura \\
+\hline
+RNF-04 & NE-06 & Objetivo propuesto de accesibilidad & Auditoría futura \\
+\hline
+RES-01 & NE-06 & Contexto tecnológico observado & Sitio web \\
+\hline
+RES-02 & NE-06 & Normativa aplicable propuesta & Revisión legal futura \\
+\hline
+RES-03 & NE-06 & Delimitación metodológica & Alcance de práctica \\
 \hline
 \end{longtable}
 \endgroup
@@ -2091,8 +1943,7 @@ Parcial \\
 \hline
 V-05 &
 Aceptacion &
-Los requisitos funcionales disponen de
-criterios de aceptacion. &
+Los ocho requisitos funcionales disponen de criterios de aceptación propuestos. &
 Cumple \\
 \hline
 V-06 &
@@ -2103,9 +1954,8 @@ Parcial \\
 \hline
 V-07 &
 Evidencias &
-Las capturas originales respaldan cada
-funcionalidad identificada. &
-Pendiente \\
+Las capturas documentan las funcionalidades observadas; no equivalen a pruebas formales. &
+Parcial \\
 \hline
 V-08 &
 Factibilidad &
@@ -2411,6 +2261,8 @@ Asimismo, la aplicación de actividades de elicitación, análisis, especificaci
 En conjunto, la práctica permitió relacionar los fundamentos de Ingeniería de Requisitos con un sistema existente y reconocer la importancia de mantener consistencia entre la identificación, la evaluación de calidad y la especificación de los requisitos. Como trabajo posterior, se recomienda validar los objetivos propuestos mediante pruebas controladas y contrastar los requisitos con los interesados correspondientes.
 
 % REFERENCIAS
+% La bibliografía comienza en una página nueva para que no quede dividida.
+\clearpage
 \bibliographystyle{IEEEtran}
 \bibliography{referencias}
 
