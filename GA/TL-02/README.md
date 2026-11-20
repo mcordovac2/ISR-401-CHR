@@ -159,34 +159,20 @@ Los perfiles restantes forman parte del contexto del proyecto y podrán consider
 
 ## 7. Organización y distribución de responsabilidades
 
-### 7.1. Herrera Morán Gilmar Javier
+### 7.1. Córdova Carreño Mayra Lucila
 
 **Responsable del guion de entrevista y consentimiento informado.**
 
 Actividades asignadas:
 
-- Diseñar el guion de entrevista estructurada.
-- Organizar las preguntas en bloques temáticos.
+- Diseñar el guion de entrevista estructurada de 12 a 15 preguntas.
+- Organizar las preguntas en apertura, bloques temáticos y cierre.
 - Revisar que las preguntas sean abiertas, neutrales y simples.
 - Preparar el protocolo de consentimiento informado.
-- Interpretar al propietario durante el ensayo.
+- Conducir la entrevista durante el ensayo.
 - Participar en la revisión de los resultados.
 
-### 7.2. Córdova Carreño Mayra Lucila
-
-**Responsable de Design Thinking y conducción de la entrevista.**
-
-Actividades asignadas:
-
-- Preparar la plantilla del mapa de empatía.
-- Conducir la entrevista durante el ensayo.
-- Analizar las respuestas obtenidas.
-- Identificar necesidades y dificultades del usuario.
-- Completar el mapa de empatía con la información recopilada.
-- Formular la definición del problema.
-- Participar en la revisión del documento final.
-
-### 7.3. Rivas Bodero Jordy Fabián
+### 7.2. Rivas Bodero Jordy Fabián
 
 **Responsable del registro, análisis de preguntas y documentación.**
 
@@ -196,9 +182,23 @@ Actividades asignadas:
 - Actuar como observador y registrador durante el ensayo.
 - Registrar las dificultades detectadas.
 - Identificar preguntas defectuosas.
-- Proponer versiones corregidas.
+- Proponer versiones corregidas y justificar los cambios.
 - Preparar el manifiesto de evidencias.
 - Documentar el procedimiento de compilación.
+- Participar en la revisión del documento final.
+
+### 7.3. Herrera Morán Gilmar Javier
+
+**Responsable de Design Thinking y definición del problema.**
+
+Actividades asignadas:
+
+- Preparar la plantilla del mapa de empatía.
+- Interpretar al propietario durante el ensayo.
+- Analizar las respuestas obtenidas en el ensayo.
+- Identificar necesidades y dificultades del usuario representado.
+- Completar el mapa de empatía con base en la información registrada.
+- Formular la definición del problema centrada en el usuario mediante «¿Cómo podríamos…?».
 - Participar en la revisión del documento final.
 
 ### 7.4. Responsabilidades compartidas
@@ -675,7 +675,7 @@ Las observaciones deberán atenderse antes de las actividades sumativas vinculad
 
 **Estado general:** En preparación.
 
-Se ha establecido la organización del equipo, el proyecto seleccionado y la estructura inicial del directorio.
+Se ha establecido la organización del equipo, el proyecto seleccionado, la distribución actualizada de responsabilidades y la estructura inicial del directorio.
 
 El guion de entrevista, el consentimiento informado, el ensayo, el mapa de empatía, la definición del problema y los ajustes deberán completarse y verificarse conforme avance la actividad.
 
