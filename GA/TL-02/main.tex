@@ -1,1 +1,83 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{lmodern}\usepackage{titlesec}\usepackage{tikz}\usepackage{lastpage}\usepackage{colortbl}
+\usepackage{geometry}
+\geometry{left=2.65cm,right=2.65cm,top=2.75cm,bottom=2.7cm}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{array,tabularx,longtable,enumitem}
+\usepackage{amssymb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\definecolor{azul}{HTML}{15324C}
+\definecolor{acento}{HTML}{B58A55}
+\definecolor{gris}{HTML}{64748B}
+\definecolor{fondo}{HTML}{F3F6F8}
+\definecolor{linea}{HTML}{D9E2E8}
+\hypersetup{colorlinks=true,linkcolor=azul,urlcolor=azul}
+\titleformat{\section}{\Large\bfseries\color{azul}}{\thesection}{0.85em}{}[\vspace{0.25em}{\color{acento}\titlerule[1pt]}]
+\titleformat{\subsection}{\large\bfseries\color{azul}}{\thesubsection}{0.7em}{}
+\titlespacing*{\section}{0pt}{2.2ex plus 1ex}{1.4ex}
+\titlespacing*{\subsection}{0pt}{1.7ex plus .5ex}{.8ex}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{gris} UTEQ \quad / \quad INGENIERÍA DE REQUERIMIENTOS}
+\fancyhead[R]{\small\sffamily\color{acento} GA-TL-02}
+\fancyfoot[L]{\scriptsize\sffamily\color{gris} Entrevista estructurada y Design Thinking}
+\fancyfoot[R]{\scriptsize\sffamily\color{gris} \thepage\ / \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.35pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{17pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\renewcommand{\arraystretch}{1.25}
+\setlist[enumerate]{itemsep=5pt,topsep=5pt}
+\newcommand{\pendiente}[1]{\par\medskip\noindent\begingroup\setlength{\fboxsep}{11pt}\colorbox{fondo}{\parbox{\dimexpr\linewidth-22pt\relax}{\textcolor{azul}{\bfseries EN DESARROLLO}\\[4pt]\small #1}}\endgroup\par\medskip}
+\newcommand{\etiqueta}[1]{{\sffamily\footnotesize\bfseries\color{acento} #1}}
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\fill[azul] (current page.north west) rectangle ([yshift=-7.6cm]current page.north east);
+\fill[acento] ([xshift=2.6cm,yshift=-7.6cm]current page.north west) rectangle ([xshift=7.1cm,yshift=-7.48cm]current page.north west);
+\draw[linea,line width=.7pt] ([xshift=2.6cm,yshift=2.0cm]current page.south west)--([xshift=-2.6cm,yshift=2.0cm]current page.south east);
+\end{tikzpicture}
+\vspace*{0.75cm}
+{\sffamily\color{white}\small\bfseries UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\par}
+\vspace{0.18cm}
+{\sffamily\color{white}\small Facultad de Ciencias de la Computación \quad | \quad Ingeniería de Software\par}
+\vspace{1.05cm}
+{\sffamily\color{white}\large\bfseries INGENIERÍA DE REQUERIMIENTOS\par}
+\vspace{0.45cm}
+{\sffamily\color{white}\fontsize{30}{36}\selectfont\bfseries GA-TL-02\par}
+\vspace{0.16cm}
+{\sffamily\color{white}\large Taller de entrevista estructurada\\ y Design Thinking aplicados al PFC\par}
+\vspace{1.9cm}
+\etiqueta{CASO DE ESTUDIO}\par
+\vspace{0.3cm}
+{\Large\bfseries\color{azul} Sistema de Gestión de Arriendos y Residencias Estudiantiles\par}
+{\large\color{gris} En los alrededores de la UTEQ\par}
+\vspace{1.05cm}
+\etiqueta{EQUIPO RESPONSABLE DE LA ACTIVIDAD}\par
+\vspace{0.2cm}
+{\normalsize Córdova Carreño Mayra Lucila\\ Herrera Morán Gilmar Javier\\ Rivas Bodero Jordy Fabián\par}
+\vspace{0.75cm}
+\etiqueta{DOCENTE}\par
+\vspace{0.2cm}
+Gleiston Cicerón Guerrero Ulloa, PhD\par
+\vfill
+{\small\color{gris} Cuarto nivel \quad / \quad Unidad 2 \quad / \quad Actividad formativa\par}
+{\small\color{gris} Fecha límite: 21 de noviembre de 2026\par}
+\vspace{1cm}
+\end{titlepage}
+\thispagestyle{fancy}
+{\Large\bfseries\color{azul} Contenido}\par\vspace{0.4cm}
+\tableofcontents
 
+
+\end{document}
