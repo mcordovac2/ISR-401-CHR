@@ -210,14 +210,34 @@ P1--P15 & \textit{[Pendiente de ejecución]} & $\square$ Sí \quad $\square$ No 
 \pendiente{Gilmar Herrera: formular una pregunta «¿Cómo podríamos...?» basada en las necesidades observadas, sin imponer de antemano una solución tecnológica.}
 
 \section{Revisión y ajustes de preguntas}
-\begin{tabularx}{\linewidth}{|p{1.2cm}|p{3.0cm}|p{2.6cm}|p{3.2cm}|X|}
+\subsection{Propuesta de correcciones y justificación}
+\begin{tabularx}{\linewidth}{|p{1.2cm}|p{2.8cm}|p{2.5cm}|p{3.1cm}|X|}
 \hline
-\textbf{ID} & \textbf{Pregunta original} & \textbf{Defecto identificado} & \textbf{Versión corregida} & \textbf{Justificación} \\ \hline
-\textit{[Pendiente]} & \textit{[Pendiente de ejecución]} & \textit{[Inductiva / doble / cerrada innecesaria / ambigua]} & \textit{[Pendiente]} & \textit{[Pendiente: identificar preguntas defectuosas tras el ensayo]} \\ \hline
+\textbf{ID} & \textbf{Pregunta original} & \textbf{Defecto identificado} & \textbf{Versión corregida} & \textbf{Justificación del cambio} \\ \hline
+\textit{[Pendiente]} & \textit{[Pendiente de ejecución]} & \textit{[Inductiva / doble / cerrada innecesaria / ambigua]} & \textit{[Pendiente: proponer versión corregida tras el ensayo]} & \textit{[Pendiente: justificar el cambio según lo observado en el ensayo]} \\ \hline
 \end{tabularx}
 
 \section{Evidencias y manifiesto}
-\pendiente{Jordy Rivas: completar \texttt{manifiesto.md} con nombre real del archivo, fecha, duración y huella SHA-256, después de registrar el audio consentido. Guardar el audio y consentimiento en carpeta institucional privada.}
+\subsection{Manifiesto de evidencias}
+\begin{tabularx}{\linewidth}{|p{3.5cm}|p{2.3cm}|p{2.1cm}|X|}
+\hline
+\textbf{Nombre del archivo} & \textbf{Fecha} & \textbf{Duración} & \textbf{Huella SHA-256} \\ \hline
+\textit{[Pendiente: audio]} & \textit{[Pendiente]} & \textit{[Pendiente]} & \textit{[Pendiente: Get-FileHash -Algorithm SHA256]} \\ \hline
+\end{tabularx}
+
+\section{Procedimiento de compilación y revisión del documento final}
+\subsection{Procedimiento de compilación}
+\begin{quote}\ttfamily\small
+git clone https://github.com/mcordovaac2/ISR-401-CHR.git\\
+cd ISR-401-CHR/GA/TL-02\\
+pdflatex -interaction=nonstopmode -halt-on-error main.tex\\
+bibtex main\\
+pdflatex -interaction=nonstopmode -halt-on-error main.tex\\
+pdflatex -interaction=nonstopmode -halt-on-error main.tex
+\end{quote}
+
+\subsection{Revisión del documento final}
+\pendiente{Rivas Bodero Jordy Fabián: participar en la revisión del documento final verificando coherencia entre observaciones, ajustes de preguntas, manifiesto de evidencias, compilación limpia del PDF y entrega antes del 21 de noviembre de 2026.}
 
 \section{Declaración de apoyo con inteligencia artificial}
 Se utilizó \textbf{ChatGPT (OpenAI, modelo GPT-6)} como apoyo para la redacción inicial, revisión de neutralidad de preguntas y preparación de la estructura LaTeX. La verificación de la pertinencia de las preguntas, el consentimiento, el ensayo, la fidelidad de los resultados y la compilación corresponde a los integrantes del equipo. Esta declaración deberá actualizarse para reflejar con exactitud el uso final y la revisión efectivamente realizada.
