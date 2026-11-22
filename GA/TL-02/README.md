@@ -1,4 +1,5 @@
 # GA-TL-02 - FORM
+
 ## Taller de entrevista estructurada y Design Thinking aplicados al PFC
 
 **Universidad:** Universidad Técnica Estatal de Quevedo (UTEQ)  
@@ -7,684 +8,176 @@
 **Asignatura:** Ingeniería de Requerimientos (ISR-401)  
 **Nivel:** Cuarto  
 **Unidad:** Unidad 2 — Elicitación y Análisis de Requisitos  
-**Actividad:** GA-TL-02 - FORM  
-**Modalidad:** Grupal  
-**Carácter:** Formativo, sin calificación  
-**Semana:** 4 (16 al 22 de noviembre de 2026)  
-**Fecha límite:** Sábado 21 de noviembre de 2026, a las 23:59  
+**Modalidad:** Grupal · Actividad formativa, sin calificación numérica  
+**Semana:** 4, del 16 al 22 de noviembre de 2026  
+**Fecha límite:** sábado 21 de noviembre de 2026, 23:59  
 **Docente:** Gleiston Cicerón Guerrero Ulloa, PhD
 
----
+## 1. Integrantes
 
-## 1. Integrantes del equipo
-
-La presente actividad es desarrollada por el equipo asignado para las actividades grupales de Ingeniería de Requerimientos.
-
-| Integrante | Usuario de GitHub |
+| Integrante | GitHub |
 |---|---|
 | Córdova Carreño Mayra Lucila | [mcordovaac2](https://github.com/mcordovaac2) |
 | Herrera Morán Gilmar Javier | [GilmaR2006](https://github.com/GilmaR2006) |
 | Rivas Bodero Jordy Fabián | [JordyR15](https://github.com/JordyR15) |
 
-**Repositorio del equipo:** [ISR-401-CHR](https://github.com/mcordovaac2/ISR-401-CHR)
+**Repositorio:** https://github.com/mcordovaac2/ISR-401-CHR  
+**Directorio:** https://github.com/mcordovaac2/ISR-401-CHR/tree/main/GA/TL-02
 
-**Directorio de la actividad:** [GA/TL-02](https://github.com/mcordovaac2/ISR-401-CHR/tree/main/GA/TL-02)
+El equipo de este taller está formado por los tres integrantes indicados. El proyecto seleccionado como caso de estudio procede de un PFC; utilizarlo en esta actividad no modifica la autoría ni la composición del equipo original de ese PFC.
 
-Este repositorio corresponde exclusivamente al equipo integrado por Córdova, Herrera y Rivas para el desarrollo de las actividades grupales asignadas.
+## 2. Proyecto y propósito
 
----
+**Caso de estudio:** Sistema de Gestión de Arriendos y Residencias Estudiantiles en los alrededores de la UTEQ.
 
-## 2. Descripción de la actividad
+Se estudia la administración de habitaciones y residencias destinadas a estudiantes, con atención a la disponibilidad, contratos, mensualidades, servicios básicos, comunicación y mantenimiento. Para este taller se seleccionó como parte interesada principal a una **propietaria de residencia estudiantil simulada**. Los perfiles de estudiante y personal de mantenimiento forman parte del contexto del proyecto, pero no fueron entrevistados en este ensayo.
 
-La actividad GA-TL-02 - FORM tiene como finalidad diseñar y ensayar instrumentos de elicitación de requisitos mediante una entrevista estructurada y la aplicación de Design Thinking.
+El objetivo fue diseñar un guion de elicitación, ensayarlo mediante juego de roles, sintetizar la perspectiva del personaje mediante un mapa de empatía, formular un problema centrado en el usuario y revisar preguntas susceptibles de mejora. La actividad prepara **GA-SUM-03** y **TA-PFC-E2**.
 
-El taller permite practicar la identificación de necesidades, dificultades y expectativas de una parte interesada antes de aplicar estas técnicas con participantes reales durante el desarrollo de las actividades vinculadas al Proyecto Formativo de Carrera (PFC).
+## 3. Productos desarrollados
 
-De acuerdo con la guía oficial, el trabajo comprende cuatro componentes:
-
-1. Diseño de un guion de entrevista estructurada de 12 a 15 preguntas.
-2. Aplicación del guion mediante un ensayo o juego de roles, con consentimiento y grabación únicamente de audio.
-3. Elaboración de un mapa de empatía y definición del problema.
-4. Identificación y corrección de preguntas defectuosas.
-
-La actividad es formativa y no tiene calificación numérica. Sin embargo, su entrega válida constituye un requisito para presentar las actividades sumativas vinculadas **GA-SUM-03 y TA-PFC-E2**.
-
----
-
-## 3. Origen y selección del proyecto
-
-### 3.1. Procedencia del proyecto
-
-Para el desarrollo de esta actividad, el equipo conformado por Córdova, Herrera y Rivas seleccionó como caso de estudio el proyecto:
-
-**Sistema de Gestión de Arriendos y Residencias Estudiantiles en los alrededores de la UTEQ.**
-
-Este proyecto pertenece originalmente al equipo del Proyecto de Fin de Curso (PFC) de una de las integrantes de la presente actividad.
-
-La selección se realizó entre los proyectos propuestos por los miembros del equipo asignado para las actividades grupales de Ingeniería de Requerimientos.
-
-Por tanto, se establece la siguiente distinción:
-
-- **Equipo del PFC original:** responsable del desarrollo del proyecto de Gestión de Arriendos y Residencias Estudiantiles.
-- **Equipo GA-TL-02 - FORM:** conformado por Córdova, Herrera y Rivas, responsable de desarrollar el taller de entrevista y Design Thinking utilizando dicho proyecto como caso de estudio.
-
-El desarrollo de esta actividad no modifica la conformación del equipo original del PFC ni atribuye su autoría a los integrantes del equipo de GA-TL-02.
-
-### 3.2. Justificación de la selección
-
-El proyecto fue seleccionado porque permite analizar procesos relacionados con la búsqueda, administración y mantenimiento de alojamientos estudiantiles.
-
-Asimismo, presenta distintas partes interesadas, cuyas necesidades pueden ser identificadas mediante técnicas de elicitación.
-
-El caso permite estudiar dificultades relacionadas con la disponibilidad de habitaciones, los pagos de arriendo, las garantías, los servicios básicos y la comunicación entre los participantes.
-
----
-
-## 4. Descripción del proyecto seleccionado
-
-### 4.1. Nombre
-
-**Sistema de Gestión de Arriendos y Residencias Estudiantiles en los alrededores de la UTEQ.**
-
-### 4.2. Contexto
-
-El proyecto se enfoca en la gestión de alojamientos destinados a estudiantes universitarios en sectores cercanos a la Universidad Técnica Estatal de Quevedo, particularmente San Camilo, Venus del Río y Nicolás Infante Díaz.
-
-En el escenario planteado, propietarios de habitaciones, departamentos y residencias realizan manualmente diferentes actividades administrativas.
-
-Entre los procesos considerados se encuentran:
-
-- Registro y consulta de habitaciones disponibles.
-- Administración de contratos de arrendamiento.
-- Registro de estudiantes arrendatarios.
-- Control de mensualidades y garantías.
-- Distribución de gastos de agua, electricidad e internet.
-- Comunicación entre propietarios y estudiantes.
-- Registro de daños y solicitudes de mantenimiento.
-- Seguimiento de reparaciones.
-
-### 4.3. Problemática
-
-La administración manual de los arriendos puede ocasionar dificultades para controlar pagos, contratos, garantías, consumos de servicios básicos y disponibilidad de habitaciones.
-
-Por otra parte, los estudiantes que buscan alojamiento pueden enfrentar dificultades para identificar habitaciones disponibles, conocer los precios y comparar las condiciones de arrendamiento.
-
-En determinados casos, la búsqueda requiere desplazamientos presenciales y consultas a diferentes propietarios.
-
-Estas situaciones constituyen la problemática inicial del proyecto y deberán contrastarse mediante las técnicas de elicitación correspondientes.
-
-### 4.4. Propósito del sistema
-
-El proyecto busca estudiar las necesidades relacionadas con la gestión de arriendos y residencias estudiantiles para definir los requisitos de una posible solución informática.
-
-Las funcionalidades definitivas deberán determinarse mediante el análisis y la validación de las necesidades identificadas.
-
----
-
-## 5. Objetivos de la actividad
-
-### 5.1. Objetivo general
-
-Diseñar y ensayar una entrevista estructurada y aplicar la fase Empatizar de Design Thinking para identificar necesidades, dificultades y expectativas relacionadas con la gestión de arriendos y residencias estudiantiles en los alrededores de la UTEQ.
-
-### 5.2. Objetivos específicos
-
-1. Elaborar un guion de entrevista estructurada de 12 a 15 preguntas, organizado en apertura, bloques temáticos y cierre.
-2. Realizar un ensayo mediante juego de roles con consentimiento y registro de audio.
-3. Identificar necesidades y dificultades de la parte interesada entrevistada.
-4. Construir un mapa de empatía coherente con las respuestas obtenidas.
-5. Formular una definición del problema centrada en el usuario mediante la pregunta «¿Cómo podríamos…?».
-6. Identificar preguntas inductivas, dobles o cerradas sin necesidad y proponer versiones corregidas.
-7. Documentar los resultados y evidencias de manera verificable y reproducible.
-
----
-
-## 6. Partes interesadas
-
-Para el proyecto se han identificado inicialmente tres perfiles de partes interesadas.
-
-| Parte interesada | Descripción |
+| Componente de la rúbrica | Contenido documentado en `main.tex` y `main.pdf` |
 |---|---|
-| Propietario | Administra habitaciones, contratos, pagos, garantías y disponibilidad. |
-| Estudiante | Busca alojamiento y participa en los procesos de arrendamiento. |
-| Personal de mantenimiento | Atiende reportes de daños y solicitudes de reparación. |
+| Guion de entrevista | Apertura, cinco bloques temáticos, 15 preguntas (P1–P15) y cierre. |
+| Consentimiento | Protocolo de consentimiento informado y autorización **verbal** incluida en la grabación. El formulario del anexo no se presenta como firmado. |
+| Ensayo | Juego de roles grabado solo en audio, el 21/11/2026, con duración de **07:45**. |
+| Mapa de empatía | Síntesis de Dice, Hace, Piensa, Siente, Dolores y Ganancias; las inferencias se distinguen de las respuestas simuladas. |
+| Definición del problema | Necesidad del usuario y pregunta central «¿Cómo podríamos…?», con preguntas complementarias. |
+| Revisión del guion | Identificación, reformulación y justificación de preguntas mejorables. |
+| Evidencias | Manifiesto integrado en el documento, con metadatos del audio, ubicación institucional y huella SHA-256. |
 
-Para el ensayo de GA-TL-02 - FORM se ha seleccionado al **propietario** como parte interesada principal.
+**Alcance del ensayo:** la grabación se realizó **fuera de clase** entre Mayra Córdova, como entrevistadora, y una participante voluntaria, como propietaria simulada. **Gilmar Herrera y Jordy Rivas no participaron en esa grabación ni estuvieron presentes como observadores.** La guía oficial solicita un ensayo en clase con un compañero; el ejercicio externo se declara expresamente y no se hace pasar por una ejecución presencial en el aula. Las respuestas son parte de una simulación académica, no testimonios de una propietaria real.
 
-Esta selección permite estudiar los procesos de administración de residencias y las dificultades relacionadas con el control de arriendos.
+## 4. Distribución del trabajo
 
-Los perfiles restantes forman parte del contexto del proyecto y podrán considerarse en posteriores actividades de elicitación.
-
----
-
-## 7. Organización y distribución de responsabilidades
-
-### 7.1. Córdova Carreño Mayra Lucila
-
-**Responsable del guion de entrevista y consentimiento informado.**
-
-Actividades asignadas:
-
-- Diseñar el guion de entrevista estructurada de 12 a 15 preguntas.
-- Organizar las preguntas en apertura, bloques temáticos y cierre.
-- Revisar que las preguntas sean abiertas, neutrales y simples.
-- Preparar el protocolo de consentimiento informado.
-- Conducir la entrevista durante el ensayo.
-- Participar en la revisión de los resultados.
-
-### 7.2. Rivas Bodero Jordy Fabián
-
-**Responsable del registro, análisis de preguntas y documentación.**
-
-Actividades asignadas:
-
-- Preparar el formato de observación.
-- Actuar como observador y registrador durante el ensayo.
-- Registrar las dificultades detectadas.
-- Identificar preguntas defectuosas.
-- Proponer versiones corregidas y justificar los cambios.
-- Preparar el manifiesto de evidencias.
-- Documentar el procedimiento de compilación.
-- Participar en la revisión del documento final.
-
-### 7.3. Herrera Morán Gilmar Javier
-
-**Responsable de Design Thinking y definición del problema.**
-
-Actividades asignadas:
-
-- Preparar la plantilla del mapa de empatía.
-- Interpretar al propietario durante el ensayo.
-- Analizar las respuestas obtenidas en el ensayo.
-- Identificar necesidades y dificultades del usuario representado.
-- Completar el mapa de empatía con base en la información registrada.
-- Formular la definición del problema centrada en el usuario mediante «¿Cómo podríamos…?».
-- Participar en la revisión del documento final.
-
-### 7.4. Responsabilidades compartidas
-
-Los tres integrantes deberán:
-
-- Revisar el guion antes del ensayo.
-- Participar en el juego de roles.
-- Verificar el consentimiento y la grabación de audio.
-- Revisar la coherencia del mapa de empatía.
-- Comprobar que los resultados correspondan a las evidencias.
-- Integrar y revisar el documento LaTeX.
-- Verificar la compilación del PDF.
-- Comprobar la accesibilidad del repositorio.
-- Verificar la entrega antes del cierre oficial.
-
----
-
-## 8. Desarrollo de la actividad
-
-### 8.1. Guion de entrevista estructurada
-
-Se elaborará un guion de entre **12 y 15 preguntas** dirigido al propietario de una residencia estudiantil.
-
-El guion contendrá:
-
-- Apertura.
-- Presentación del entrevistador.
-- Explicación del propósito.
-- Bloques temáticos.
-- Preguntas abiertas, neutrales y simples.
-- Cierre y agradecimiento.
-
-Los bloques temáticos previstos son:
-
-1. Contexto y responsabilidades del propietario.
-2. Administración de habitaciones y contratos.
-3. Gestión de mensualidades, garantías y servicios básicos.
-4. Comunicación y mantenimiento.
-5. Dificultades y necesidades de mejora.
-
-Las preguntas deberán evitar formulaciones inductivas, ambiguas o dobles.
-
-### 8.2. Consentimiento informado
-
-Antes del ensayo se explicará al participante:
-
-- El propósito académico de la entrevista.
-- El carácter voluntario de su participación.
-- El procedimiento previsto.
-- La duración aproximada.
-- El uso de la información recopilada.
-- Las medidas de confidencialidad.
-- La solicitud de autorización para grabar audio.
-- Su derecho a no responder o retirarse.
-
-La grabación se realizará únicamente después de obtener el consentimiento correspondiente.
-
-Los documentos firmados no se publicarán en el repositorio público.
-
-### 8.3. Ensayo mediante juego de roles
-
-La distribución prevista es:
-
-| Integrante | Rol |
+| Integrante | Aportación documentada |
 |---|---|
-| Herrera | Propietario entrevistado |
-| Córdova | Entrevistadora |
-| Rivas | Observador y registrador |
+| **Mayra Córdova** | Elaboración del guion, protocolo de consentimiento, conducción y grabación del ensayo simulado; integración y revisión del documento. |
+| **Gilmar Herrera** | Desarrollo del mapa de empatía y de la definición del problema centrada en el usuario a partir del registro del ensayo. |
+| **Jordy Rivas** | Documentación y análisis posterior del ensayo, revisión de preguntas, registro de evidencias e instrucciones de compilación. |
 
-Se ha planificado un ensayo de aproximadamente 10 minutos.
+La distribución de tareas documentales **no implica** que todos hayan intervenido en la grabación.
 
-| Tiempo | Actividad |
-|---|---|
-| Minuto 0–1 | Presentación y consentimiento |
-| Minuto 1–7 | Desarrollo de la entrevista |
-| Minuto 7–9 | Aclaraciones y profundización |
-| Minuto 9–10 | Cierre y agradecimiento |
+## 5. Archivos del directorio
 
-La duración propuesta corresponde a la planificación interna del equipo.
-
-De acuerdo con el PDF oficial, el ensayo debe realizarse mediante juego de roles y grabarse **solo en audio, con consentimiento**.
-
-Las respuestas y observaciones deberán registrarse después de su realización.
-
-**Estado:** Pendiente de ejecución.
-
-### 8.4. Fase Empatizar — Design Thinking
-
-Con la información obtenida durante el ensayo se elaborará un mapa de empatía correspondiente a la parte interesada entrevistada.
-
-Se utilizarán las siguientes dimensiones:
-
-- ¿Qué piensa y siente?
-- ¿Qué ve?
-- ¿Qué oye?
-- ¿Qué dice y hace?
-- Esfuerzos y frustraciones.
-- Necesidades y resultados esperados.
-
-El contenido deberá reflejar las respuestas y observaciones obtenidas.
-
-Las interpretaciones realizadas por el equipo deberán diferenciarse de las afirmaciones expresadas durante la entrevista.
-
-**Estado:** Pendiente de completar con los resultados del ensayo.
-
-### 8.5. Definición del problema
-
-A partir del mapa de empatía se formulará una definición del problema centrada en el usuario.
-
-Se utilizará la estructura:
-
-**¿Cómo podríamos [atender una necesidad identificada] considerando [el contexto o dificultad observada]?**
-
-La formulación definitiva deberá sustentarse en la información obtenida durante el ensayo.
-
-No se impondrá anticipadamente una funcionalidad tecnológica como solución.
-
-**Estado:** Pendiente de validación.
-
-### 8.6. Identificación y corrección de preguntas defectuosas
-
-Después del ensayo se analizará el comportamiento del guion.
-
-Se revisarán principalmente:
-
-- Preguntas inductivas.
-- Preguntas dobles.
-- Preguntas cerradas sin necesidad.
-- Preguntas ambiguas o difíciles de comprender.
-
-Para cada pregunta que requiera corrección se documentará:
-
-| Elemento | Descripción |
-|---|---|
-| Identificador | Número de pregunta |
-| Pregunta original | Formulación utilizada |
-| Defecto identificado | Problema observado |
-| Versión corregida | Nueva formulación |
-| Justificación | Motivo del ajuste |
-
-Las correcciones deberán corresponder a problemas detectados durante el ensayo o la revisión.
-
-**Estado:** Pendiente de ejecución.
-
----
-
-## 9. Productos entregables
-
-El PDF oficial establece como producto principal un documento en LaTeX que contenga:
-
-1. Guion de entrevista.
-2. Mapa de empatía.
-3. Definición del problema.
-4. Ajustes de preguntas.
-
-El documento deberá acompañarse de los archivos necesarios para su reproducción y verificación.
-
-Los archivos principales son:
-
-- `GA/TL-02/main.tex`
-- `GA/TL-02/main.pdf`
-
-También se documentará el consentimiento y el registro del ensayo, respetando las condiciones de privacidad establecidas en la guía.
-
----
-
-## 10. Estructura del directorio
-
-La organización prevista para esta actividad es:
+La carpeta de la actividad contiene los siguientes archivos principales:
 
 ```text
 GA/
 └── TL-02/
-    ├── main.tex
-    ├── main.pdf
     ├── README.md
-    ├── referencias.bib
-    ├── manifiesto.md
-    └── figuras/
-        └── mapa_empatia.pdf
+    ├── main.tex
+    └── main.pdf
 ```
 
-### Descripción de archivos
-
-| Archivo | Función |
+| Archivo | Descripción |
 |---|---|
-| `main.tex` | Código fuente principal del informe |
-| `main.pdf` | Documento compilado |
-| `README.md` | Descripción de la actividad e instrucciones de compilación |
-| `referencias.bib` | Referencias bibliográficas verificadas |
-| `manifiesto.md` | Registro de evidencias privadas |
-| `figuras/` | Recursos gráficos y fuentes editables del mapa de empatía |
+| `main.tex` | Fuente LaTeX del informe: guion, consentimiento, ensayo, mapa de empatía, problema, ajustes, manifiesto y declaración de IA. |
+| `main.pdf` | PDF generado a partir del código fuente. |
+| `README.md` | Contexto, alcance, evidencias y procedimiento de compilación. |
 
-Los archivos auxiliares se incorporarán conforme se elaboren los productos correspondientes.
+El manifiesto está **dentro de `main.tex`/`main.pdf`**; no se requiere un `manifiesto.md` separado para describir el archivo existente. El mapa de empatía también está integrado en el documento, sin depender de un archivo gráfico externo.
 
-Los archivos `main.tex` y `main.pdf` son los exigidos expresamente en la ruta oficial.
+## 6. Compilación reproducible
 
----
+### 6.1. Herramientas y dependencias
 
-## 11. Compilación del documento LaTeX
+- **Compilador:** pdfLaTeX (disponible en distribuciones como TeX Live o MiKTeX).
+- **Archivo principal:** `GA/TL-02/main.tex`.
+- **Paquetes utilizados:** `inputenc`, `fontenc`, `babel` (español), `lmodern`, `titlesec`, `tikz`, `lastpage`, `colortbl`, `geometry`, `setspace`, `array`, `tabularx`, `longtable`, `enumitem`, `needspace`, `amssymb`, `hyperref`, `fancyhdr`, `microtype`, `graphicx` y `xcolor`.
+- **Bibliografía:** las referencias se encuentran directamente en `main.tex` mediante `thebibliography`; no se utiliza archivo `.bib` ni BibTeX.
+- **Recursos externos:** el código actual no requiere una figura externa para compilar el mapa de empatía.
 
-### 11.1. Requisitos
+### 6.2. Procedimiento
 
-Para reproducir el documento se necesitará:
-
-- Una distribución LaTeX compatible.
-- El compilador utilizado por el proyecto.
-- Los paquetes declarados en `main.tex`.
-- Los archivos gráficos y bibliográficos necesarios.
-- Acceso al repositorio completo.
-
-### 11.2. Compilador previsto
-
-**Compilador:** pdfLaTeX.
-
-**Gestor bibliográfico previsto:** BibTeX, si el documento utiliza `referencias.bib`.
-
-El compilador y las dependencias definitivas deberán verificarse cuando se complete `main.tex`.
-
-### 11.3. Procedimiento de compilación
-
-Clonar el repositorio:
+Clonar el repositorio e ingresar a la carpeta:
 
 ```bash
 git clone https://github.com/mcordovaac2/ISR-401-CHR.git
-```
-
-Ingresar al directorio:
-
-```bash
 cd ISR-401-CHR/GA/TL-02
 ```
 
-Si el documento utiliza pdfLaTeX y BibTeX:
+Ejecutar **tres pasadas** de pdfLaTeX para actualizar referencias cruzadas, numeración e índice:
 
 ```bash
 pdflatex -interaction=nonstopmode -halt-on-error main.tex
-bibtex main
 pdflatex -interaction=nonstopmode -halt-on-error main.tex
 pdflatex -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-Si no utiliza BibTeX, se omitirá ese comando y se realizarán las compilaciones necesarias.
+El resultado debe ser `main.pdf` en el mismo directorio. Si se utiliza Overleaf, seleccionar **pdfLaTeX** como compilador y establecer `main.tex` como documento principal.
 
-### 11.4. Verificación de reproducibilidad
+### 6.3. Comprobaciones de reproducibilidad
 
-Antes de la entrega se comprobará que:
+Después de compilar, verificar que:
 
-- El documento compile sin errores.
-- Se genere `main.pdf`.
-- Las imágenes y tablas sean legibles.
-- Las referencias se resuelvan correctamente.
-- El PDF coincida con el código fuente.
-- Los recursos necesarios estén disponibles.
-- El procedimiento funcione después de clonar el repositorio.
+- No existan errores de compilación ni referencias internas sin resolver.
+- El índice incluya el apartado **Referencias**.
+- Las tablas, los saltos de página y las referencias bibliográficas sean legibles.
+- El PDF generado corresponda al `main.tex` publicado.
+- La compilación funcione desde una copia recién clonada del repositorio.
 
-**Estado de verificación:** Pendiente.
+El historial de compilación local no sustituye esta última prueba en un entorno limpio.
 
----
+## 7. Manifiesto y protección de las evidencias
 
-## 12. Gestión de evidencias y protección de datos
+**Evidencia:** grabación de audio del juego de roles. El archivo **no se publica en GitHub**.
 
-De acuerdo con el PDF oficial, no deben publicarse datos personales de terceros ni evidencias privadas en GitHub.
-
-Esto incluye:
-
-- Cédulas.
-- Teléfonos personales.
-- Correos personales.
-- Grabaciones de audio.
-- Grabaciones de video.
-- Consentimientos firmados.
-
-Las evidencias privadas se conservarán en una carpeta institucional asociada a una cuenta `@uteq.edu.ec`, compartida con el docente.
-
-### 12.1. Manifiesto de evidencias
-
-El repositorio incluirá un manifiesto con:
-
-| Campo | Información |
+| Campo | Registro |
 |---|---|
-| Nombre del archivo | Identificación de la evidencia |
-| Fecha | Fecha real del registro |
-| Duración | Duración de la grabación, cuando corresponda |
-| SHA-256 | Huella digital del archivo |
+| Nombre | `GA-TL-02_Entrevista_Propietaria_2026-11-21.m4a` |
+| Fecha | 21 de noviembre de 2026 |
+| Duración | 07:45 |
+| Formato | M4A |
+| Tamaño | 10.798.192 bytes |
+| SHA-256 | `69821E07DF5A38766E48A1672EC669FCF2ADFA8B4D9CD8BE13C2DC4CEA1AC799` |
+| Almacenamiento | Google Drive de una cuenta institucional UTEQ, carpeta `GA-TL-02 - Evidencias Privadas` |
+| Permiso informado | Lectura para miembros de la UTEQ que dispongan del enlace; **no está limitado exclusivamente al docente** |
+| Consentimiento | Verbal, registrado al inicio del audio |
 
-El manifiesto se completará cuando existan las evidencias.
+**Enlace institucional a la evidencia (requiere cuenta UTEQ autorizada):**  
+https://drive.google.com/file/d/1loUDyv_cXjtktltbx32BDi9hD-7bvkpM/view?usp=sharing
 
-### 12.2. Cálculo de SHA-256
-
-En Windows puede utilizarse PowerShell:
+La huella se obtuvo mediante PowerShell. Para calcularla nuevamente sobre una copia local del archivo:
 
 ```powershell
-Get-FileHash -Path "archivo.mp3" -Algorithm SHA256
+Get-FileHash -Path ".\GA-TL-02_Entrevista_Propietaria_2026-11-21.m4a" -Algorithm SHA256
 ```
 
-El nombre deberá reemplazarse por la ruta real del archivo.
+El resultado debe compararse con el valor registrado; **no se afirma aquí haber verificado una segunda copia descargada**. La hora de creación del archivo no debe confundirse con la hora exacta de inicio de la entrevista.
 
-No se registrarán valores ficticios.
+**Privacidad:** la rúbrica solicita resguardar las evidencias personales en una carpeta institucional privada compartida con el docente. La configuración actual de lectura por dominio institucional es más amplia que el acceso exclusivo del docente y el equipo; se recomienda restringirla a las personas autorizadas y comprobar que el docente pueda abrir el archivo. No publicar en el repositorio audios, consentimientos firmados, cédulas, teléfonos ni otros datos personales de terceros.
 
----
+## 8. Referencias y declaración de IA
 
-## 13. Referencias bibliográficas
+Las referencias están numeradas en formato IEEE mediante `thebibliography` dentro de `main.tex`, y el documento incorpora citas `\cite{...}`. No se necesita `referencias.bib`. Deben comprobarse los datos bibliográficos y que cada cita respalde la afirmación correspondiente; la existencia de un enlace no garantiza su corrección.
 
-Las referencias deberán utilizar el estilo IEEE y corresponder a fuentes reales y verificables.
+El informe declara el uso de **ChatGPT (OpenAI, GPT-6)** como apoyo para redacción, revisión de preguntas, integración de aportaciones y ajustes de LaTeX. La revisión de fuentes, evidencias, afirmaciones y resultados corresponde al equipo. No se deben presentar respuestas simuladas como entrevistas reales ni atribuir participaciones que no ocurrieron.
 
-Se comprobarán los siguientes datos, según corresponda:
+## 9. Entrega y condiciones de validez
 
-- Autor o institución.
-- Título.
-- Año.
-- Editorial o publicación.
-- Volumen, número y páginas.
-- DOI, ISBN o URL.
+La guía oficial establece:
 
-No se utilizarán referencias inventadas, identificadores inexistentes ni citas que no respalden las afirmaciones del documento.
+1. **Repositorio público:** los archivos principales `GA/TL-02/main.tex` y `GA/TL-02/main.pdf`, junto con el README y las dependencias necesarias, deben estar accesibles en GitHub.
+2. **SGA:** subir **solo un PDF informativo de una página**, con los nombres de los integrantes, código y nombre de la actividad, fecha límite y URL completa del repositorio **en una sola línea**. **No subir el informe `main.pdf` de varias páginas como sustituto del PDF informativo.**
+3. **Reproducibilidad:** el PDF debe poder regenerarse desde `main.tex` siguiendo este README.
+4. **Plazo:** el contenido evaluable debía estar publicado antes del **21/11/2026 a las 23:59**; la fecha y la entrega se comprueban en GitHub y SGA.
+5. **Integridad:** las fuentes y evidencias deben existir y ser explicables; el uso de IA debe declararse según la guía.
 
-Solo se incorporarán fuentes efectivamente consultadas.
+El incumplimiento de las condiciones de entrega válida puede impedir la presentación de **GA-SUM-03** y **TA-PFC-E2**. El README no demuestra por sí solo que el PDF informativo haya sido entregado ni que la fecha límite se haya cumplido.
 
----
+## 10. Lista de cotejo y verificaciones finales
 
-## 14. Integridad académica y uso de IA
-
-El contenido deberá representar el trabajo efectivamente realizado por el equipo.
-
-No se presentarán como propios resultados, entrevistas, grabaciones, transcripciones o modelos inexistentes.
-
-Si se utiliza una herramienta de inteligencia artificial como apoyo, se declarará en el documento:
-
-- Herramienta.
-- Versión.
-- Propósito.
-- Procedimiento de verificación.
-
-Los integrantes deberán comprender, justificar y poder modificar el contenido entregado.
-
-La declaración del uso de IA no sustituye la responsabilidad académica ni elimina los indicios de incumplimiento descritos en la rúbrica.
-
----
-
-## 15. Control de versiones
-
-El equipo utilizará GitHub para documentar el desarrollo de la actividad.
-
-Los commits deberán representar avances reales y verificables.
-
-Ejemplos de mensajes:
-
-```text
-Crear estructura inicial de GA/TL-02
-Documentar proyecto seleccionado y equipo responsable
-Agregar guion de entrevista
-Incorporar protocolo de consentimiento
-Preparar plantilla de mapa de empatia
-Registrar resultados del ensayo
-Documentar correcciones del guion
-Integrar informe en main.tex
-Actualizar referencias y compilacion
-Agregar PDF final
-```
-
-Los mensajes son ejemplos y deberán utilizarse únicamente cuando se hayan realizado los cambios correspondientes.
-
-Se evitarán commits vacíos, mensajes repetitivos y modificaciones artificiales.
-
----
-
-## 16. Entrega en el SGA
-
-La guía oficial establece que en el SGA se debe subir únicamente un PDF de una sola página.
-
-Debe contener:
-
-1. Nombres de los integrantes.
-2. Código y nombre de la actividad.
-3. Fecha límite de entrega.
-4. URL completa del repositorio, escrita en una sola línea.
-
-No se deben subir archivos adicionales.
-
-**Fecha límite:** sábado 21 de noviembre de 2026, 23:59.
-
-El repositorio deberá ser público y accesible.
-
----
-
-## 17. Condiciones de entrega válida
-
-La guía oficial establece cuatro condiciones principales.
-
-### P1. PDF informativo
-
-El documento del SGA debe contener exactamente una página y una URL completa, legible y funcional.
-
-### P2. Reproducibilidad
-
-El PDF debe poder regenerarse desde el código LaTeX siguiendo las instrucciones del README.
-
-### P3. Plazo
-
-El contenido evaluable debe encontrarse en el repositorio antes del cierre.
-
-### P4. Integridad académica
-
-No se permite plagio, evidencias fabricadas, referencias falsas ni contenido generado por IA presentado como propio.
-
-El incumplimiento de estas condiciones puede ocasionar que la actividad sea considerada no entregada e impedir la presentación de las sumativas vinculadas.
-
----
-
-## 18. Lista de cotejo
-
-El docente evaluará la presencia y calidad de los siguientes elementos mediante retroalimentación formativa.
-
-| N.º | Indicador | Estado |
+| Indicador de la rúbrica | Evidencia en el documento | Precaución |
 |---|---|---|
-| 1 | Guion con apertura, bloques, cierre y preguntas abiertas, neutrales y simples | Pendiente |
-| 2 | Ensayo realizado con consentimiento y registrado en el manifiesto | Pendiente |
-| 3 | Mapa de empatía coherente con la entrevista | Pendiente |
-| 4 | Definición del problema centrada en el usuario | Pendiente |
-| 5 | Preguntas defectuosas identificadas y corregidas | Pendiente |
+| Guion estructurado y preguntas neutrales | Apertura, 15 preguntas en bloques y cierre | Comprobar claridad y neutralidad. |
+| Ensayo con consentimiento y manifiesto | Audio, consentimiento verbal y metadatos | Fue fuera de clase, no en el aula como exige la guía. |
+| Mapa de empatía coherente | Seis dimensiones vinculadas al ensayo | Son respuestas simuladas e inferencias, no hallazgos de campo real. |
+| Problema centrado en el usuario | Planteamiento y «¿Cómo podríamos…?» | No confundir necesidad con solución predeterminada. |
+| Preguntas defectuosas corregidas | Tabla de revisión y justificación | Mantener trazabilidad con las preguntas originales. |
 
-Los niveles de revisión son:
+**Pendiente de verificación externa antes de considerar la entrega conforme:** accesibilidad del enlace para el docente, exactitud de todas las referencias, compilación desde un clon limpio, historial de commits y entrega del PDF informativo de una página en el SGA. La decisión sobre el cumplimiento del requisito de ensayo en clase corresponde al docente.
 
-- **L:** Logrado.
-- **EP:** En proceso.
-- **NL:** No logrado.
+## 11. Documento normativo de la actividad
 
-Las observaciones deberán atenderse antes de las actividades sumativas vinculadas.
-
----
-
-## 19. Lista de verificación final
-
-### Contenido académico
-
-- [ ] Guion de 12 a 15 preguntas.
-- [ ] Apertura, bloques temáticos y cierre.
-- [ ] Preguntas abiertas, neutrales y simples.
-- [ ] Consentimiento informado preparado.
-- [ ] Ensayo realizado con consentimiento.
-- [ ] Grabación únicamente de audio.
-- [ ] Registro de observaciones.
-- [ ] Mapa de empatía basado en la entrevista.
-- [ ] Definición del problema centrada en el usuario.
-- [ ] Preguntas defectuosas identificadas y corregidas.
-
-### Documentación
-
-- [ ] `main.tex` completo.
-- [ ] `main.pdf` generado.
-- [ ] README con instrucciones verificadas.
-- [ ] Dependencias identificadas.
-- [ ] Referencias reales en estilo IEEE.
-- [ ] Recursos gráficos disponibles.
-- [ ] Manifiesto con datos reales.
-- [ ] Evidencias privadas almacenadas institucionalmente.
-- [ ] Declaración de uso de IA, si corresponde.
-
-### Entrega
-
-- [ ] Repositorio público y accesible.
-- [ ] Archivos principales ubicados en `GA/TL-02/`.
-- [ ] PDF reproducible desde LaTeX.
-- [ ] Historial de commits correspondiente al trabajo realizado.
-- [ ] PDF informativo del SGA de una sola página.
-- [ ] URL completa en una sola línea.
-- [ ] Entrega antes del 21 de noviembre de 2026, 23:59.
-
----
-
-## 20. Estado de desarrollo
-
-**Estado general:** En preparación.
-
-Se ha establecido la organización del equipo, el proyecto seleccionado, la distribución actualizada de responsabilidades y la estructura inicial del directorio.
-
-El guion de entrevista, el consentimiento informado, el ensayo, el mapa de empatía, la definición del problema y los ajustes deberán completarse y verificarse conforme avance la actividad.
-
-Los resultados se incorporarán únicamente después de realizar las actividades correspondientes.
-
----
-
-## 21. Documento de referencia
-
-**Universidad Técnica Estatal de Quevedo.** *Guía y rúbrica de evaluación: GA-TL-02 - FORM — Taller de entrevista estructurada y Design Thinking aplicados al PFC*. Ingeniería de Requerimientos (ISR-401), SPA 2026–2027, 5 páginas.
-
-Este README documenta la organización, planificación, requisitos y procedimiento de entrega de la actividad. No constituye evidencia de que las actividades pendientes hayan sido realizadas.
+Universidad Técnica Estatal de Quevedo, *Guía y rúbrica de evaluación: GA-TL-02 - FORM — Taller de entrevista estructurada y Design Thinking aplicados al PFC*, Ingeniería de Requerimientos (ISR-401), SPA 2026–2027, 5 páginas.
