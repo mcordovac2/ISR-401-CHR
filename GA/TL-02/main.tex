@@ -7,7 +7,7 @@
 \usepackage{geometry}
 \geometry{left=2.65cm,right=2.65cm,top=2.75cm,bottom=2.7cm}
 \usepackage{setspace}
-\onehalfspacing
+\setstretch{1.18}
 \usepackage{array,tabularx,longtable,enumitem}
 \usepackage{amssymb}
 \usepackage[hidelinks]{hyperref}
@@ -23,8 +23,8 @@
 \hypersetup{colorlinks=true,linkcolor=azul,urlcolor=azul}
 \titleformat{\section}{\Large\bfseries\color{azul}}{\thesection}{0.85em}{}[\vspace{0.25em}{\color{acento}\titlerule[1pt]}]
 \titleformat{\subsection}{\large\bfseries\color{azul}}{\thesubsection}{0.7em}{}
-\titlespacing*{\section}{0pt}{2.2ex plus 1ex}{1.4ex}
-\titlespacing*{\subsection}{0pt}{1.7ex plus .5ex}{.8ex}
+\titlespacing*{\section}{0pt}{1.5ex plus .5ex}{.8ex}
+\titlespacing*{\subsection}{0pt}{1.1ex plus .3ex}{.5ex}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\small\sffamily\color{gris} UTEQ \quad / \quad INGENIERÍA DE REQUERIMIENTOS}
@@ -35,9 +35,9 @@
 \renewcommand{\footrulewidth}{0pt}
 \setlength{\headheight}{17pt}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt}
-\renewcommand{\arraystretch}{1.25}
-\setlist[enumerate]{itemsep=5pt,topsep=5pt}
+\setlength{\parskip}{3pt}
+\renewcommand{\arraystretch}{1.12}
+\setlist[enumerate]{itemsep=2pt,topsep=2pt}
 \newcommand{\pendiente}[1]{\par\medskip\noindent\begingroup\setlength{\fboxsep}{11pt}\colorbox{fondo}{\parbox{\dimexpr\linewidth-22pt\relax}{\textcolor{azul}{\bfseries EN DESARROLLO}\\[4pt]\small #1}}\endgroup\par\medskip}
 \newcommand{\etiqueta}[1]{{\sffamily\footnotesize\bfseries\color{acento} #1}}
 \begin{document}
@@ -78,7 +78,7 @@ Gleiston Cicerón Guerrero Ulloa, PhD\par
 \end{titlepage}
 \thispagestyle{fancy}
 {\Large\bfseries\color{azul} Contenido}\par\vspace{0.4cm}
-\tableofcontents
+{\small\setcounter{tocdepth}{1}\tableofcontents}
 \newpage
 \section{Presentación y alcance}
 Este informe corresponde a la actividad formativa GA-TL-02 - FORM. El equipo de esta actividad está integrado por Córdova Carreño Mayra Lucila, Herrera Morán Gilmar Javier y Rivas Bodero Jordy Fabián. Para desarrollar el taller, el equipo seleccionó el proyecto \emph{Sistema de Gestión de Arriendos y Residencias Estudiantiles en los alrededores de la UTEQ}, que pertenece originalmente a otro equipo del Proyecto de Fin de Curso (PFC) en el que participa una integrante. Su elección como caso de estudio no cambia la autoría ni la conformación del equipo original del PFC.
@@ -106,7 +106,7 @@ Entrevistada (rol): & Participante voluntaria, amiga de la entrevistadora (ident
 Registro: & Entrevistadora y archivo de audio; no hubo tercera persona observadora.\\
 Duración registrada: & 7 minutos y 45 segundos (07:45).\\
 Modalidad: & Juego de roles fuera de clase, grabado únicamente en audio con consentimiento verbal.\\
-Estado: & Ensayo realizado el 21 de noviembre de 2026; carga en almacenamiento institucional privado pendiente; SHA-256 calculado.\\
+Estado: & Ensayo realizado el 21 de noviembre de 2026; audio cargado en Google Drive institucional; SHA-256 calculado.\\
 \end{tabularx}
 
 \subsection{Apertura}
@@ -189,6 +189,7 @@ Observación independiente & No hubo una tercera persona observadora durante el 
 
 \subsection{Síntesis del contenido del guion interpretado}
 Las siguientes síntesis corresponden a \textbf{respuestas simuladas} del libreto que la entrevistadora confirma haber seguido íntegramente. No son hallazgos obtenidos de una propietaria real.
+\begingroup\small\renewcommand{\arraystretch}{1.05}
 \begin{longtable}{|p{1.1cm}|p{10.8cm}|}
 \hline
 \textbf{ID} & \textbf{Contenido de la respuesta simulada} \\ \hline
@@ -210,16 +211,99 @@ P12 & Dificultades para coordinar horarios y disponibilidad de materiales. \\ \h
 P13 & Información dispersa entre libreta, carpetas y mensajes. \\ \hline
 P14 & Necesidad simulada de mejorar control de pagos, habitaciones, contratos y mantenimiento. \\ \hline
 P15 & Dificultad simulada para consultar saldos, futuras vacantes y gastos. \\ \hline
-\end{longtable}
+\end{longtable}\endgroup
 
 \subsection{Observaciones y limitaciones metodológicas}
 Se incorporó una pregunta de profundización tras P9 para explorar la consulta de cobros anteriores. El guion contiene expresiones susceptibles de revisión por amplitud o presuposición (P8, P9, P12 y P15). Estas son \textbf{observaciones de revisión textual}, no dificultades medidas por un observador independiente. La simulación permite ensayar la secuencia de preguntas, pero sus respuestas no permiten validar necesidades reales de propietarios.
 
 \section{Mapa de empatía (Design Thinking)}
-\pendiente{Responsable asignado: Herrera Morán Gilmar Javier. Incorporar el mapa de empatía, diferenciando expresiones del personaje simulado e interpretaciones del equipo. Adjuntar, si corresponde, la figura y su fuente editable.}
+\subsection{Base de información}
+El mapa se construye a partir de las respuestas simuladas del juego de roles, sintetizadas en la sección de registro del ensayo (P1--P15 y pregunta de profundización P9+). Cada punto indica entre paréntesis la pregunta de la que proviene. Los cuadrantes \textbf{Dice} y \textbf{Hace} recogen lo expresado o descrito por el personaje de propietaria simulada; los cuadrantes \textbf{Piensa} y \textbf{Siente}, así como el análisis de necesidades, son \textbf{inferencias del equipo}. El mapa no constituye evidencia empírica de una propietaria real y sus hipótesis requieren validación con usuarios reales.
+
+\subsection{Mapa de empatía del propietario}
+{\footnotesize
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\linewidth}{|X|X|}
+\hline
+\rowcolor{fondo}\textbf{\color{azul}DICE} (expresado) & \textbf{\color{azul}HACE} (descrito) \\ \hline
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt,label=--]
+\item {Su principal dificultad es mantener organizada la información: pagos, contratos, habitaciones y mantenimiento están en distintos lugares (P13).}
+\item {Quiere organizar mejor pagos y contratos, ver la disponibilidad y consultar reportes de mantenimiento (P14).}
+\item {Le cuesta saber rápido cuánto está pendiente, qué habitaciones estarán libres y cuánto gastó en servicios y reparaciones (P15).}
+\item {Es complicado coordinar el horario del técnico y del estudiante, y hay retrasos por falta de materiales o de disponibilidad del encargado (P12).}
+\item {Sería útil tener la información organizada en un solo lugar (cierre).}
+\end{itemize}
+&
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt,label=--]
+\item {Anota la ocupación en un cuaderno y los pagos en una libreta; revisa mensajes y comprobantes (P3, P7).}
+\item {Guarda documentos físicos en una carpeta; parte de la información queda en mensajes (P6).}
+\item {Escribe para recordar la fecha acordada y conversa para fijar cuándo pagará (P8).}
+\item {Calcula cuánto corresponde a cada persona en los consumos compartidos (P9).}
+\item {Se comunica por WhatsApp, llamadas y en persona; repara o contacta a quien pueda hacerlo (P10, P11).}
+\item {Pide nombre completo, identificación, contacto y datos básicos al ingresar un estudiante (P5).}
+\end{itemize} \\ \hline
+\rowcolor{fondo}\textbf{\color{azul}PIENSA} (inferencia) & \textbf{\color{azul}SIENTE} (inferencia) \\ \hline
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt,label=--]
+\item {Que tener cobros, contratos y disponibilidad ordenados facilitaría su administración (P14).}
+\item {Que conversar con los estudiantes ante un atraso forma parte de su manera de administrar (P8).}
+\item {Que la rapidez de las reparaciones depende en parte de factores ajenos a él (P12).}
+\end{itemize}
+&
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt,label=--]
+\item {Carga al tener que revisar varios lugares para confirmar un acuerdo o un pago (P6, P7).}
+\item {Incertidumbre sobre cuánto está pendiente y cuánto se ha gastado (P15).}
+\item {Desgaste por revisar recibos y anotaciones y por los retrasos en reparaciones (P9+, P12).}
+\end{itemize} \\ \hline
+\end{tabularx}
+}
+
+\subsection{Dolores y ganancias}
+{\footnotesize
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\linewidth}{|X|X|}
+\hline
+\rowcolor{fondo}\textbf{\color{azul}DOLORES} & \textbf{\color{azul}GANANCIAS / NECESIDADES} \\ \hline
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt,label=--]
+\item {Información de pagos, contratos y ocupación dispersa entre cuaderno, papel y mensajería (P3, P6, P7, P13).}
+\item {Cálculo de servicios compartidos y su revisión posterior con recibos y anotaciones (P9, P9+).}
+\item {Registros de ocupación duplicados (cuaderno y WhatsApp) que hay que comparar (P3).}
+\item {Reparaciones condicionadas por el horario del técnico y del estudiante y por la falta de materiales (P12).}
+\item {Seguimiento de pagos atrasados que depende de mensajes manuales (P8).}
+\end{itemize}
+&
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt,label=--]
+\item {Organizar pagos y contratos y ver la disponibilidad de habitaciones (P14).}
+\item {Contar con trazabilidad de acuerdos y pagos (P4, P6, P7).}
+\item {Saber con claridad cuánto está pendiente, qué habitaciones estarán libres y cuánto se gastó (P15).}
+\item {Calcular y revisar el cobro de servicios compartidos con rapidez (P9, P9+).}
+\item {Consultar fácilmente los reportes de mantenimiento (P14).}
+\end{itemize} \\ \hline
+\end{tabularx}
+}
+
 
 \section{Definición del problema centrada en el usuario}
-\pendiente{Responsable asignado: Herrera Morán Gilmar Javier. Redactar el problema centrado en la parte interesada y la pregunta «¿Cómo podríamos...?» a partir del material del ensayo, sin presentar la simulación como investigación con usuarios reales.}
+\subsection{Planteamiento}
+\textbf{Usuario:} propietaria de residencia estudiantil cerca de la UTEQ, representada en el juego de roles, que administra los arriendos con cuaderno, comprobantes y mensajes.
+
+\textbf{Necesidad:} saber con claridad el estado de pagos, ocupación y gastos, y tener ordenados los acuerdos con los estudiantes.
+
+\textbf{Hallazgo:} la información existe, pero está repartida en varios medios, por lo que confirmar un pago, un acuerdo o el cálculo de servicios exige revisar varios lugares y consume tiempo (P3, P6, P7, P9+, P15).
+
+\subsection{Pregunta «¿Cómo podríamos\ldots?»}
+\begin{quote}\itshape\color{azul}
+¿Cómo podríamos ayudar a los propietarios de residencias estudiantiles a conocer con claridad el estado de los pagos, la ocupación y los gastos de sus arriendos, aunque hoy esa información se lleve en varios medios?
+\end{quote}
+La pregunta no impone una solución tecnológica: describe el resultado que el propietario necesita y deja abiertas las alternativas.
+
+\subsection{Preguntas complementarias}
+\begin{itemize}[itemsep=3pt,topsep=3pt]
+\item ¿Cómo podríamos facilitar el seguimiento de los pagos atrasados sin perder el trato flexible que el propietario tiene con los estudiantes?
+\item ¿Cómo podríamos hacer más transparente el cálculo y el cobro de los servicios básicos compartidos?
+\item ¿Cómo podríamos ayudar a coordinar las reparaciones considerando la disponibilidad de técnicos, estudiantes y materiales?
+\end{itemize}
+
+\textit{Nota:} la definición parte de respuestas simuladas en un juego de roles, por lo que constituye una hipótesis de diseño que debe contrastarse con propietarios reales.
 
 \section{Revisión y ajustes de preguntas}
 Las siguientes modificaciones proceden de la revisión del texto del guion empleado en el juego de roles. No se atribuyen a observaciones de una tercera persona.
@@ -260,7 +344,6 @@ La huella SHA-256 se obtuvo mediante PowerShell (\texttt{Get-FileHash}, algoritm
 git clone https://github.com/mcordovaac2/ISR-401-CHR.git\\
 cd ISR-401-CHR/GA/TL-02\\
 pdflatex -interaction=nonstopmode -halt-on-error main.tex\\
-bibtex main\\
 pdflatex -interaction=nonstopmode -halt-on-error main.tex\\
 pdflatex -interaction=nonstopmode -halt-on-error main.tex
 \end{quote}
@@ -271,8 +354,43 @@ La revisión editorial distingue el juego de roles grabado fuera de clase de la 
 \section{Declaración de apoyo con inteligencia artificial}
 Se utilizó \textbf{ChatGPT (OpenAI, modelo GPT-6)} como apoyo para la redacción inicial, revisión de neutralidad de preguntas y preparación de la estructura LaTeX. La verificación de la pertinencia de las preguntas, las hipótesis del mapa de empatía y la compilación corresponde al equipo. Se identifican explícitamente los textos generados como apoyo y las respuestas simuladas del ejercicio grabado. Esta declaración deberá actualizarse para reflejar con exactitud el uso final y la revisión efectivamente realizada.
 
-\section{Referencias}
-La guía oficial de GA-TL-02 - FORM constituye la fuente de las instrucciones de esta actividad. Antes de la entrega, deben incorporarse los datos bibliográficos verificables de los documentos efectivamente consultados; no se presentan referencias inventadas.
+
+\phantomsection
+\addcontentsline{toc}{section}{Referencias}
+\begin{thebibliography}{9}
+
+\bibitem{ieee29148}
+ISO/IEC/IEEE,
+\textit{Systems and software engineering --- Life cycle processes --- Requirements engineering},
+ISO/IEC/IEEE 29148:2018, 2018.
+[En línea]. Disponible:
+\url{https://doi.org/10.1109/IEEESTD.2018.8559686}
+
+
+\bibitem{pohl2010}
+K. Pohl,
+\textit{Requirements Engineering:
+Fundamentals, Principles, and Techniques}.
+Berlin, Heidelberg: Springer, 2010.
+ISBN: 978-3-642-12577-5.
+[En línea]. Disponible:
+\url{https://biblioteca.uteq.edu.ec/cgi-bin/koha/opac-detail.pl?biblionumber=9114}
+
+
+\bibitem{ixdf}
+Interaction Design Foundation,
+``Empathy Map -- Why and How to Use It.''
+[En línea]. Disponible:
+\url{https://www.interaction-design.org/literature/article/empathy-map-why-and-how-to-use-it}
+
+\bibitem{stanford}
+Stanford d.school,
+``An Introduction to Design Thinking: Process Guide.''
+[En línea]. Disponible:
+\url{https://dschool.stanford.edu/resources/getting-started-with-design-thinking}
+
+\end{thebibliography}
+
 
 
 % ==========================================================
