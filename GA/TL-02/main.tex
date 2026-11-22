@@ -9,6 +9,7 @@
 \usepackage{setspace}
 \setstretch{1.18}
 \usepackage{array,tabularx,longtable,enumitem}
+\usepackage{needspace}
 \usepackage{amssymb}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
@@ -83,7 +84,7 @@ Gleiston Cicerón Guerrero Ulloa, PhD\par
 \section{Presentación y alcance}
 Este informe corresponde a la actividad formativa GA-TL-02 - FORM. El equipo de esta actividad está integrado por Córdova Carreño Mayra Lucila, Herrera Morán Gilmar Javier y Rivas Bodero Jordy Fabián. Para desarrollar el taller, el equipo seleccionó el proyecto \emph{Sistema de Gestión de Arriendos y Residencias Estudiantiles en los alrededores de la UTEQ}, que pertenece originalmente a otro equipo del Proyecto de Fin de Curso (PFC) en el que participa una integrante. Su elección como caso de estudio no cambia la autoría ni la conformación del equipo original del PFC.
 
-El ejercicio se enfoca en el rol de \textbf{propietario de una residencia estudiantil}. Se pretende explorar sus prácticas de administración, sus dificultades y las necesidades que podrían orientar una futura elicitación de requisitos. Se realizó un juego de roles fuera del aula con una participante voluntaria que representó a la propietaria. Las respuestas son parte de una simulación académica, no testimonios de una propietaria real.
+El ejercicio se enfoca en el rol de \textbf{propietario de una residencia estudiantil}. Se pretende explorar sus prácticas de administración, sus dificultades y las necesidades que podrían orientar una futura elicitación de requisitos, siguiendo el enfoque de ingeniería de requisitos descrito en \cite{ieee29148,pohl2010}. Se realizó un juego de roles fuera del aula con una participante voluntaria que representó a la propietaria. Las respuestas son parte de una simulación académica, no testimonios de una propietaria real.
 
 \section{Objetivo}
 Diseñar una entrevista estructurada y preparar su ensayo dirigida al propietario de una residencia estudiantil, para identificar necesidades y dificultades relacionadas con la administración de arriendos y, a partir de la información obtenida, elaborar un mapa de empatía, definir un problema centrado en el usuario y corregir las preguntas que presenten dificultades.
@@ -97,6 +98,7 @@ Jordy Rivas & Revisión de preguntas y preparación de instrumentos de observaci
 Gilmar Herrera & Mapa de empatía y definición del problema (asignación inicial); no participó en la grabación. \\ \hline
 \end{tabularx}
 
+\Needspace{9\baselineskip}
 \section{Guion de entrevista estructurada}
 \subsection{Ficha de planificación}
 \begin{tabularx}{\linewidth}{@{}p{4.4cm}X@{}}
@@ -165,7 +167,7 @@ Se invita a participar voluntariamente en un ensayo académico de entrevista est
 La participación es voluntaria. El participante puede omitir preguntas o retirarse en cualquier momento, sin consecuencias académicas o personales. Antes de iniciar, podrá solicitar aclaraciones sobre el ejercicio.
 
 \subsection{Registro de audio y confidencialidad}
-Se solicitará autorización diferenciada para la grabación \textbf{solo de audio}. No se realizará video. El audio y cualquier consentimiento firmado se conservarán en un espacio institucional privado, compartido únicamente con las personas autorizadas para revisión académica. No se publicarán en GitHub. En el repositorio público se documentarán únicamente los metadatos y la huella SHA-256 de la evidencia, sin datos personales sensibles.
+Se solicitará autorización diferenciada para la grabación \textbf{solo de audio}. No se realizará video. El archivo de audio se conserva en Google Drive de una cuenta institucional; actualmente, pueden consultarlo los miembros de la UTEQ que tengan el enlace y permiso de lectura. Esta configuración no equivale a acceso exclusivo del docente y del equipo. Los formularios firmados, si llegaran a utilizarse, deben mantenerse con acceso más restringido. No se publicarán en GitHub. En el repositorio público se documentarán únicamente los metadatos y la huella SHA-256 de la evidencia, sin datos personales sensibles.
 
 \subsection{Formulario y resguardo}
 El formulario completo se presenta en el Anexo A como plantilla sin completar. En caso de realizarse el ensayo, se solicitará el consentimiento antes de cualquier registro. Las copias firmadas y el audio se mantendrán fuera del repositorio público.
@@ -218,7 +220,7 @@ Se incorporó una pregunta de profundización tras P9 para explorar la consulta 
 
 \section{Mapa de empatía (Design Thinking)}
 \subsection{Base de información}
-El mapa se construye a partir de las respuestas simuladas del juego de roles, sintetizadas en la sección de registro del ensayo (P1--P15 y pregunta de profundización P9+). Cada punto indica entre paréntesis la pregunta de la que proviene. Los cuadrantes \textbf{Dice} y \textbf{Hace} recogen lo expresado o descrito por el personaje de propietaria simulada; los cuadrantes \textbf{Piensa} y \textbf{Siente}, así como el análisis de necesidades, son \textbf{inferencias del equipo}. El mapa no constituye evidencia empírica de una propietaria real y sus hipótesis requieren validación con usuarios reales.
+El mapa de empatía se utiliza como instrumento de síntesis de la perspectiva del usuario \cite{ixdf}. En este caso se construye a partir de las respuestas simuladas del juego de roles, sintetizadas en la sección de registro del ensayo (P1--P15 y pregunta de profundización P9+). Cada punto indica entre paréntesis la pregunta de la que proviene. Los cuadrantes \textbf{Dice} y \textbf{Hace} recogen lo expresado o descrito por el personaje de propietaria simulada; los cuadrantes \textbf{Piensa} y \textbf{Siente}, así como el análisis de necesidades, son \textbf{inferencias del equipo}. El mapa no constituye evidencia empírica de una propietaria real y sus hipótesis requieren validación con usuarios reales.
 
 \subsection{Mapa de empatía del propietario}
 {\footnotesize
@@ -294,7 +296,7 @@ El mapa se construye a partir de las respuestas simuladas del juego de roles, si
 \begin{quote}\itshape\color{azul}
 ¿Cómo podríamos ayudar a los propietarios de residencias estudiantiles a conocer con claridad el estado de los pagos, la ocupación y los gastos de sus arriendos, aunque hoy esa información se lleve en varios medios?
 \end{quote}
-La pregunta no impone una solución tecnológica: describe el resultado que el propietario necesita y deja abiertas las alternativas.
+La pregunta no impone una solución tecnológica: describe el resultado que el propietario necesita y deja abiertas las alternativas, de acuerdo con el enfoque de definición del problema en Design Thinking \cite{stanford}.
 
 \subsection{Preguntas complementarias}
 \begin{itemize}[itemsep=3pt,topsep=3pt]
@@ -320,6 +322,7 @@ P15 & ¿Qué información le resulta más difícil encontrar cuando necesita tom
 \end{tabularx}
 }
 
+\Needspace{10\baselineskip}
 \section{Evidencias y manifiesto}
 \subsection{Manifiesto del archivo de audio}
 \begin{tabularx}{\linewidth}{|p{4cm}|X|}
@@ -336,7 +339,7 @@ Enlace de la evidencia & \url{https://drive.google.com/file/d/1loUDyv_cXjtktltbx
 Consentimiento & Autorización verbal registrada en el propio audio. \\ \hline
 \end{tabularx}
 
-La huella SHA-256 se obtuvo mediante PowerShell (\texttt{Get-FileHash}, algoritmo SHA256) y se contrastó con el archivo de audio descargado del enlace institucional, con resultado coincidente. La hora de creación del archivo no se presenta como hora exacta de inicio del ensayo. El enlace permite consultar la evidencia con una cuenta autorizada de la UTEQ; el audio no se incorpora al repositorio público de GitHub.
+La huella SHA-256 indicada fue obtenida mediante PowerShell (\texttt{Get-FileHash}, algoritmo SHA256), según el registro de comprobación del equipo. Para verificar la integridad de una copia descargada debe calcularse de nuevo la huella y compararla con el valor consignado. La hora de creación del archivo no se presenta como hora exacta de inicio del ensayo. El enlace permite consultar la evidencia con una cuenta autorizada de la UTEQ; el audio no se incorpora al repositorio público de GitHub.
 
 \section{Procedimiento de compilación y revisión del documento final}
 \subsection{Procedimiento de compilación}
@@ -352,7 +355,7 @@ pdflatex -interaction=nonstopmode -halt-on-error main.tex
 La revisión editorial distingue el juego de roles grabado fuera de clase de la aplicación en aula exigida por la guía y separa los resultados simulados de evidencia con usuarios reales. Antes de entregar, deben verificarse la compilación, la correspondencia de la huella SHA-256 con el archivo definitivo, el resguardo privado del audio y el enlace del SGA.
 
 \section{Declaración de apoyo con inteligencia artificial}
-Se utilizó \textbf{ChatGPT (OpenAI, modelo GPT-6)} como apoyo para la redacción inicial, revisión de neutralidad de preguntas y preparación de la estructura LaTeX. La verificación de la pertinencia de las preguntas, las hipótesis del mapa de empatía y la compilación corresponde al equipo. Se identifican explícitamente los textos generados como apoyo y las respuestas simuladas del ejercicio grabado. Esta declaración deberá actualizarse para reflejar con exactitud el uso final y la revisión efectivamente realizada.
+Se utilizó \textbf{ChatGPT (OpenAI, modelo GPT-6)} como apoyo en la organización y revisión de la redacción, el análisis de neutralidad de las preguntas, la integración de aportaciones y la preparación y corrección del código LaTeX. El equipo es responsable de comprobar las fuentes, revisar las formulaciones, explicar el contenido y validar que el PDF coincida con el código fuente. Las respuestas del juego de roles se identifican como simuladas y no se presentan como entrevistas con usuarios reales.
 
 
 \phantomsection
@@ -444,8 +447,7 @@ La información obtenida se utilizará exclusivamente con fines
 académicos relacionados con la actividad.
 
 Los documentos firmados y las grabaciones se conservarán
-en un espacio institucional privado, con acceso restringido
-a las personas autorizadas para su revisión.
+en una cuenta institucional. El acceso al audio se describe en el manifiesto de evidencias; cualquier formulario firmado, si se utilizara, se guardaría con permisos limitados a quienes deban revisarlo.
 
 No se publicarán datos personales, grabaciones ni formularios
 firmados en el repositorio público.
