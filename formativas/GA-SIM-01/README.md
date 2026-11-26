@@ -18,6 +18,7 @@
 ### Integrantes
 
 - Córdova Carreño Mayra Lucila
+- Espinoza Pivaque Angelo Maximiliano
 - Herrera Morán Gilmar Javier
 - Rivas Bodero Jordy Fabián
 
@@ -58,14 +59,15 @@ El grupo trabajará con los diez requisitos candidatos establecidos en la guía 
 
 De acuerdo con la aclaración del docente, la distribución de los cuatro roles será realizada internamente por los integrantes del grupo.
 
-Debido a que el equipo está conformado por tres integrantes, uno de ellos asumirá dos roles, presentando y defendiendo cada posición por separado.
+Debido a que el equipo está conformado por cuatro integrantes, cada estudiante asumirá un rol diferente, representando y defendiendo las posiciones correspondientes durante la simulación.
 
 ### 4.1. Asignación de roles
 
 | Integrante | Rol asignado |
 |---|---|
-| Córdova Carreño Mayra Lucila | Gerente y auditor |
+| Córdova Carreño Mayra Lucila | Gerente |
 | Rivas Bodero Jordy Fabián | Usuario operativo |
+| Espinoza Pivaque Angelo Maximiliano | Auditor |
 | Herrera Morán Gilmar Javier | Desarrollador |
 
 ### 4.2. Responsabilidades de los roles
@@ -106,7 +108,7 @@ Las posiciones específicas de cada rol se establecerán a partir de las tarjeta
 
 Cada rol dispondrá de dos minutos para presentar su posición respecto a los diez requisitos candidatos, considerando la información proporcionada en su tarjeta.
 
-El integrante que represente dos roles deberá presentar ambas posiciones de manera independiente.
+Cada integrante deberá presentar y defender de manera independiente la posición correspondiente a su rol asignado.
 
 ### 5.2. Priorización MoSCoW
 
@@ -167,15 +169,21 @@ Los acuerdos alcanzados deberán reflejarse en la tabla MoSCoW.
 
 La elaboración del documento se organizará de manera secuencial, considerando las dependencias entre los productos entregables y la necesidad de mantener la coherencia entre las tres tablas.
 
+Las responsabilidades se distribuirán entre los cuatro integrantes, considerando la complejidad de las actividades, el análisis requerido y los criterios establecidos en la rúbrica de evaluación.
+
+Cada integrante será responsable de un componente específico del documento, sin excluir su participación en las decisiones colectivas durante la simulación.
+
 ### 6.1. Primera parte – Córdova Carreño Mayra Lucila
 
-**Roles:** Gerente y auditor.
+**Rol:** Gerente.
 
 **Producto asignado:** Tabla MoSCoW acordada.
 
+**Criterio principal de la rúbrica:** R1 – Tabla MoSCoW acordada.
+
 **Responsabilidades:**
 
-- Crear el README.md de la actividad.
+- Crear y actualizar el README.md de la actividad.
 - Preparar la estructura inicial del documento LaTeX.
 - Incorporar las plantillas correspondientes a los tres productos entregables.
 - Elaborar la tabla MoSCoW acordada.
@@ -191,6 +199,8 @@ La elaboración del documento se organizará de manera secuencial, considerando 
 
 **Producto asignado:** Tabla de votación ponderada.
 
+**Criterio principal de la rúbrica:** R2 – Votación ponderada.
+
 **Responsabilidades:**
 
 - Revisar la tabla MoSCoW elaborada en la primera parte.
@@ -200,38 +210,66 @@ La elaboración del documento se organizará de manera secuencial, considerando 
 - Calcular los puntajes mediante los pesos establecidos.
 - Ordenar los requisitos de mayor a menor puntaje.
 - Explicar las diferencias entre la votación ponderada y la clasificación MoSCoW.
+- Verificar la exactitud de los cálculos y la coherencia del ordenamiento.
 - Registrar sus aportes mediante commits individuales.
 
-### 6.3. Tercera parte – Herrera Morán Gilmar Javier
+### 6.3. Tercera parte – Espinoza Pivaque Angelo Maximiliano
 
-**Rol:** Desarrollador.
+**Rol:** Auditor.
 
-**Producto asignado:** Lista de conflictos resueltos.
+**Producto asignado:** Identificación y análisis de conflictos.
+
+**Criterio principal de la rúbrica:** R3 – Conflictos identificados.
 
 **Responsabilidades:**
 
 - Revisar los productos elaborados en las partes anteriores.
-- Documentar al menos dos conflictos ocurridos durante la simulación.
-- Identificar los requisitos y roles involucrados.
+- Identificar al menos dos conflictos ocurridos durante la simulación.
+- Registrar los requisitos involucrados en cada conflicto.
+- Identificar los roles implicados.
 - Documentar las posiciones de cada rol.
 - Clasificar correctamente los tipos de conflicto.
-- Registrar los acuerdos win-win alcanzados.
-- Especificar qué cede y qué gana cada rol.
-- Verificar que los acuerdos se reflejen en la tabla MoSCoW.
+- Justificar la clasificación asignada a cada conflicto.
+- Analizar las causas, restricciones y diferencias entre las posiciones de los roles.
+- Completar los campos correspondientes a la identificación y análisis de conflictos en la tercera tabla.
 - Registrar sus aportes mediante commits individuales.
 
-### 6.4. Orden de elaboración del documento
+### 6.4. Cuarta parte – Herrera Morán Gilmar Javier
 
-| Orden | Responsable | Producto |
-|---|---|---|
-| 1 | Córdova Carreño Mayra Lucila | Estructura inicial y tabla MoSCoW. |
-| 2 | Rivas Bodero Jordy Fabián | Tabla de votación ponderada. |
-| 3 | Herrera Morán Gilmar Javier | Lista de conflictos resueltos. |
-| 4 | Todos los integrantes | Revisión, integración y compilación final. |
+**Rol:** Desarrollador.
+
+**Producto asignado:** Resolución de conflictos mediante acuerdos win-win.
+
+**Criterio principal de la rúbrica:** R4 – Resolución win-win.
+
+**Responsabilidades:**
+
+- Revisar los conflictos identificados y documentados en la tercera parte.
+- Registrar los acuerdos win-win alcanzados durante la simulación.
+- Documentar las cesiones recíprocas correspondientes a cada conflicto.
+- Especificar qué cede y qué gana cada rol involucrado.
+- Justificar cómo los acuerdos alcanzados consideran los intereses de las partes involucradas.
+- Verificar el cumplimiento de las exigencias normativas y de protección de datos.
+- Comprobar que los acuerdos respeten las exigencias no negociables del auditor.
+- Verificar que los acuerdos alcanzados se reflejen en la tabla MoSCoW.
+- Completar los campos correspondientes a la resolución de conflictos en la tercera tabla.
+- Registrar sus aportes mediante commits individuales.
+
+### 6.5. Orden de elaboración del documento
+
+| Orden | Responsable | Producto | Criterio |
+|---|---|---|---|
+| 1 | Córdova Carreño Mayra Lucila | Estructura inicial y tabla MoSCoW. | R1 |
+| 2 | Rivas Bodero Jordy Fabián | Tabla de votación ponderada y comparación con MoSCoW. | R2 |
+| 3 | Espinoza Pivaque Angelo Maximiliano | Identificación, análisis y clasificación de conflictos. | R3 |
+| 4 | Herrera Morán Gilmar Javier | Resolución de conflictos y documentación de acuerdos win-win. | R4 |
+| 5 | Todos los integrantes | Revisión, integración y compilación final. | R5 |
 
 El orden establecido corresponde únicamente a la elaboración del documento. Durante la simulación, todos los integrantes participarán conjuntamente en la negociación, priorización y resolución de conflictos.
 
-### 6.5. Responsabilidades colectivas
+La tercera tabla será elaborada de manera complementaria entre los responsables de la tercera y cuarta parte, manteniendo un único registro consolidado de los conflictos identificados y los acuerdos alcanzados.
+
+### 6.6. Responsabilidades colectivas
 
 Todos los integrantes deberán:
 
@@ -358,7 +396,7 @@ Para garantizar una entrega válida, se deberán cumplir las siguientes condicio
 - **P3. Plazo:** incorporar todos los productos evaluables antes de la fecha y hora de cierre.
 - **P4. Integridad:** garantizar la autoría propia, la autenticidad de los resultados y el cumplimiento de las disposiciones de integridad académica.
 
-Cada integrante deberá contar con aportes verificables en el repositorio y participar en los roles correspondientes durante la simulación.
+Cada integrante deberá contar con aportes verificables en el repositorio y participar en el rol correspondiente durante la simulación.
 
 ## 12. Entrega
 
@@ -399,4 +437,3 @@ La entrega válida de esta actividad formativa constituye un requisito para pres
 - EV-PRAC-02 – Evaluación parcial de las unidades I y II.
 
 Los criterios que reciban una retroalimentación de En proceso (EP) o No logrado (NL) deberán corregirse antes de presentar las actividades sumativas vinculadas.
-
