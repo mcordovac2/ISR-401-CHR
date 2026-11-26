@@ -301,6 +301,116 @@ fuera de su alcance inicial.
 
 \subsection{Requisitos candidatos}
 
+El caso de estudio presenta diez requisitos candidatos 
+para la primera versión del sistema de inscripciones 
+universitarias. Estos incluyen funcionalidades relacionadas 
+con el proceso de inscripción, restricciones de interfaz 
+y requisitos de calidad y cumplimiento legal.
+
+La Tabla~\ref{tab:requisitos-candidatos} recoge los 
+identificadores, enunciados y tipos de requisitos 
+establecidos en la guía de la actividad GA-SIM-01.
+
+\begingroup
+
+\small
+\singlespacing
+
+\begin{longtable}{
+    C{1.2cm}
+    L{9.3cm}
+    L{3.5cm}
+}
+
+\caption{Requisitos candidatos de la primera versión.}
+\label{tab:requisitos-candidatos}\\
+
+\rowcolor{azul}
+\cabecera{ID} &
+\cabecera{Requisito} &
+\cabecera{Tipo} \\
+
+\endfirsthead
+
+\rowcolor{azul}
+\cabecera{ID} &
+\cabecera{Requisito} &
+\cabecera{Tipo} \\
+
+\endhead
+
+\bottomrule
+
+\endfoot
+
+\rowcolor{fondo}
+\textbf{R-01} &
+El estudiante se inscribe en línea en las asignaturas 
+de su malla para el periodo vigente. &
+Funcional \\
+
+\textbf{R-02} &
+El sistema valida de forma automática los prerrequisitos 
+aprobados y el cupo disponible de cada paralelo antes 
+de confirmar la inscripción. &
+Funcional \\
+
+\rowcolor{fondo}
+\textbf{R-03} &
+El estudiante paga en línea, con tarjeta, los valores 
+de matrícula a través de una pasarela de pagos externa. &
+Funcional \\
+
+\textbf{R-04} &
+El sistema registra en una bitácora no modificable 
+cada inscripción, modificación y anulación, con 
+usuario, fecha, hora y motivo. &
+Funcional \\
+
+\rowcolor{fondo}
+\textbf{R-05} &
+El coordinador de carrera aprueba o rechaza en el 
+sistema las solicitudes de excepción (sobrecupo o 
+prerrequisito pendiente). &
+Funcional \\
+
+\textbf{R-06} &
+El sistema obtiene las mallas, las notas y los 
+paralelos del sistema académico institucional 
+existente. &
+Restricción de interfaz \\
+
+\rowcolor{fondo}
+\textbf{R-07} &
+El sistema atiende 3000 usuarios concurrentes el 
+primer día de inscripciones con un tiempo de respuesta 
+menor a 3 segundos en el 95\,\% de las solicitudes. &
+De calidad (rendimiento) \\
+
+\textbf{R-08} &
+El estudiante se inscribe desde una aplicación móvil 
+nativa para Android e iOS. &
+Funcional \\
+
+\rowcolor{fondo}
+\textbf{R-09} &
+La gerencia consulta reportes de inscritos por 
+carrera, asignatura y paralelo. &
+Funcional \\
+
+\textbf{R-10} &
+Los datos personales se almacenan cifrados y se 
+tratan con consentimiento informado, conforme a la 
+normativa de protección de datos personales. &
+De calidad (seguridad) y legal \\
+
+\end{longtable}
+
+\noindent
+{\footnotesize\textit{Fuente: Guía y rúbrica de evaluación 
+GA-SIM-01, sección 4, Tabla 1, p.~2.}}
+
+\endgroup
 
 % ==================================================
 % 4. DISTRIBUCIÓN DE ROLES
