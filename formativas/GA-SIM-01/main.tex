@@ -877,6 +877,316 @@ entre los cuatro roles.
 
 \subsection{Dependencias entre requisitos}
 
+La priorización de los requisitos no debe realizarse
+considerando únicamente la importancia individual de
+cada funcionalidad. También es necesario identificar
+las relaciones existentes entre los requisitos, debido
+a que la implementación de uno puede necesitar
+información, servicios o funcionalidades proporcionadas
+por otro.
+
+El siguiente análisis se realiza a partir de los
+enunciados del caso de estudio y de la clasificación
+inicial propuesta por el gerente. Las dependencias
+identificadas deberán contrastarse con los demás roles
+durante la negociación.
+
+\subsubsection{Identificación de dependencias}
+
+\begingroup
+
+\small
+\singlespacing
+\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{
+    C{1.1cm}
+    L{3.2cm}
+    L{4.0cm}
+    L{6.0cm}
+}
+
+\caption{Análisis preliminar de dependencias entre requisitos.}
+\label{tab:dependencias}\\
+
+\rowcolor{azul}
+\cabecera{ID} &
+\cabecera{Dependencia o relación} &
+\cabecera{Tipo de relación} &
+\cabecera{Justificación} \\
+
+\endfirsthead
+
+\rowcolor{azul}
+\cabecera{ID} &
+\cabecera{Dependencia o relación} &
+\cabecera{Tipo de relación} &
+\cabecera{Justificación} \\
+
+\endhead
+
+\bottomrule
+
+\endfoot
+
+\rowcolor{fondo}
+\textbf{R-01} &
+R-02 y R-06 &
+Funcional y de información &
+La confirmación de las inscripciones requiere
+validar los prerrequisitos y cupos, además de
+disponer de la información académica correspondiente. \\
+
+\textbf{R-02} &
+R-06 &
+De información &
+La validación automática necesita consultar
+las notas, las mallas y los paralelos obtenidos
+del sistema académico institucional. \\
+
+\rowcolor{fondo}
+\textbf{R-03} &
+Pasarela de pagos externa &
+De integración externa &
+El procesamiento de pagos mediante tarjeta
+requiere la comunicación con un servicio
+externo de pagos. \\
+
+\textbf{R-04} &
+R-01 &
+Funcional &
+La bitácora necesita registrar las operaciones
+de inscripción, modificación y anulación
+efectuadas en el sistema. \\
+
+\rowcolor{fondo}
+\textbf{R-05} &
+R-02 y R-04 &
+Funcional y de trazabilidad &
+La gestión de excepciones se relaciona con
+las condiciones de prerrequisitos y cupos.
+Las operaciones de inscripción resultantes
+deben mantener su trazabilidad. \\
+
+\textbf{R-06} &
+Sistema académico institucional &
+De integración externa &
+La obtención de las mallas, las notas y los
+paralelos depende de la disponibilidad y
+del acceso al sistema académico existente. \\
+
+\rowcolor{fondo}
+\textbf{R-07} &
+Sistema de inscripciones &
+Transversal de rendimiento &
+Las condiciones de concurrencia y tiempo
+de respuesta deben considerarse en las
+operaciones del sistema durante el periodo
+de mayor demanda. \\
+
+\textbf{R-08} &
+R-01 y R-02 &
+Funcional &
+La aplicación móvil requiere las funcionalidades
+de inscripción y validación para ofrecer
+el servicio desde dispositivos móviles. \\
+
+\rowcolor{fondo}
+\textbf{R-09} &
+R-01 &
+De información &
+Los reportes gerenciales necesitan los registros
+de las inscripciones realizadas por los
+estudiantes. \\
+
+\textbf{R-10} &
+Tratamiento de datos personales &
+Transversal de seguridad y cumplimiento legal &
+Las medidas de protección de datos deben
+aplicarse a las funcionalidades que almacenen
+o procesen información personal. \\
+
+\end{longtable}
+
+\endgroup
+
+\subsubsection{Verificación de coherencia de las prioridades}
+
+Una vez identificadas las relaciones entre los requisitos,
+se revisa la clasificación inicial del gerente para
+comprobar que los requisitos imprescindibles no dependan
+de funcionalidades que hayan sido consideradas importantes,
+deseables o fuera del alcance de la primera versión.
+
+\begingroup
+
+\small
+\singlespacing
+\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{
+    C{1.2cm}
+    C{2.0cm}
+    L{3.5cm}
+    L{2.0cm}
+    L{5.5cm}
+}
+
+\caption{Verificación preliminar de coherencia MoSCoW.}
+\label{tab:coherencia-moscow}\\
+
+\rowcolor{azul}
+\cabecera{ID} &
+\cabecera{Prioridad} &
+\cabecera{Dependencia interna} &
+\cabecera{Resultado} &
+\cabecera{Observación} \\
+
+\endfirsthead
+
+\rowcolor{azul}
+\cabecera{ID} &
+\cabecera{Prioridad} &
+\cabecera{Dependencia interna} &
+\cabecera{Resultado} &
+\cabecera{Observación} \\
+
+\endhead
+
+\bottomrule
+
+\endfoot
+
+\rowcolor{fondo}
+\textbf{R-01} &
+Must &
+R-02 y R-06 (Must) &
+Coherente &
+Las funcionalidades y los datos necesarios
+se mantienen dentro de los requisitos
+imprescindibles. \\
+
+\textbf{R-02} &
+Must &
+R-06 (Must) &
+Coherente &
+La integración académica conserva la misma
+prioridad que la validación automática. \\
+
+\rowcolor{fondo}
+\textbf{R-04} &
+Must &
+R-01 (Must) &
+Coherente &
+La bitácora se incorpora junto con la
+funcionalidad principal de inscripción. \\
+
+\textbf{R-05} &
+Must &
+R-02 y R-04 (Must) &
+Coherente &
+La validación y la trazabilidad se encuentran
+dentro del alcance imprescindible. \\
+
+\rowcolor{fondo}
+\textbf{R-06} &
+Must &
+Sin dependencia interna identificada &
+Coherente &
+Su implementación requiere comprobar el
+acceso al sistema académico institucional. \\
+
+\textbf{R-07} &
+Must &
+Condición transversal &
+Por validar &
+La prioridad es consistente, pero su
+viabilidad requiere una evaluación técnica
+de las condiciones de rendimiento. \\
+
+\rowcolor{fondo}
+\textbf{R-10} &
+Must &
+Condición transversal &
+Coherente &
+La protección de los datos personales
+debe mantenerse en las funcionalidades
+incluidas en la primera versión. \\
+
+\end{longtable}
+
+\endgroup
+
+De acuerdo con las dependencias identificadas, no se
+observan requisitos clasificados como Must que dependan
+directamente de otros requisitos candidatos con una
+prioridad inferior.
+
+La exclusión de R-08 de la primera versión no impide
+el funcionamiento de las inscripciones mediante el
+sistema web. De igual manera, la incorporación
+posterior de R-03 y R-09 no compromete las funcionalidades
+esenciales, siempre que el pago en línea y los reportes
+no constituyan condiciones obligatorias para confirmar
+una inscripción.
+
+\subsubsection{Riesgos y condiciones de la propuesta}
+
+Aunque la clasificación inicial mantiene una relación
+coherente entre las prioridades y las dependencias
+identificadas, existen condiciones que deben analizarse
+antes de establecer el alcance definitivo.
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item \textbf{Integración académica:} la implementación
+    de R-06 requiere comprobar que el sistema académico
+    institucional permita acceder a la información
+    necesaria para las inscripciones.
+
+    \item \textbf{Capacidad del sistema:} las condiciones
+    de rendimiento establecidas en R-07 deben evaluarse
+    considerando la infraestructura, el tiempo y los
+    recursos disponibles.
+
+    \item \textbf{Gestión de excepciones:} es necesario
+    establecer cómo se relacionarán las autorizaciones
+    del coordinador con las validaciones automáticas
+    y el registro de las operaciones.
+
+    \item \textbf{Protección de datos:} las funcionalidades
+    incorporadas deben respetar las condiciones de
+    seguridad y cumplimiento legal contempladas en R-10.
+
+    \item \textbf{Alcance de la primera versión:} la
+    clasificación de siete requisitos como Must debe
+    contrastarse con la capacidad real del equipo para
+    evitar comprometer una entrega que no pueda
+    completarse dentro del plazo establecido.
+
+\end{itemize}
+
+\subsubsection{Resultado del análisis preliminar}
+
+La propuesta inicial del gerente mantiene una
+clasificación coherente respecto a las dependencias
+internas identificadas. Los requisitos relacionados
+con las inscripciones, las validaciones, la integración
+académica, las excepciones y la trazabilidad conservan
+la categoría Must.
+
+Sin embargo, la coherencia de las prioridades no
+garantiza por sí sola que todos los requisitos puedan
+implementarse dentro del plazo disponible. Por ello,
+la viabilidad técnica, las condiciones de integración
+y las posiciones de los demás roles deberán
+considerarse durante la negociación.
+
+Una vez establecida la clasificación definitiva,
+será necesario revisar nuevamente las dependencias
+para comprobar que los acuerdos alcanzados no
+introduzcan inconsistencias en el alcance de la
+primera versión.
 
 % ==================================================
 % 6. VOTACIÓN PONDERADA
