@@ -1,1 +1,357 @@
 
+\documentclass[12pt,a4paper]{article}
+
+% ==================================================
+% PAQUETES
+% ==================================================
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{microtype}
+\usepackage{pdflscape}
+\usepackage[hidelinks]{hyperref}
+
+% ==================================================
+% CONFIGURACIÓN DE PÁGINA
+% ==================================================
+
+\geometry{
+    left=2.65cm,
+    right=2.65cm,
+    top=2.75cm,
+    bottom=2.7cm
+}
+
+\onehalfspacing
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\headheight}{15pt}
+
+% ==================================================
+% PALETA DE COLORES
+% ==================================================
+
+\definecolor{azul}{HTML}{15324C}
+\definecolor{acento}{HTML}{B58A55}
+\definecolor{gris}{HTML}{64748B}
+\definecolor{fondo}{HTML}{F3F6F8}
+
+% ==================================================
+% FORMATO DE TÍTULOS
+% ==================================================
+
+\titleformat{\section}
+    {\Large\bfseries\color{azul}}
+    {\thesection.}{0.6em}{}
+    [\color{acento}\titlerule]
+
+\titleformat{\subsection}
+    {\large\bfseries\color{azul}}
+    {\thesubsection.}{0.6em}{}
+
+\titlespacing*{\section}
+    {0pt}{18pt}{10pt}
+
+\titlespacing*{\subsection}
+    {0pt}{12pt}{6pt}
+
+% ==================================================
+% ENCABEZADO Y PIE DE PÁGINA
+% ==================================================
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[L]{\small\color{gris}ISR-401}
+\fancyhead[R]{\small\color{gris}GA-SIM-01}
+
+\fancyfoot[L]{
+    \small\color{gris}
+    UTEQ -- Ingeniería de Software
+}
+
+\fancyfoot[R]{
+    \small\color{gris}
+    Página \thepage\ de \pageref{LastPage}
+}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% ==================================================
+% CONFIGURACIÓN DE TABLAS
+% ==================================================
+
+\renewcommand{\arraystretch}{1.4}
+
+\newcolumntype{L}[1]{
+    >{\raggedright\arraybackslash}p{#1}
+}
+
+\newcolumntype{C}[1]{
+    >{\centering\arraybackslash}p{#1}
+}
+
+\newcolumntype{Y}{
+    >{\raggedright\arraybackslash}X
+}
+
+\newcommand{\cabecera}[1]{
+    \textcolor{white}{\textbf{#1}}
+}
+
+% ==================================================
+% INICIO DEL DOCUMENTO
+% ==================================================
+
+\begin{document}
+
+% ==================================================
+% CARÁTULA
+% ==================================================
+
+\begin{titlepage}
+
+    \centering
+    \singlespacing
+    \setlength{\parskip}{0pt}
+    \thispagestyle{empty}
+
+    \vspace*{0.3cm}
+
+    {\Large\bfseries\color{azul}
+    UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\par}
+
+    \vspace{0.25cm}
+
+    {\large
+    Facultad de Ciencias de la Computación\par}
+
+    {\large
+    Carrera de Ingeniería de Software\par}
+
+    \vspace{0.5cm}
+
+    {\color{acento}\rule{\textwidth}{1.5pt}\par}
+
+    \vspace{0.5cm}
+
+    {\Huge\bfseries\color{azul}
+    GA-SIM-01\par}
+
+    \vspace{0.2cm}
+
+    {\large Actividad formativa\par}
+
+    \vspace{0.35cm}
+
+    {\LARGE\bfseries
+    Simulación: priorización y negociación entre roles\par}
+
+    \vspace{0.35cm}
+
+    {\large
+    Caso de estudio: Inscripciones universitarias\par}
+
+    \vspace{0.5cm}
+
+    {\color{acento}\rule{\textwidth}{1.5pt}\par}
+
+    \vspace{0.5cm}
+
+    {\bfseries\color{azul}Asignatura\par}
+
+    Ingeniería de Requerimientos (ISR-401)\par
+
+    \vspace{0.3cm}
+
+    {\bfseries\color{azul}Docente\par}
+
+    Gleiston Cicerón Guerrero Ulloa, PhD\par
+
+    \vspace{0.3cm}
+
+    {\bfseries\color{azul}Integrantes\par}
+
+    \vspace{0.1cm}
+
+    Córdova Carreño Mayra Lucila\par
+    Espinoza Pivaque Angelo Maximiliano\par
+    Herrera Morán Gilmar Javier\par
+    Rivas Bodero Jordy Fabián\par
+
+    \vspace{0.3cm}
+
+    {\bfseries\color{azul}Nivel y paralelo\par}
+
+    4.º Software B\par
+
+    \vspace{0.3cm}
+
+    {\bfseries\color{azul}Fecha de entrega\par}
+
+    28 de noviembre de 2026\par
+
+    \vfill
+
+    {\color{gris}Quevedo -- Ecuador\par}
+
+    {\bfseries\color{azul}2026\par}
+
+\end{titlepage}
+
+% ==================================================
+% ÍNDICE
+% ==================================================
+
+\setcounter{page}{1}
+
+\tableofcontents
+
+\newpage
+
+% ==================================================
+% 1. INTRODUCCIÓN
+% ==================================================
+
+\section{Introducción}
+
+
+% ==================================================
+% 2. OBJETIVO
+% ==================================================
+
+\section{Objetivo}
+
+
+% ==================================================
+% 3. CASO DE ESTUDIO
+% ==================================================
+
+\section{Caso de estudio}
+
+\subsection{Contexto del sistema}
+
+
+\subsection{Requisitos candidatos}
+
+
+% ==================================================
+% 4. DISTRIBUCIÓN DE ROLES
+% ==================================================
+
+\section{Distribución de roles}
+
+\begin{table}[htbp]
+
+    \centering
+
+    \begin{tabularx}{\textwidth}{Y L{4cm}}
+
+        \rowcolor{azul}
+
+        \cabecera{Integrante} &
+        \cabecera{Rol asignado} \\
+
+        \rowcolor{fondo}
+        Córdova Carreño Mayra Lucila &
+        Gerente \\
+
+        Rivas Bodero Jordy Fabián &
+        Usuario operativo \\
+
+        \rowcolor{fondo}
+        Espinoza Pivaque Angelo Maximiliano &
+        Auditor \\
+
+        Herrera Morán Gilmar Javier &
+        Desarrollador \\
+
+        \bottomrule
+
+    \end{tabularx}
+
+    \caption{Distribución de roles del equipo.}
+
+\end{table}
+
+% ==================================================
+% 5. PRIORIZACIÓN MEDIANTE MoSCoW
+% ==================================================
+
+\section{Priorización mediante MoSCoW}
+
+\subsection{Criterios de priorización}
+
+
+\subsection{Tabla MoSCoW acordada}
+
+
+\subsection{Dependencias entre requisitos}
+
+
+% ==================================================
+% 6. VOTACIÓN PONDERADA
+% ==================================================
+
+\section{Votación ponderada}
+
+\subsection{Criterios y pesos}
+
+
+\subsection{Tabla de votación ponderada}
+
+
+\subsection{Comparación con MoSCoW}
+
+
+% ==================================================
+% 7. IDENTIFICACIÓN Y RESOLUCIÓN DE CONFLICTOS
+% ==================================================
+
+\section{Identificación y resolución de conflictos}
+
+\subsection{Identificación y clasificación}
+
+
+\subsection{Acuerdos win-win}
+
+
+\subsection{Lista de conflictos resueltos}
+
+
+% ==================================================
+% 8. CONCLUSIONES
+% ==================================================
+
+\section{Conclusiones}
+
+
+% ==================================================
+% 9. DECLARACIÓN DE USO DE IA
+% ==================================================
+
+\section{Declaración de uso de inteligencia artificial}
+
+
+% ==================================================
+% FIN DEL DOCUMENTO
+% ==================================================
+
+\end{document}
+
