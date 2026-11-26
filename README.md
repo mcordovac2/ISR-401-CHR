@@ -23,11 +23,22 @@ Su propósito es facilitar el trabajo colaborativo, mantener un registro de los 
 
 ## 2. Integrantes del equipo
 
-| Integrante | Usuario de GitHub |
-|---|---|
-| Córdova Carreño Mayra Lucila | [mcordovaac2](https://github.com/mcordovaac2) |
-| Herrera Morán Gilmar Javier | [GilmaR2006](https://github.com/GilmaR2006) |
-| Rivas Bodero Jordy Fabián | [JordyR15](https://github.com/JordyR15) |
+| Integrante | Usuario de GitHub | Incorporación al equipo |
+|---|---|---|
+| Córdova Carreño Mayra Lucila | mcordovaac2 | Semana 1 |
+| Herrera Morán Gilmar Javier | GilmaR2006 | Semana 1 |
+| Rivas Bodero Jordy Fabián | JordyR15 | Semana 1 |
+| Espinoza Pivaque Angelo Maximiliano | Espinoza-P-1007 | Semana 5 |
+
+### 2.1. Actualización de la conformación del equipo
+
+Durante la semana 5 del periodo académico, por disposición del docente de la asignatura de Ingeniería de Requisitos, se incorporó al estudiante Espinoza Pivaque Angelo Maximiliano como nuevo integrante del equipo CHR.
+
+A partir de esta incorporación, el equipo pasa de estar conformado por tres integrantes a cuatro.
+
+Las actividades desarrolladas con anterioridad a la incorporación del nuevo integrante mantienen su conformación original, así como la distribución de responsabilidades, documentación y registros de participación correspondientes.
+
+El nuevo integrante participará en las actividades académicas grupales y en los entregables del Proyecto de Fin de Curso (PFC) que correspondan a partir de su incorporación.
 
 ## 3. Actividades académicas
 
