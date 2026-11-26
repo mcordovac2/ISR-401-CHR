@@ -457,7 +457,107 @@ GA-SIM-01, sección 4, Tabla 1, p.~2.}}
 
 \section{Priorización mediante MoSCoW}
 
+
 \subsection{Criterios de priorización}
+
+La técnica MoSCoW permite clasificar los requisitos según 
+su importancia dentro del alcance de una entrega. Su 
+aplicación en el sistema de inscripciones universitarias 
+parte de la necesidad de disponer de una primera versión 
+operativa para el próximo periodo académico, considerando 
+que los recursos disponibles no permiten implementar 
+todos los requisitos candidatos.
+
+\begin{table}[htbp]
+    \centering
+    \small
+
+    \begin{tabularx}{\textwidth}{C{0.8cm} L{3cm} Y}
+
+        \rowcolor{azul}
+        \cabecera{ID} &
+        \cabecera{Categoría} &
+        \cabecera{Criterio de clasificación} \\
+
+        \rowcolor{fondo}
+        \textbf{M} &
+        \textbf{Must} (Imprescindible) &
+        Requisito necesario para el funcionamiento 
+        esencial del sistema o para satisfacer 
+        obligaciones que deben cumplirse desde la 
+        primera versión. \\
+
+        \textbf{S} &
+        \textbf{Should} (Importante) &
+        Requisito que aporta un beneficio significativo 
+        al proceso de inscripción, pero cuya ausencia 
+        no impide el funcionamiento esencial del sistema. \\
+
+        \rowcolor{fondo}
+        \textbf{C} &
+        \textbf{Could} (Deseable) &
+        Requisito que mejora las funcionalidades o la 
+        experiencia de los usuarios y cuya incorporación 
+        depende de los recursos disponibles. \\
+
+        \textbf{W} &
+        \textbf{Won't} (Fuera de esta entrega) &
+        Requisito que no forma parte del alcance de 
+        la primera versión y que podrá reconsiderarse 
+        en futuras entregas. \\
+
+        \bottomrule
+
+    \end{tabularx}
+
+    \caption{Categorías de priorización MoSCoW.}
+    \label{tab:categorias-moscow}
+
+\end{table}
+
+Para determinar la categoría de cada requisito se 
+consideran los siguientes criterios:
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item \textbf{Necesidad operativa:} importancia del 
+    requisito para realizar las inscripciones, validar 
+    prerrequisitos, controlar cupos y gestionar 
+    excepciones.
+
+    \item \textbf{Valor institucional:} contribución 
+    del requisito a la reducción de las filas en las 
+    secretarías, la organización del proceso y el 
+    seguimiento de las inscripciones.
+
+    \item \textbf{Viabilidad técnica:} posibilidad de 
+    implementar el requisito considerando los recursos 
+    disponibles, su complejidad y la integración con 
+    el sistema académico institucional.
+
+    \item \textbf{Plazo de implementación:} necesidad 
+    de disponer de una primera versión funcional para 
+    el próximo periodo académico.
+
+    \item \textbf{Cumplimiento normativo:} consideración 
+    de las obligaciones relacionadas con la protección 
+    de datos personales y las exigencias no negociables 
+    del auditor.
+
+    \item \textbf{Dependencias:} relación entre los 
+    requisitos, verificando que ningún requisito 
+    clasificado como Must dependa de otro con una 
+    prioridad inferior.
+
+\end{itemize}
+
+La clasificación definitiva debe establecerse mediante 
+la negociación entre el gerente, el usuario operativo, 
+el desarrollador y el auditor. Las decisiones deben 
+justificarse a partir de las condiciones del caso y 
+las posiciones de los roles, evitando que todos los 
+requisitos sean considerados imprescindibles.
+
 
 
 \subsection{Tabla MoSCoW acordada}
