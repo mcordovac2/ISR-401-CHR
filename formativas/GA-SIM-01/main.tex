@@ -231,25 +231,25 @@
 
 \section{Introducción}
 
-Durante el desarrollo de un sistema de software, las partes 
-interesadas pueden presentar necesidades y prioridades 
-diferentes. Sin embargo, las limitaciones de tiempo y recursos 
-hacen que no siempre sea posible implementar todos los 
-requisitos en una primera versión. Por esta razón, es necesario 
+Durante el desarrollo de un sistema de software, las partes
+interesadas pueden presentar necesidades y prioridades
+diferentes. Sin embargo, las limitaciones de tiempo y recursos
+hacen que no siempre sea posible implementar todos los
+requisitos en una primera versión. Por esta razón, es necesario
 establecer prioridades y negociar el alcance del sistema.
 
-La presente actividad se centra en la simulación de una 
-negociación de requisitos para un sistema de inscripciones 
-universitarias. En ella participan cuatro roles: gerente, 
-usuario operativo, desarrollador y auditor, cada uno con 
+La presente actividad se centra en la simulación de una
+negociación de requisitos para un sistema de inscripciones
+universitarias. En ella participan cuatro roles: gerente,
+usuario operativo, desarrollador y auditor, cada uno con
 intereses y responsabilidades diferentes frente al sistema.
 
-Para el desarrollo de la actividad se emplean las técnicas 
-MoSCoW y votación ponderada, las cuales permiten clasificar 
-y ordenar los requisitos candidatos. También se contempla 
-la identificación de conflictos entre los roles y su resolución 
-mediante acuerdos \textit{win-win}, procurando que las 
-decisiones respondan a las necesidades del sistema y a las 
+Para el desarrollo de la actividad se emplean las técnicas
+MoSCoW y votación ponderada, las cuales permiten clasificar
+y ordenar los requisitos candidatos. También se contempla
+la identificación de conflictos entre los roles y su resolución
+mediante acuerdos \textit{win-win}, procurando que las
+decisiones respondan a las necesidades del sistema y a las
 limitaciones del proyecto.
 
 % ==================================================
@@ -258,12 +258,12 @@ limitaciones del proyecto.
 
 \section{Objetivo}
 
-Priorizar los diez requisitos candidatos del sistema de 
-inscripciones universitarias mediante la aplicación de 
-MoSCoW y votación ponderada, considerando las posiciones 
-de los cuatro roles involucrados y la resolución de 
-conflictos mediante acuerdos \textit{win-win}, con la 
-finalidad de establecer el alcance de la primera versión 
+Priorizar los diez requisitos candidatos del sistema de
+inscripciones universitarias mediante la aplicación de
+MoSCoW y votación ponderada, considerando las posiciones
+de los cuatro roles involucrados y la resolución de
+conflictos mediante acuerdos \textit{win-win}, con la
+finalidad de establecer el alcance de la primera versión
 del sistema.
 
 % ==================================================
@@ -274,41 +274,41 @@ del sistema.
 
 \subsection{Contexto del sistema}
 
-Una universidad pública realiza actualmente el proceso de 
-inscripción en asignaturas mediante formularios en papel 
-y hojas de cálculo. Esta forma de trabajo ocasiona que, 
-al inicio de cada periodo académico, se formen filas en 
+Una universidad pública realiza actualmente el proceso de
+inscripción en asignaturas mediante formularios en papel
+y hojas de cálculo. Esta forma de trabajo ocasiona que,
+al inicio de cada periodo académico, se formen filas en
 las secretarías para realizar las inscripciones.
 
-Las solicitudes de excepción, como los sobrecupos y los 
-prerrequisitos pendientes, se autorizan manualmente. 
-El proceso tampoco cuenta con un registro que permita 
-identificar quién autorizó cada cambio, lo que dificulta 
-el seguimiento de las decisiones tomadas durante las 
+Las solicitudes de excepción, como los sobrecupos y los
+prerrequisitos pendientes, se autorizan manualmente.
+El proceso tampoco cuenta con un registro que permita
+identificar quién autorizó cada cambio, lo que dificulta
+el seguimiento de las decisiones tomadas durante las
 inscripciones.
 
-Ante esta situación, la universidad ha decidido desarrollar 
-un sistema web de inscripciones que deberá estar en 
-funcionamiento para el próximo periodo académico. Debido 
-a las limitaciones de la primera versión, no será posible 
-incorporar todos los requisitos solicitados por las partes 
+Ante esta situación, la universidad ha decidido desarrollar
+un sistema web de inscripciones que deberá estar en
+funcionamiento para el próximo periodo académico. Debido
+a las limitaciones de la primera versión, no será posible
+incorporar todos los requisitos solicitados por las partes
 interesadas.
 
-Por lo tanto, se requiere establecer cuáles son los 
-requisitos imprescindibles para la primera entrega, cuáles 
-pueden implementarse posteriormente y cuáles quedarán 
+Por lo tanto, se requiere establecer cuáles son los
+requisitos imprescindibles para la primera entrega, cuáles
+pueden implementarse posteriormente y cuáles quedarán
 fuera de su alcance inicial.
 
 \subsection{Requisitos candidatos}
 
-El caso de estudio presenta diez requisitos candidatos 
-para la primera versión del sistema de inscripciones 
-universitarias. Estos incluyen funcionalidades relacionadas 
-con el proceso de inscripción, restricciones de interfaz 
+El caso de estudio presenta diez requisitos candidatos
+para la primera versión del sistema de inscripciones
+universitarias. Estos incluyen funcionalidades relacionadas
+con el proceso de inscripción, restricciones de interfaz
 y requisitos de calidad y cumplimiento legal.
 
-La Tabla~\ref{tab:requisitos-candidatos} recoge los 
-identificadores, enunciados y tipos de requisitos 
+La Tabla~\ref{tab:requisitos-candidatos} recoge los
+identificadores, enunciados y tipos de requisitos
 establecidos en la guía de la actividad GA-SIM-01.
 
 \begingroup
@@ -345,69 +345,69 @@ establecidos en la guía de la actividad GA-SIM-01.
 
 \rowcolor{fondo}
 \textbf{R-01} &
-El estudiante se inscribe en línea en las asignaturas 
+El estudiante se inscribe en línea en las asignaturas
 de su malla para el periodo vigente. &
 Funcional \\
 
 \textbf{R-02} &
-El sistema valida de forma automática los prerrequisitos 
-aprobados y el cupo disponible de cada paralelo antes 
+El sistema valida de forma automática los prerrequisitos
+aprobados y el cupo disponible de cada paralelo antes
 de confirmar la inscripción. &
 Funcional \\
 
 \rowcolor{fondo}
 \textbf{R-03} &
-El estudiante paga en línea, con tarjeta, los valores 
+El estudiante paga en línea, con tarjeta, los valores
 de matrícula a través de una pasarela de pagos externa. &
 Funcional \\
 
 \textbf{R-04} &
-El sistema registra en una bitácora no modificable 
-cada inscripción, modificación y anulación, con 
+El sistema registra en una bitácora no modificable
+cada inscripción, modificación y anulación, con
 usuario, fecha, hora y motivo. &
 Funcional \\
 
 \rowcolor{fondo}
 \textbf{R-05} &
-El coordinador de carrera aprueba o rechaza en el 
-sistema las solicitudes de excepción (sobrecupo o 
+El coordinador de carrera aprueba o rechaza en el
+sistema las solicitudes de excepción (sobrecupo o
 prerrequisito pendiente). &
 Funcional \\
 
 \textbf{R-06} &
-El sistema obtiene las mallas, las notas y los 
-paralelos del sistema académico institucional 
+El sistema obtiene las mallas, las notas y los
+paralelos del sistema académico institucional
 existente. &
 Restricción de interfaz \\
 
 \rowcolor{fondo}
 \textbf{R-07} &
-El sistema atiende 3000 usuarios concurrentes el 
-primer día de inscripciones con un tiempo de respuesta 
+El sistema atiende 3000 usuarios concurrentes el
+primer día de inscripciones con un tiempo de respuesta
 menor a 3 segundos en el 95\,\% de las solicitudes. &
 De calidad (rendimiento) \\
 
 \textbf{R-08} &
-El estudiante se inscribe desde una aplicación móvil 
+El estudiante se inscribe desde una aplicación móvil
 nativa para Android e iOS. &
 Funcional \\
 
 \rowcolor{fondo}
 \textbf{R-09} &
-La gerencia consulta reportes de inscritos por 
+La gerencia consulta reportes de inscritos por
 carrera, asignatura y paralelo. &
 Funcional \\
 
 \textbf{R-10} &
-Los datos personales se almacenan cifrados y se 
-tratan con consentimiento informado, conforme a la 
+Los datos personales se almacenan cifrados y se
+tratan con consentimiento informado, conforme a la
 normativa de protección de datos personales. &
 De calidad (seguridad) y legal \\
 
 \end{longtable}
 
 \noindent
-{\footnotesize\textit{Fuente: Guía y rúbrica de evaluación 
+{\footnotesize\textit{Fuente: Guía y rúbrica de evaluación
 GA-SIM-01, sección 4, Tabla 1, p.~2.}}
 
 \endgroup
@@ -457,15 +457,14 @@ GA-SIM-01, sección 4, Tabla 1, p.~2.}}
 
 \section{Priorización mediante MoSCoW}
 
-
 \subsection{Criterios de priorización}
 
-La técnica MoSCoW permite clasificar los requisitos según 
-su importancia dentro del alcance de una entrega. Su 
-aplicación en el sistema de inscripciones universitarias 
-parte de la necesidad de disponer de una primera versión 
-operativa para el próximo periodo académico, considerando 
-que los recursos disponibles no permiten implementar 
+La técnica MoSCoW permite clasificar los requisitos según
+su importancia dentro del alcance de una entrega. Su
+aplicación en el sistema de inscripciones universitarias
+parte de la necesidad de disponer de una primera versión
+operativa para el próximo periodo académico, considerando
+que los recursos disponibles no permiten implementar
 todos los requisitos candidatos.
 
 \begin{table}[htbp]
@@ -482,28 +481,28 @@ todos los requisitos candidatos.
         \rowcolor{fondo}
         \textbf{M} &
         \textbf{Must} (Imprescindible) &
-        Requisito necesario para el funcionamiento 
-        esencial del sistema o para satisfacer 
-        obligaciones que deben cumplirse desde la 
+        Requisito necesario para el funcionamiento
+        esencial del sistema o para satisfacer
+        obligaciones que deben cumplirse desde la
         primera versión. \\
 
         \textbf{S} &
         \textbf{Should} (Importante) &
-        Requisito que aporta un beneficio significativo 
-        al proceso de inscripción, pero cuya ausencia 
+        Requisito que aporta un beneficio significativo
+        al proceso de inscripción, pero cuya ausencia
         no impide el funcionamiento esencial del sistema. \\
 
         \rowcolor{fondo}
         \textbf{C} &
         \textbf{Could} (Deseable) &
-        Requisito que mejora las funcionalidades o la 
-        experiencia de los usuarios y cuya incorporación 
+        Requisito que mejora las funcionalidades o la
+        experiencia de los usuarios y cuya incorporación
         depende de los recursos disponibles. \\
 
         \textbf{W} &
         \textbf{Won't} (Fuera de esta entrega) &
-        Requisito que no forma parte del alcance de 
-        la primera versión y que podrá reconsiderarse 
+        Requisito que no forma parte del alcance de
+        la primera versión y que podrá reconsiderarse
         en futuras entregas. \\
 
         \bottomrule
@@ -515,50 +514,299 @@ todos los requisitos candidatos.
 
 \end{table}
 
-Para determinar la categoría de cada requisito se 
+Para determinar la categoría de cada requisito se
 consideran los siguientes criterios:
 
 \begin{itemize}[leftmargin=1.5em]
 
-    \item \textbf{Necesidad operativa:} importancia del 
-    requisito para realizar las inscripciones, validar 
-    prerrequisitos, controlar cupos y gestionar 
+    \item \textbf{Necesidad operativa:} importancia del
+    requisito para realizar las inscripciones, validar
+    prerrequisitos, controlar cupos y gestionar
     excepciones.
 
-    \item \textbf{Valor institucional:} contribución 
-    del requisito a la reducción de las filas en las 
-    secretarías, la organización del proceso y el 
+    \item \textbf{Valor institucional:} contribución
+    del requisito a la reducción de las filas en las
+    secretarías, la organización del proceso y el
     seguimiento de las inscripciones.
 
-    \item \textbf{Viabilidad técnica:} posibilidad de 
-    implementar el requisito considerando los recursos 
-    disponibles, su complejidad y la integración con 
+    \item \textbf{Viabilidad técnica:} posibilidad de
+    implementar el requisito considerando los recursos
+    disponibles, su complejidad y la integración con
     el sistema académico institucional.
 
-    \item \textbf{Plazo de implementación:} necesidad 
-    de disponer de una primera versión funcional para 
+    \item \textbf{Plazo de implementación:} necesidad
+    de disponer de una primera versión funcional para
     el próximo periodo académico.
 
-    \item \textbf{Cumplimiento normativo:} consideración 
-    de las obligaciones relacionadas con la protección 
-    de datos personales y las exigencias no negociables 
+    \item \textbf{Cumplimiento normativo:} consideración
+    de las obligaciones relacionadas con la protección
+    de datos personales y las exigencias no negociables
     del auditor.
 
-    \item \textbf{Dependencias:} relación entre los 
-    requisitos, verificando que ningún requisito 
-    clasificado como Must dependa de otro con una 
+    \item \textbf{Dependencias:} relación entre los
+    requisitos, verificando que ningún requisito
+    clasificado como Must dependa de otro con una
     prioridad inferior.
 
 \end{itemize}
 
-La clasificación definitiva debe establecerse mediante 
-la negociación entre el gerente, el usuario operativo, 
-el desarrollador y el auditor. Las decisiones deben 
-justificarse a partir de las condiciones del caso y 
-las posiciones de los roles, evitando que todos los 
+La clasificación definitiva debe establecerse mediante
+la negociación entre el gerente, el usuario operativo,
+el desarrollador y el auditor. Las decisiones deben
+justificarse a partir de las condiciones del caso y
+las posiciones de los roles, evitando que todos los
 requisitos sean considerados imprescindibles.
 
+\subsection{Posición inicial del gerente}
 
+\textbf{Responsable:} Córdova Carreño Mayra Lucila.
+
+Desde la perspectiva de la gerencia, la principal
+prioridad es que el sistema esté disponible para el
+próximo periodo académico y permita solucionar los
+problemas que presenta actualmente el proceso de
+inscripción.
+
+La propuesta inicial se concentra en las funcionalidades
+necesarias para realizar las inscripciones en línea,
+controlar los cupos, gestionar las excepciones y mantener
+un registro de las operaciones efectuadas. También se
+consideran la capacidad de atención durante los días de
+mayor demanda y la protección de los datos personales.
+
+Aunque existen funcionalidades que aportarían beneficios
+adicionales a la institución, su incorporación debe
+evaluarse considerando los recursos disponibles y el
+plazo establecido para la primera entrega.
+
+\begingroup
+
+\small
+\singlespacing
+
+\begin{longtable}{
+    C{1.2cm}
+    C{2.1cm}
+    L{10.7cm}
+}
+
+\caption{Propuesta inicial de priorización del gerente.}
+\label{tab:moscow-gerente}\\
+
+\rowcolor{azul}
+\cabecera{ID} &
+\cabecera{Categoría} &
+\cabecera{Justificación de la posición} \\
+
+\endfirsthead
+
+\rowcolor{azul}
+\cabecera{ID} &
+\cabecera{Categoría} &
+\cabecera{Justificación de la posición} \\
+
+\endhead
+
+\bottomrule
+
+\endfoot
+
+\rowcolor{fondo}
+\textbf{R-01} &
+\textbf{Must} &
+La inscripción en línea constituye la funcionalidad
+principal del sistema. Su implementación permitirá
+reducir las filas en las secretarías y disminuir la
+dependencia de los formularios en papel. Sin este
+requisito, el proyecto no cumpliría su propósito
+principal. \\
+
+\textbf{R-02} &
+\textbf{Must} &
+La validación automática de prerrequisitos y cupos
+es necesaria para evitar inscripciones que incumplan
+las condiciones académicas establecidas. También
+permite reducir las verificaciones manuales realizadas
+por el personal administrativo. \\
+
+\rowcolor{fondo}
+\textbf{R-03} &
+\textbf{Could} &
+El pago en línea representa una facilidad adicional
+para los estudiantes. Sin embargo, el problema
+principal del caso se relaciona con la inscripción
+en asignaturas y no con la gestión de pagos. Su
+incorporación dependerá de los recursos disponibles
+y de la viabilidad de integrar una pasarela externa. \\
+
+\textbf{R-04} &
+\textbf{Must} &
+Actualmente no existe un registro que permita
+identificar quién autorizó cada cambio. La bitácora
+es necesaria para mantener la trazabilidad de las
+inscripciones, modificaciones y anulaciones, facilitando
+el control institucional de estas operaciones. \\
+
+\rowcolor{fondo}
+\textbf{R-05} &
+\textbf{Must} &
+Los sobrecupos y los prerrequisitos pendientes forman
+parte de las situaciones que actualmente se gestionan
+de manera manual. Incorporar la aprobación o el rechazo
+de estas solicitudes permitirá mantener el control
+sobre las excepciones dentro del propio sistema. \\
+
+\textbf{R-06} &
+\textbf{Must} &
+La integración con el sistema académico institucional
+es necesaria para disponer de las mallas, notas y
+paralelos utilizados durante las inscripciones.
+Sin estos datos, no sería posible efectuar las
+validaciones automáticas contempladas en R-02
+de acuerdo con el funcionamiento planteado. \\
+
+\rowcolor{fondo}
+\textbf{R-07} &
+\textbf{Must} &
+La disponibilidad del sistema durante el primer día
+de inscripciones es una prioridad institucional.
+Si el sistema no responde adecuadamente ante la
+demanda, podrían producirse retrasos que afecten
+a los estudiantes. Se propone conservar la meta
+de rendimiento establecida en el requisito,
+sujeta a la evaluación de su viabilidad técnica. \\
+
+\textbf{R-08} &
+\textbf{Won't} &
+El desarrollo de aplicaciones nativas para Android
+e iOS ampliaría el alcance del proyecto. Dado que
+la primera entrega contempla un sistema web y existe
+un plazo limitado, se considera conveniente destinar
+los recursos a las funcionalidades esenciales y
+reconsiderar la aplicación móvil en futuras versiones. \\
+
+\rowcolor{fondo}
+\textbf{R-09} &
+\textbf{Should} &
+Los reportes permitirían a la gerencia conocer la
+cantidad de inscritos por carrera, asignatura y
+paralelo, facilitando el seguimiento del proceso.
+Aunque representan un beneficio institucional,
+su ausencia no impediría que los estudiantes
+realicen sus inscripciones. \\
+
+\textbf{R-10} &
+\textbf{Must} &
+El sistema manejará información personal y académica
+de los estudiantes. El cifrado y el consentimiento
+informado deben considerarse desde la primera
+versión para proteger dicha información y cumplir
+las obligaciones establecidas en materia de
+protección de datos personales. \\
+
+\end{longtable}
+
+\endgroup
+
+\subsubsection{Distribución de las prioridades propuestas}
+
+La clasificación inicial del gerente contempla siete
+requisitos imprescindibles, uno importante, uno deseable
+y uno fuera del alcance de la primera entrega.
+
+\begin{table}[htbp]
+
+    \centering
+    \small
+
+    \begin{tabularx}{\textwidth}{
+        L{3cm}
+        Y
+        C{1.8cm}
+        C{2cm}
+    }
+
+        \rowcolor{azul}
+        \cabecera{Categoría} &
+        \cabecera{Requisitos} &
+        \cabecera{Cantidad} &
+        \cabecera{Porcentaje} \\
+
+        \rowcolor{fondo}
+        Must &
+        R-01, R-02, R-04, R-05, R-06, R-07 y R-10 &
+        7 &
+        70\,\% \\
+
+        Should &
+        R-09 &
+        1 &
+        10\,\% \\
+
+        \rowcolor{fondo}
+        Could &
+        R-03 &
+        1 &
+        10\,\% \\
+
+        Won't &
+        R-08 &
+        1 &
+        10\,\% \\
+
+        \midrule
+
+        \rowcolor{fondo}
+        \textbf{Total} &
+        &
+        \textbf{10} &
+        \textbf{100\,\%} \\
+
+        \bottomrule
+
+    \end{tabularx}
+
+    \caption{Distribución inicial de prioridades del gerente.}
+    \label{tab:distribucion-gerente}
+
+\end{table}
+
+\subsubsection{Aspectos sujetos a negociación}
+
+La cantidad de requisitos clasificados como Must
+responde a la importancia que la gerencia atribuye
+al funcionamiento del sistema durante el próximo
+periodo académico. No obstante, esta clasificación
+debe contrastarse con las necesidades del usuario
+operativo, las limitaciones técnicas del desarrollador
+y las obligaciones identificadas por el auditor.
+
+Los principales aspectos que la gerencia considera
+necesario discutir son los siguientes:
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item La viabilidad técnica de alcanzar las
+    condiciones de rendimiento establecidas en R-07
+    dentro del plazo disponible.
+
+    \item La posibilidad de incorporar los reportes
+    gerenciales de R-09 sin afectar el desarrollo
+    de las funcionalidades imprescindibles.
+
+    \item La disponibilidad de recursos para integrar
+    la pasarela de pagos externa correspondiente
+    a R-03.
+
+    \item La postergación de la aplicación móvil
+    nativa de R-08 para concentrar los recursos
+    en el sistema web.
+
+\end{itemize}
+
+La propuesta constituye la posición inicial del gerente
+y no representa todavía una clasificación acordada
+entre los cuatro roles.
 
 \subsection{Tabla MoSCoW acordada}
 
@@ -566,6 +814,7 @@ requisitos sean considerados imprescindibles.
 
 \small
 \singlespacing
+\setlength{\tabcolsep}{4pt}
 
 \begin{longtable}{
     C{1.1cm}
