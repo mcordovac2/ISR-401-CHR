@@ -874,7 +874,6 @@ La bitácora permite identificar quién realiza cada
 operación y revisar posibles cambios no autorizados.
 No aceptaría aplazar este registro. \\
 
-\rowcolor{fondo}
 \textbf{R-05} & Must &
 Las excepciones deben ser aprobadas o rechazadas por
 el coordinador, dejando constancia de la decisión
@@ -886,7 +885,6 @@ para realizar las validaciones. Su consulta e
 intercambio deben efectuarse mediante accesos
 autorizados y protegidos. \\
 
-\rowcolor{fondo}
 \textbf{R-07} & Must &
 El sistema debe soportar la demanda del primer día
 de inscripciones para evitar retrasos y dificultades
@@ -898,7 +896,6 @@ Aceptaría dejar la aplicación móvil para una versión
 posterior, porque la primera entrega contará con
 un sistema web para realizar las inscripciones. \\
 
-\rowcolor{fondo}
 \textbf{R-09} & Should &
 Los reportes permiten conocer los inscritos por
 carrera, asignatura y paralelo. Su consulta debe
@@ -1343,23 +1340,23 @@ prioridad, según el análisis realizado.
 
 \subsection{Criterios y pesos}
 
-La votación ponderada evalúa cada requisito candidato en una escala de $1$ a $5$ sobre tres criterios definidos en la guía \textbf{GA-SIM-01}: valor de negocio ($V$, peso 40\,\%), riesgo técnico ($R$, peso 30\,\%) y esfuerzo de implementación ($E$, peso 30\,\%).
+La votación ponderada evalúa cada requisito candidato en una escala de $1$ a $5$ sobre tres criterios definidos en la guía \textbf{GA-SIM-01}: valor de negocio ($V$, peso 40\,\%), riesgo técnico ($R$, peso 30\,\%) y esfuerzo de implementación ($E$, peso 30\,\%)[cite: 3].
 
-De acuerdo con la regla de puntuación inversa establecida para esta actividad, en $R$ y $E$ el valor $5$ corresponde a riesgo bajo o esfuerzo bajo, mientras que el valor $1$ corresponde a riesgo alto o esfuerzo alto. El puntaje total $P$ de cada requisito se calcula mediante:
+De acuerdo con la regla de puntuación inversa establecida para esta actividad, en $R$ y $E$ el valor $5$ corresponde a riesgo bajo o esfuerzo bajo, mientras que el valor $1$ corresponde a riesgo alto o esfuerzo alto[cite: 3, 7]. El puntaje total $P$ de cada requisito se calcula mediante:
 
 \[
 P = 0{,}40\,V + 0{,}30\,R + 0{,}30\,E
 \]
 
-donde $P \in [1{,}00;\,5{,}00]$ y los requisitos se ordenan de mayor a menor puntaje obtenido (asignando el puesto $1$ al mayor valor).
+donde $P \in [1{,}00;\,5{,}00]$ y los requisitos se ordenan de mayor a menor puntaje obtenido (asignando el puesto $1$ al mayor valor)[cite: 3, 7].
 
 \subsection{Segunda parte -- Rivas Bodero Jordy Fabián}
 
-\textbf{Rol:} Usuario operativo.\\
-\textbf{Responsable:} Rivas Bodero Jordy Fabián.\\
+\textbf{Rol:} Usuario operativo[cite: 9].\\
+\textbf{Responsable:} Rivas Bodero Jordy Fabián[cite: 9].\\
 \textbf{Producto asignado:} Tabla de votación ponderada ordenada, verificación de cálculos y análisis comparativo frente a MoSCoW.
 
-Desde la perspectiva del usuario operativo, la evaluación prioriza las funcionalidades que eliminan filas presenciales en secretaría, evitan errores de matrícula por cupos o prerrequisitos y agilizan el seguimiento de excepciones, ponderando simultáneamente las restricciones técnicas y de esfuerzo que condicionan la entrega de la primera versión.
+Desde la perspectiva del usuario operativo, la evaluación prioriza las funcionalidades que eliminan filas presenciales en secretaría, evitan errores de matrícula por cupos o prerrequisitos y agilizan el seguimiento de excepciones, ponderando simultáneamente las restricciones técnicas y de esfuerzo que condicionan la entrega de la primera versión[cite: 2, 9].
 
 \subsubsection{Tabla de votación ponderada (ordenada de mayor a menor puntaje)}
 
@@ -1410,38 +1407,38 @@ Desde la perspectiva del usuario operativo, la evaluación prioriza las funciona
 
 \rowcolor{fondo}
 \textbf{R-01} & 5 & 4 & 3 & 4{,}10 & 1 &
-Coincide con su prioridad imprescindible (\textit{Must}): elimina filas presenciales y su esfuerzo moderado ($E=3$) permite ubicarlo en el primer lugar. \\
+Coincide con su categoría definitiva \textit{Must}: elimina filas presenciales y su esfuerzo moderado ($E=3$) permite ubicarlo en el primer lugar[cite: 2, 9]. \\
 
 \textbf{R-04} & 4 & 4 & 4 & 4{,}00 & 2 &
-Asciende al segundo puesto por su bajo riesgo y bajo esfuerzo ($R=4$, $E=4$), aportando trazabilidad inmediata frente a requisitos más complejos. \\
+Asciende al segundo puesto por su bajo riesgo y bajo esfuerzo ($R=4$, $E=4$), aportando trazabilidad inmediata coherente con su categoría definitiva \textit{Must}[cite: 2, 9]. \\
 
 \rowcolor{fondo}
 \textbf{R-02} & 5 & 3 & 3 & 3{,}80 & 3 &
-Mantiene coherencia con el núcleo operativo (\textit{Must}): alto valor para evitar errores de cupo y prerrequisitos, con riesgo técnico medio ($R=3$). \\
+Coincide con su categoría definitiva \textit{Must}: alto valor para evitar errores de cupo y prerrequisitos, con riesgo técnico medio ($R=3$)[cite: 2, 9]. \\
 
 \textbf{R-09} & 3 & 4 & 4 & 3{,}60 & 4 &
-Supera en puntaje a requisitos \textit{Must} más complejos (R-05, R-10, R-06 y R-07) debido a su bajo esfuerzo y riesgo ($R=4$, $E=4$), pese a ser \textit{Should}. \\
+Supera en puntaje a requisitos \textit{Must} más complejos (R-05, R-10 y R-06) por su bajo esfuerzo y riesgo ($R=4$, $E=4$), aunque en MoSCoW definitivo sea \textit{Should}[cite: 2, 9]. \\
 
 \rowcolor{fondo}
 \textbf{R-05} & 4 & 3 & 3 & 3{,}40 & 5 &
-Refleja alta utilidad operativa para gestionar sobrecupos y prerrequisitos pendientes; se ubica quinto al requerir un flujo de aprobación dedicado. \\
+Refleja alta utilidad operativa para sobrecupos y prerrequisitos pendientes; es \textit{Must} en MoSCoW definitivo, pero queda quinto por requerir flujo de aprobación[cite: 2, 9]. \\
 
 \textbf{R-10} & 4 & 3 & 3 & 3{,}40 & 6 &
-Empata en puntaje con R-05 ($3{,}40$); su cumplimiento legal y de seguridad es obligatorio (\textit{Must}) aunque el cálculo multicriterio lo ubique sexto. \\
+Empata en puntaje con R-05 ($3{,}40$); su categoría definitiva es \textit{Must} por cumplimiento legal y seguridad aunque el cálculo multicriterio lo ubique sexto[cite: 2, 8, 9]. \\
 
 \rowcolor{fondo}
 \textbf{R-06} & 5 & 2 & 2 & 3{,}20 & 7 &
-Presenta la mayor brecha frente a MoSCoW: es precondición \textit{Must} para R-01 y R-02, pero cae al séptimo lugar por la complejidad de integrar el sistema legado ($R=2$, $E=2$). \\
+Presenta una brecha frente a su categoría definitiva \textit{Must}: es base para R-01 y R-02, pero cae al séptimo lugar por integrar el sistema legado ($R=2$, $E=2$)[cite: 2]. \\
 
 \textbf{R-07} & 4 & 2 & 2 & 2{,}80 & 8 &
-Desciende en el ordenamiento porque atender $3000$ usuarios concurrentes implica alto riesgo y esfuerzo técnico ($R=2$, $E=2$), aun siendo crítico el primer día. \\
+Coherente con su clasificación definitiva \textit{Should} tras la negociación: el octavo puesto refleja el alto riesgo y esfuerzo técnico ($R=2$, $E=2$) de la meta de $3000$ usuarios[cite: 2, 9]. \\
 
 \rowcolor{fondo}
 \textbf{R-03} & 2 & 2 & 2 & 2{,}00 & 9 &
-Coherente con su postergación (\textit{Could}): integrar una pasarela de pagos externa conlleva riesgo y esfuerzo elevados frente a un valor secundario para inscribir. \\
+Coherente con su categoría definitiva \textit{Could} condicionado: pasarela externa con mayor riesgo/esfuerzo y menor urgencia frente al flujo de inscripción[cite: 2, 9]. \\
 
 \textbf{R-08} & 2 & 2 & 1 & 1{,}70 & 10 &
-Coincide plenamente con quedar fuera de esta entrega (\textit{Won't}): desarrollar aplicaciones nativas para Android e iOS representa el mayor esfuerzo ($E=1$). \\
+Coincide con su categoría definitiva \textit{Won't}: desarrollar aplicaciones nativas para Android e iOS representa el mayor esfuerzo ($E=1$)[cite: 2]. \\
 
 \end{longtable}
 
@@ -1525,21 +1522,21 @@ Para garantizar la exactitud aritmética y la consistencia del ordenamiento de l
 
 \endgroup
 
-Respecto al empate técnico en $3{,}40$ puntos entre \textbf{R-05} y \textbf{R-10}, ambos comparten idéntica distribución de criterios ($V=4$, $R=3$, $E=3$); se ubica primero a \textbf{R-05} por su impacto operativo directo en la atención de excepciones en ventanilla, sin que ello altere la obligatoriedad legal transversal de \textbf{R-10}.
+Respecto al empate técnico en $3{,}40$ puntos entre \textbf{R-05} y \textbf{R-10}, ambos comparten idéntica distribución de criterios ($V=4$, $R=3$, $E=3$); se ubica primero a \textbf{R-05} por su impacto operativo directo en la atención de excepciones en ventanilla, sin que ello altere la obligatoriedad legal transversal de \textbf{R-10}[cite: 2, 8, 9].
 
 \subsection{Comparación con MoSCoW}
 
-Al contrastar el ordenamiento de la Tabla~\ref{tab:votacion} con la clasificación MoSCoW, se identifican cuatro diferencias estructurales derivadas de equilibrar el valor de negocio (40\,\%) con la factibilidad técnica y de esfuerzo (60\,\% conjunto):
+Al contrastar el ordenamiento de la Tabla~\ref{tab:votacion} con la clasificación MoSCoW definitiva (\textbf{R-01}, \textbf{R-02}, \textbf{R-04}, \textbf{R-05}, \textbf{R-06} y \textbf{R-10} como \textit{Must}; \textbf{R-07} y \textbf{R-09} como \textit{Should}; \textbf{R-03} como \textit{Could} condicionado; y \textbf{R-08} como \textit{Won't}), se identifican cuatro diferencias estructurales derivadas de equilibrar el valor de negocio (40\,\%) con la factibilidad técnica y de esfuerzo (60\,\% conjunto)[cite: 3]:
 
 \begin{itemize}[leftmargin=1.5em]
 
-    \item \textbf{Dependencia técnica frente a puntaje multicriterio (R-06):} En MoSCoW, \textbf{R-06} es imprescindible (\textit{Must}) porque provee las mallas, notas y paralelos necesarios para \textbf{R-01} y \textbf{R-02}. Sin embargo, en la votación ponderada desciende al puesto $7$ ($3{,}20$) debido a la penalización inversa por depender de un sistema académico externo ($R=2$, $E=2$). Esto demuestra que el ranking ponderado no sustituye el análisis de dependencias: \textbf{R-06} debe ejecutarse primero como habilitador técnico.
+    \item \textbf{Dependencia técnica frente a puntaje multicriterio (R-06):} En la tabla MoSCoW definitiva, \textbf{R-06} se mantiene como \textit{Must} porque aporta las mallas, notas y paralelos indispensables para \textbf{R-01} y \textbf{R-02}. En cambio, en la votación ponderada queda en el puesto $7$ ($3{,}20$) por la puntuación inversa aplicada a su dependencia externa ($R=2$, $E=2$), lo que confirma que el ranking ponderado no reemplaza el control de dependencias: \textbf{R-06} debe abordarse como habilitador técnico[cite: 2].
 
-    \item \textbf{Ascenso de requisitos de bajo esfuerzo y riesgo (R-04 y R-09):} \textbf{R-04} alcanza el segundo lugar ($4{,}00$) y \textbf{R-09} el cuarto ($3{,}60$, por encima de requisitos \textit{Must} como \textbf{R-05}, \textbf{R-10}, \textbf{R-06} y \textbf{R-07}). Mientras MoSCoW evalúa la criticidad funcional o normativa, la votación ponderada premia las funcionalidades rápidas y seguras de implementar ($R=4$, $E=4$).
+    \item \textbf{Ascenso de requisitos ágiles frente a categorías MoSCoW (R-04 y R-09):} \textbf{R-04} sube al puesto $2$ ($4{,}00$, coherente con su condición \textit{Must}) y \textbf{R-09} alcanza el puesto $4$ ($3{,}60$, por encima de los \textit{Must} \textbf{R-05}, \textbf{R-10} y \textbf{R-06}, aunque en MoSCoW definitivo sea \textit{Should}). Esto ocurre porque la votación ponderada recompensa el bajo riesgo y el bajo esfuerzo ($R=4$, $E=4$) frente a funcionalidades de mayor complejidad[cite: 2, 9].
 
-    \item \textbf{Penalización de requisitos no funcionales exigentes (R-07 y R-10):} \textbf{R-07} baja al puesto $8$ ($2{,}80$) por la complejidad de soportar $3000$ usuarios concurrentes en menos de $3$ segundos ($R=2$, $E=2$), y \textbf{R-10} se sitúa en el puesto $6$ ($3{,}40$). Aunque obtienen menor puntaje relativo, su cumplimiento sigue siendo obligatorio por continuidad operativa el primer día y por exigencia legal.
+    \item \textbf{Alineación en rendimiento y exigencia normativa (R-07 y R-10):} Tras la negociación, \textbf{R-07} pasó de \textit{Must} a \textit{Should} condicionado a evaluación de demanda e infraestructura, lo cual guarda sintonía con su puesto $8$ ($2{,}80$) por el mayor riesgo y esfuerzo ($R=2$, $E=2$) de la meta de $3000$ usuarios concurrentes. Por su parte, \textbf{R-10} se ubica en el puesto $6$ ($3{,}40$), pero su categoría \textit{Must} definitiva se mantiene intacta por obligación legal y de protección de datos[cite: 2, 8, 9].
 
-    \item \textbf{Convergencia en el núcleo y en las exclusiones (R-01, R-02, R-03 y R-08):} Ambos métodos coinciden plenamente en los extremos: \textbf{R-01} ($4{,}10$, puesto $1$) y \textbf{R-02} ($3{,}80$, puesto $3$) lideran como base de la inscripción web, mientras que \textbf{R-03} ($2{,}00$, puesto $9$) y \textbf{R-08} ($1{,}70$, puesto $10$) quedan relegados al final, respaldando su exclusión o postergación en la primera entrega.
+    \item \textbf{Convergencia en el núcleo operativo y en las exclusiones (R-01, R-02, R-03 y R-08):} Ambos enfoques coinciden en priorizar \textbf{R-01} ($4{,}10$, puesto $1$) y \textbf{R-02} ($3{,}80$, puesto $3$) como pilares \textit{Must} de la inscripción web, mientras que \textbf{R-03} ($2{,}00$, puesto $9$, \textit{Could} condicionado) y \textbf{R-08} ($1{,}70$, puesto $10$, \textit{Won't}) cierran el ranking respaldando su postergación o exclusión en la primera entrega[cite: 2, 9].
 
 \end{itemize}
 
