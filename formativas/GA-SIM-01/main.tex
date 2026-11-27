@@ -1,4 +1,3 @@
-
 \documentclass[12pt,a4paper]{article}
 
 % ==================================================
@@ -975,7 +974,6 @@ La obtención de las mallas, las notas y los
 paralelos depende de la disponibilidad y
 del acceso al sistema académico existente. \\
 
-\rowcolor{fondo}
 \textbf{R-07} &
 Sistema de inscripciones &
 Transversal de rendimiento &
@@ -991,7 +989,6 @@ La aplicación móvil requiere las funcionalidades
 de inscripción y validación para ofrecer
 el servicio desde dispositivos móviles. \\
 
-\rowcolor{fondo}
 \textbf{R-09} &
 R-01 &
 De información &
@@ -1196,8 +1193,25 @@ primera versión.
 
 \subsection{Criterios y pesos}
 
+La votación ponderada evalúa cada requisito candidato en una escala de $1$ a $5$ sobre tres criterios definidos en la guía \textbf{GA-SIM-01}: valor de negocio ($V$, peso 40\,\%), riesgo técnico ($R$, peso 30\,\%) y esfuerzo de implementación ($E$, peso 30\,\%).
 
-\subsection{Tabla de votación ponderada}
+De acuerdo con la regla de puntuación inversa establecida para esta actividad, en $R$ y $E$ el valor $5$ corresponde a riesgo bajo o esfuerzo bajo, mientras que el valor $1$ corresponde a riesgo alto o esfuerzo alto. El puntaje total $P$ de cada requisito se calcula mediante:
+
+\[
+P = 0{,}40\,V + 0{,}30\,R + 0{,}30\,E
+\]
+
+donde $P \in [1{,}00;\,5{,}00]$ y el orden jerárquico asigna el puesto $1$ al mayor puntaje obtenido.
+
+\subsection{Segunda parte -- Rivas Bodero Jordy Fabián}
+
+\textbf{Rol:} Usuario operativo.\\
+\textbf{Responsable:} Rivas Bodero Jordy Fabián.\\
+\textbf{Producto asignado:} Tabla de votación ponderada y análisis comparativo frente a MoSCoW.
+
+Desde la perspectiva del usuario operativo, la evaluación prioriza las funciones que reducen filas en secretaría, previenen errores de matrícula por cupos o prerrequisitos y permiten verificar cambios y excepciones sin fricción operativa, ponderando al mismo tiempo las restricciones técnicas y de esfuerzo que afectan su entrega en la primera versión.
+
+\subsubsection{Tabla de votación ponderada}
 
 \begingroup
 
@@ -1211,11 +1225,11 @@ primera versión.
     C{1.1cm}
     C{1.1cm}
     C{1.2cm}
-    C{1.3cm}
-    L{6.9cm}
+    C{1.2cm}
+    L{7.0cm}
 }
 
-\caption{Tabla de votación ponderada.}
+\caption{Tabla de votación ponderada -- Usuario operativo.}
 \label{tab:votacion}\\
 
 \rowcolor{azul}
@@ -1245,29 +1259,39 @@ primera versión.
 \endfoot
 
 \rowcolor{fondo}
-\textbf{R-01} & & & & & & \\[0.3cm]
+\textbf{R-01} & 5 & 4 & 3 & 4{,}10 & 1 &
+Coincide con prioridad alta (\textit{Must}): elimina filas presenciales y su esfuerzo moderado permite priorizarlo en primer lugar. \\
 
-\textbf{R-02} & & & & & & \\[0.3cm]
-
-\rowcolor{fondo}
-\textbf{R-03} & & & & & & \\[0.3cm]
-
-\textbf{R-04} & & & & & & \\[0.3cm]
+\textbf{R-02} & 5 & 3 & 3 & 3{,}80 & 3 &
+Coherente con núcleo operativo: alto valor al evitar errores de cupo y prerrequisitos, con riesgo medio por validaciones académicas. \\
 
 \rowcolor{fondo}
-\textbf{R-05} & & & & & & \\[0.3cm]
+\textbf{R-03} & 2 & 2 & 2 & 2{,}00 & 9 &
+Coherente con alcance diferido (\textit{Could}/\textit{Won't}): pasarela externa con mayor esfuerzo/riesgo y menor urgencia frente al flujo de inscripción. \\
 
-\textbf{R-06} & & & & & & \\[0.3cm]
-
-\rowcolor{fondo}
-\textbf{R-07} & & & & & & \\[0.3cm]
-
-\textbf{R-08} & & & & & & \\[0.3cm]
+\textbf{R-04} & 4 & 4 & 4 & 4{,}00 & 2 &
+Sube en orden relativo frente a requisitos con mayor complejidad técnica porque su implementación es directa y aporta trazabilidad operativa inmediata. \\
 
 \rowcolor{fondo}
-\textbf{R-09} & & & & & & \\[0.3cm]
+\textbf{R-05} & 4 & 3 & 3 & 3{,}40 & 5 &
+Refleja utilidad operativa para sobrecupos y prerrequisitos pendientes; queda tras R-01, R-04 y R-02 por requerir flujo de aprobación. \\
 
-\textbf{R-10} & & & & & & \\[0.3cm]
+\textbf{R-06} & 5 & 2 & 2 & 3{,}20 & 7 &
+Aunque es base para R-01 y R-02, su puntaje baja en el ranking por dependencia de integración con el sistema académico existente ($R=2$, $E=2$). \\
+
+\rowcolor{fondo}
+\textbf{R-07} & 4 & 2 & 2 & 2{,}80 & 8 &
+Requisito de rendimiento clave para el primer día de inscripciones, pero penalizado por el esfuerzo y riesgo técnico asociados a $3000$ usuarios concurrentes. \\
+
+\textbf{R-08} & 2 & 2 & 1 & 1{,}70 & 10 &
+Coherente con quedar fuera de la primera versión (\textit{Won't}): desarrollar apps nativas para Android e iOS exige el mayor esfuerzo ($E=1$). \\
+
+\rowcolor{fondo}
+\textbf{R-09} & 3 & 4 & 4 & 3{,}60 & 4 &
+Supera en puntaje a requisitos más complejos (R-06, R-07) debido a su bajo riesgo y bajo esfuerzo operativo ($R=4$, $E=4$), aun sin ser imprescindible para inscribir. \\
+
+\textbf{R-10} & 4 & 3 & 3 & 3{,}40 & 6 &
+Empata en puntaje con R-05 ($3{,}40$); su relevancia normativa es obligatoria por cumplimiento legal aunque el puntaje multicriterio lo ubique en sexto lugar. \\
 
 \end{longtable}
 
@@ -1275,6 +1299,17 @@ primera versión.
 
 \subsection{Comparación con MoSCoW}
 
+Al contrastar el orden de la Tabla~\ref{tab:votacion} con la clasificación MoSCoW, se observan diferencias propias de combinar valor de negocio con factibilidad ($R$ y $E$):
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item \textbf{Prioridad operativa vs.\ complejidad de integración:} \textbf{R-06} es indispensable como fuente de datos para \textbf{R-01} y \textbf{R-02}, pero obtiene un puntaje de $3{,}20$ (puesto $7$) al castigarse su dependencia externa ($R=2$, $E=2$). En la ejecución real, debe atenderse como precondición técnica pese a su posición en el ranking.
+
+    \item \textbf{Requisitos ligeros con buen puntaje:} \textbf{R-04} ($4{,}00$, puesto $2$) y \textbf{R-09} ($3{,}60$, puesto $4$) destacan porque combinan utilidad práctica con menor esfuerzo y riesgo relativo frente a metas de alta concurrencia como \textbf{R-07} ($2{,}80$, puesto $8$).
+
+    \item \textbf{Exclusiones consistentes:} \textbf{R-03} ($2{,}00$, puesto $9$) y \textbf{R-08} ($1{,}70$, puesto $10$) ocupan los últimos lugares, respaldando su postergación para no comprometer el lanzamiento del sistema web en el próximo periodo académico.
+
+\end{itemize}
 
 % ==================================================
 % 7. IDENTIFICACIÓN Y RESOLUCIÓN DE CONFLICTOS
@@ -1284,9 +1319,7 @@ primera versión.
 
 \subsection{Identificación y clasificación}
 
-
 \subsection{Acuerdos win-win}
-
 
 \subsection{Lista de conflictos resueltos}
 
@@ -1344,13 +1377,11 @@ primera versión.
 
 \section{Conclusiones}
 
-
 % ==================================================
 % 9. DECLARACIÓN DE USO DE IA
 % ==================================================
 
 \section{Declaración de uso de inteligencia artificial}
-
 
 % ==================================================
 % FIN DEL DOCUMENTO
