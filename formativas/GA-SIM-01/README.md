@@ -26,9 +26,9 @@
 
 ## 1. Descripción de la actividad
 
-La actividad consiste en realizar una simulación de priorización y negociación de requisitos entre diferentes partes interesadas, utilizando el caso de estudio «Inscripciones universitarias» proporcionado por el docente.
+La actividad consiste en realizar una simulación de priorización y negociación de requisitos entre diferentes partes interesadas, utilizando el caso de estudio «Inscripciones universitarias» proporcionado por el docente
 
-Se aplicarán las técnicas de priorización MoSCoW y votación ponderada, así como la identificación y resolución de conflictos mediante acuerdos win-win.
+Se aplicarán las técnicas de priorización MoSCoW y votación ponderada, así como la identificación y resolución de conflictos mediante acuerdos win-win
 
 ## 2. Objetivo
 
