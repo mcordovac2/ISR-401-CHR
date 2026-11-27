@@ -936,6 +936,8 @@ solicitadas en la rúbrica.
 
 \subsection{Tabla MoSCoW acordada}
 
+Los cuatro integrantes ratificaron la clasificación presentada a continuación. Se conservan las condiciones técnicas de los acuerdos sobre R-03 y R-07; su ratificación no implica que dichas condiciones hayan sido verificadas.
+
 \begingroup
 
 \small
@@ -973,29 +975,29 @@ solicitadas en la rúbrica.
 \endfoot
 
 \rowcolor{fondo}
-\textbf{R-01} & & & \\[0.3cm]
+\textbf{R-01} & \textbf{Must} & La inscripción web responde al problema central de las filas y los formularios en papel. & A favor del acuerdo: los cuatro roles. Sin oposición final registrada. \\
 
-\textbf{R-02} & & & \\[0.3cm]
-
-\rowcolor{fondo}
-\textbf{R-03} & & & \\[0.3cm]
-
-\textbf{R-04} & & & \\[0.3cm]
+\textbf{R-02} & \textbf{Must} & La validación de cupos y prerrequisitos evita inscripciones incorrectas y reduce las comprobaciones manuales. & A favor del acuerdo: los cuatro roles. Sin oposición final registrada. \\
 
 \rowcolor{fondo}
-\textbf{R-05} & & & \\[0.3cm]
+\textbf{R-03} & \textbf{Could} & Se priorizan las inscripciones. La pasarela se reconsiderará si es viable sin afectar los Must, previa confirmación de otra modalidad de pago. & Gerente y desarrollador a favor; auditor inicialmente en contra (Should), acepta Could. Acuerdo final: los cuatro roles. \\
 
-\textbf{R-06} & & & \\[0.3cm]
-
-\rowcolor{fondo}
-\textbf{R-07} & & & \\[0.3cm]
-
-\textbf{R-08} & & & \\[0.3cm]
+\textbf{R-04} & \textbf{Must} & La bitácora permite identificar responsables y conservar la trazabilidad de las operaciones; el auditor exige mantenerla. & A favor del acuerdo: los cuatro roles. Sin oposición final registrada. \\
 
 \rowcolor{fondo}
-\textbf{R-09} & & & \\[0.3cm]
+\textbf{R-05} & \textbf{Must} & Las excepciones requieren autorización del coordinador y control de las decisiones, como defiende el auditor. & A favor del acuerdo: los cuatro roles. Sin oposición final registrada. \\
 
-\textbf{R-10} & & & \\[0.3cm]
+\textbf{R-06} & \textbf{Must} & Proporciona los datos académicos necesarios para R-01 y R-02; sin esta integración no se pueden efectuar las validaciones previstas. & A favor del acuerdo: los cuatro roles. Sin oposición final registrada. \\
+
+\rowcolor{fondo}
+\textbf{R-07} & \textbf{Should} & Se conserva la meta original como objetivo de rendimiento sujeto a evaluación de demanda e infraestructura. Los 1500 usuarios son solo un escenario inicial de prueba. & Desarrollador a favor; gerente y auditor inicialmente en contra (Must), aceptan Should. Acuerdo final: los cuatro roles. \\
+
+\textbf{R-08} & \textbf{Won't} & La primera entrega es web. El desarrollo nativo para dos plataformas ampliaría el alcance y consumiría recursos necesarios para los Must. & A favor del acuerdo: los cuatro roles. Sin oposición final registrada. \\
+
+\rowcolor{fondo}
+\textbf{R-09} & \textbf{Should} & Los reportes facilitan el seguimiento gerencial, pero no son indispensables para confirmar inscripciones. & A favor del acuerdo: los cuatro roles. Sin oposición final registrada. \\
+
+\textbf{R-10} & \textbf{Must} & El cifrado y el consentimiento informado son exigencias de protección de datos que el auditor no acepta aplazar. & A favor del acuerdo: los cuatro roles. Sin oposición final registrada. \\
 
 \end{longtable}
 
@@ -1311,6 +1313,27 @@ será necesario revisar nuevamente las dependencias
 para comprobar que los acuerdos alcanzados no
 introduzcan inconsistencias en el alcance de la
 primera versión.
+
+\subsubsection{Verificación de la clasificación definitiva}
+
+La clasificación ratificada comprende seis requisitos Must
+(R-01, R-02, R-04, R-05, R-06 y R-10), dos Should
+(R-07 y R-09), un Could (R-03) y un Won't (R-08).
+Las dependencias internas identificadas para los Must se
+mantienen dentro de la misma categoría: R-01 requiere R-02
+y R-06; R-02 requiere R-06; R-04 se relaciona con R-01;
+y R-05 con R-02 y R-04. R-06 depende del acceso al sistema
+académico y R-10 conserva su carácter transversal obligatorio.
+
+El cambio de R-07 a Should no elimina la necesidad de un
+rendimiento operativo suficiente. La meta original se mantiene
+como objetivo sujeto a evaluación; la capacidad mínima necesaria
+para operar deberá justificarse con datos de demanda y pruebas de
+carga. La coherencia del alcance queda condicionada a esa evaluación,
+al acceso al sistema académico y a confirmar una modalidad de pago
+alternativa para R-03. No se identifican dependencias internas
+obligatorias de los Must respecto de funcionalidades de menor
+prioridad, según el análisis realizado.
 
 % ==================================================
 % 6. VOTACIÓN PONDERADA
