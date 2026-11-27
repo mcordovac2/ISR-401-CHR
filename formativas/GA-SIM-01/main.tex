@@ -22,6 +22,7 @@
 \usepackage{lastpage}
 \usepackage{microtype}
 \usepackage{pdflscape}
+\usepackage{float}
 \usepackage[hidelinks]{hyperref}
 
 % ==================================================
@@ -1658,9 +1659,44 @@ antes de evaluar la infraestructura.
 
 \end{itemize}
 
+\begin{table}[H]
+    \centering
+    \small
+
+    \begin{tabularx}{\textwidth}{C{1.2cm} L{5cm} Y}
+
+        \rowcolor{azul}
+        \cabecera{ID} &
+        \cabecera{Exigencia del auditor} &
+        \cabecera{Efecto de los acuerdos} \\
+
+        \rowcolor{fondo}
+        \textbf{R-04} &
+        Conservar la bitácora no modificable. &
+        Los acuerdos sobre R-03 y R-07 no la modifican. \\
+
+        \textbf{R-05} &
+        Mantener el control de las autorizaciones. &
+        Los acuerdos sobre R-03 y R-07 no lo modifican. \\
+
+        \rowcolor{fondo}
+        \textbf{R-10} &
+        Proteger los datos personales. &
+        Se mantiene; también aplica a R-03 si se
+        incorpora y a las pruebas de carga de R-07. \\
+
+        \bottomrule
+
+    \end{tabularx}
+
+    \caption{Verificación de las exigencias del auditor.}
+    \label{tab:verificacion-auditor}
+
+\end{table}
+
 \subsubsection{Correspondencia con la tabla MoSCoW}
 
-\begin{table}[htbp]
+\begin{table}[H]
     \centering
     \small
 
@@ -1691,6 +1727,7 @@ antes de evaluar la infraestructura.
 
 \end{table}
 
+\newpage
 \subsection{Lista de conflictos resueltos}
 
 \begingroup
