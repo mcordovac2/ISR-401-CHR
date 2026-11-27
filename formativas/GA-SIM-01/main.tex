@@ -1193,25 +1193,25 @@ primera versión.
 
 \subsection{Criterios y pesos}
 
-La votación ponderada evalúa cada requisito candidato en una escala de $1$ a $5$ sobre tres criterios definidos en la guía \textbf{GA-SIM-01}: valor de negocio ($V$, peso 40\,\%), riesgo técnico ($R$, peso 30\,\%) y esfuerzo de implementación ($E$, peso 30\,\%).
+La votación ponderada evalúa cada requisito candidato en una escala de $1$ a $5$ sobre tres criterios definidos en la guía \textbf{GA-SIM-01}: valor de negocio ($V$, peso 40\,\%), riesgo técnico ($R$, peso 30\,\%) y esfuerzo de implementación ($E$, peso 30\,\%)[cite: 3].
 
-De acuerdo con la regla de puntuación inversa establecida para esta actividad, en $R$ y $E$ el valor $5$ corresponde a riesgo bajo o esfuerzo bajo, mientras que el valor $1$ corresponde a riesgo alto o esfuerzo alto. El puntaje total $P$ de cada requisito se calcula mediante:
+De acuerdo con la regla de puntuación inversa establecida para esta actividad, en $R$ y $E$ el valor $5$ corresponde a riesgo bajo o esfuerzo bajo, mientras que el valor $1$ corresponde a riesgo alto o esfuerzo alto[cite: 3, 7]. El puntaje total $P$ de cada requisito se calcula mediante:
 
 \[
 P = 0{,}40\,V + 0{,}30\,R + 0{,}30\,E
 \]
 
-donde $P \in [1{,}00;\,5{,}00]$ y el orden jerárquico asigna el puesto $1$ al mayor puntaje obtenido.
+donde $P \in [1{,}00;\,5{,}00]$ y los requisitos se ordenan de mayor a menor puntaje obtenido (asignando el puesto $1$ al mayor valor)[cite: 3, 7].
 
 \subsection{Segunda parte -- Rivas Bodero Jordy Fabián}
 
-\textbf{Rol:} Usuario operativo.\\
-\textbf{Responsable:} Rivas Bodero Jordy Fabián.\\
-\textbf{Producto asignado:} Tabla de votación ponderada y análisis comparativo frente a MoSCoW.
+\textbf{Rol:} Usuario operativo[cite: 9].\\
+\textbf{Responsable:} Rivas Bodero Jordy Fabián[cite: 9].\\
+\textbf{Producto asignado:} Tabla de votación ponderada ordenada, verificación de cálculos y análisis comparativo frente a MoSCoW.
 
-Desde la perspectiva del usuario operativo, la evaluación prioriza las funciones que reducen filas en secretaría, previenen errores de matrícula por cupos o prerrequisitos y permiten verificar cambios y excepciones sin fricción operativa, ponderando al mismo tiempo las restricciones técnicas y de esfuerzo que afectan su entrega en la primera versión.
+Desde la perspectiva del usuario operativo, la evaluación prioriza las funcionalidades que eliminan filas presenciales en secretaría, evitan errores de matrícula por cupos o prerrequisitos y agilizan el seguimiento de excepciones, ponderando simultáneamente las restricciones técnicas y de esfuerzo que condicionan la entrega de la primera versión[cite: 2, 9].
 
-\subsubsection{Tabla de votación ponderada}
+\subsubsection{Tabla de votación ponderada (ordenada de mayor a menor puntaje)}
 
 \begingroup
 
@@ -1226,10 +1226,10 @@ Desde la perspectiva del usuario operativo, la evaluación prioriza las funcione
     C{1.1cm}
     C{1.2cm}
     C{1.2cm}
-    L{7.0cm}
+    L{6.8cm}
 }
 
-\caption{Tabla de votación ponderada -- Usuario operativo.}
+\caption{Tabla de votación ponderada ordenada de mayor a menor puntaje -- Usuario operativo.}
 \label{tab:votacion}\\
 
 \rowcolor{azul}
@@ -1260,54 +1260,136 @@ Desde la perspectiva del usuario operativo, la evaluación prioriza las funcione
 
 \rowcolor{fondo}
 \textbf{R-01} & 5 & 4 & 3 & 4{,}10 & 1 &
-Coincide con prioridad alta (\textit{Must}): elimina filas presenciales y su esfuerzo moderado permite priorizarlo en primer lugar. \\
-
-\textbf{R-02} & 5 & 3 & 3 & 3{,}80 & 3 &
-Coherente con núcleo operativo: alto valor al evitar errores de cupo y prerrequisitos, con riesgo medio por validaciones académicas. \\
-
-\rowcolor{fondo}
-\textbf{R-03} & 2 & 2 & 2 & 2{,}00 & 9 &
-Coherente con alcance diferido (\textit{Could}/\textit{Won't}): pasarela externa con mayor esfuerzo/riesgo y menor urgencia frente al flujo de inscripción. \\
+Coincide con su prioridad imprescindible (\textit{Must}): elimina filas presenciales y su esfuerzo moderado ($E=3$) permite ubicarlo en el primer lugar[cite: 2, 9]. \\
 
 \textbf{R-04} & 4 & 4 & 4 & 4{,}00 & 2 &
-Sube en orden relativo frente a requisitos con mayor complejidad técnica porque su implementación es directa y aporta trazabilidad operativa inmediata. \\
+Asciende al segundo puesto por su bajo riesgo y bajo esfuerzo ($R=4$, $E=4$), aportando trazabilidad inmediata frente a requisitos más complejos[cite: 2, 9]. \\
+
+\rowcolor{fondo}
+\textbf{R-02} & 5 & 3 & 3 & 3{,}80 & 3 &
+Mantiene coherencia con el núcleo operativo (\textit{Must}): alto valor para evitar errores de cupo y prerrequisitos, con riesgo técnico medio ($R=3$)[cite: 2, 9]. \\
+
+\textbf{R-09} & 3 & 4 & 4 & 3{,}60 & 4 &
+Supera en puntaje a requisitos \textit{Must} más complejos (R-05, R-10, R-06 y R-07) debido a su bajo esfuerzo y riesgo ($R=4$, $E=4$), pese a ser \textit{Should}[cite: 2, 9]. \\
 
 \rowcolor{fondo}
 \textbf{R-05} & 4 & 3 & 3 & 3{,}40 & 5 &
-Refleja utilidad operativa para sobrecupos y prerrequisitos pendientes; queda tras R-01, R-04 y R-02 por requerir flujo de aprobación. \\
-
-\textbf{R-06} & 5 & 2 & 2 & 3{,}20 & 7 &
-Aunque es base para R-01 y R-02, su puntaje baja en el ranking por dependencia de integración con el sistema académico existente ($R=2$, $E=2$). \\
-
-\rowcolor{fondo}
-\textbf{R-07} & 4 & 2 & 2 & 2{,}80 & 8 &
-Requisito de rendimiento clave para el primer día de inscripciones, pero penalizado por el esfuerzo y riesgo técnico asociados a $3000$ usuarios concurrentes. \\
-
-\textbf{R-08} & 2 & 2 & 1 & 1{,}70 & 10 &
-Coherente con quedar fuera de la primera versión (\textit{Won't}): desarrollar apps nativas para Android e iOS exige el mayor esfuerzo ($E=1$). \\
-
-\rowcolor{fondo}
-\textbf{R-09} & 3 & 4 & 4 & 3{,}60 & 4 &
-Supera en puntaje a requisitos más complejos (R-06, R-07) debido a su bajo riesgo y bajo esfuerzo operativo ($R=4$, $E=4$), aun sin ser imprescindible para inscribir. \\
+Refleja alta utilidad operativa para gestionar sobrecupos y prerrequisitos pendientes; se ubica quinto al requerir un flujo de aprobación dedicado[cite: 2, 9]. \\
 
 \textbf{R-10} & 4 & 3 & 3 & 3{,}40 & 6 &
-Empata en puntaje con R-05 ($3{,}40$); su relevancia normativa es obligatoria por cumplimiento legal aunque el puntaje multicriterio lo ubique en sexto lugar. \\
+Empata en puntaje con R-05 ($3{,}40$); su cumplimiento legal y de seguridad es obligatorio (\textit{Must}) aunque el cálculo multicriterio lo ubique sexto[cite: 2, 8, 9]. \\
+
+\rowcolor{fondo}
+\textbf{R-06} & 5 & 2 & 2 & 3{,}20 & 7 &
+Presenta la mayor brecha frente a MoSCoW: es precondición \textit{Must} para R-01 y R-02, pero cae al séptimo lugar por la complejidad de integrar el sistema legado ($R=2$, $E=2$)[cite: 2]. \\
+
+\textbf{R-07} & 4 & 2 & 2 & 2{,}80 & 8 &
+Desciende en el ordenamiento porque atender $3000$ usuarios concurrentes implica alto riesgo y esfuerzo técnico ($R=2$, $E=2$), aun siendo crítico el primer día[cite: 2, 9]. \\
+
+\rowcolor{fondo}
+\textbf{R-03} & 2 & 2 & 2 & 2{,}00 & 9 &
+Coherente con su postergación (\textit{Could}): integrar una pasarela de pagos externa conlleva riesgo y esfuerzo elevados frente a un valor secundario para inscribir[cite: 2, 9]. \\
+
+\textbf{R-08} & 2 & 2 & 1 & 1{,}70 & 10 &
+Coincide plenamente con quedar fuera de esta entrega (\textit{Won't}): desarrollar aplicaciones nativas para Android e iOS representa el mayor esfuerzo ($E=1$)[cite: 2]. \\
 
 \end{longtable}
 
 \endgroup
 
+\subsubsection{Verificación de exactitud de los cálculos y coherencia del ordenamiento}
+
+Para garantizar la exactitud aritmética y la consistencia del ordenamiento de la Tabla~\ref{tab:votacion}, en la Tabla~\ref{tab:verificacion-votacion} se desglosa el aporte ponderado de cada criterio ($0{,}40\,V$, $0{,}30\,R$ y $0{,}30\,E$) y se comprueba el ordenamiento monótono decreciente ($P_1 \ge P_2 \ge \dots \ge P_{10}$).
+
+\begingroup
+
+\small
+\singlespacing
+\setlength{\tabcolsep}{4pt}
+
+\begin{longtable}{
+    C{1.2cm}
+    C{1.2cm}
+    C{2.1cm}
+    C{2.1cm}
+    C{2.1cm}
+    C{1.6cm}
+    C{3.3cm}
+}
+
+\caption{Verificación aritmética de la votación ponderada.}
+\label{tab:verificacion-votacion}\\
+
+\rowcolor{azul}
+\cabecera{Orden} &
+\cabecera{ID} &
+\cabecera{$0{,}40\,V$} &
+\cabecera{$0{,}30\,R$} &
+\cabecera{$0{,}30\,E$} &
+\cabecera{Suma ($P$)} &
+\cabecera{Estado de ordenamiento} \\
+
+\endfirsthead
+
+\rowcolor{azul}
+\cabecera{Orden} &
+\cabecera{ID} &
+\cabecera{$0{,}40\,V$} &
+\cabecera{$0{,}30\,R$} &
+\cabecera{$0{,}30\,E$} &
+\cabecera{Suma ($P$)} &
+\cabecera{Estado de ordenamiento} \\
+
+\endhead
+
+\bottomrule
+
+\endfoot
+
+\rowcolor{fondo}
+\textbf{1} & \textbf{R-01} & $0{,}40(5) = 2{,}00$ & $0{,}30(4) = 1{,}20$ & $0{,}30(3) = 0{,}90$ & \textbf{4{,}10} & Máximo puntaje \\
+
+\textbf{2} & \textbf{R-04} & $0{,}40(4) = 1{,}60$ & $0{,}30(4) = 1{,}20$ & $0{,}30(4) = 1{,}20$ & \textbf{4{,}00} & $4{,}00 < 4{,}10$ (Correcto) \\
+
+\rowcolor{fondo}
+\textbf{3} & \textbf{R-02} & $0{,}40(5) = 2{,}00$ & $0{,}30(3) = 0{,}90$ & $0{,}30(3) = 0{,}90$ & \textbf{3{,}80} & $3{,}80 < 4{,}00$ (Correcto) \\
+
+\textbf{4} & \textbf{R-09} & $0{,}40(3) = 1{,}20$ & $0{,}30(4) = 1{,}20$ & $0{,}30(4) = 1{,}20$ & \textbf{3{,}60} & $3{,}60 < 3{,}80$ (Correcto) \\
+
+\rowcolor{fondo}
+\textbf{5} & \textbf{R-05} & $0{,}40(4) = 1{,}60$ & $0{,}30(3) = 0{,}90$ & $0{,}30(3) = 0{,}90$ & \textbf{3{,}40} & $3{,}40 < 3{,}60$ (Correcto) \\
+
+\textbf{6} & \textbf{R-10} & $0{,}40(4) = 1{,}60$ & $0{,}30(3) = 0{,}90$ & $0{,}30(3) = 0{,}90$ & \textbf{3{,}40} & Empate técnico ($3{,}40 = 3{,}40$) \\
+
+\rowcolor{fondo}
+\textbf{7} & \textbf{R-06} & $0{,}40(5) = 2{,}00$ & $0{,}30(2) = 0{,}60$ & $0{,}30(2) = 0{,}60$ & \textbf{3{,}20} & $3{,}20 < 3{,}40$ (Correcto) \\
+
+\textbf{8} & \textbf{R-07} & $0{,}40(4) = 1{,}60$ & $0{,}30(2) = 0{,}60$ & $0{,}30(2) = 0{,}60$ & \textbf{2{,}80} & $2{,}80 < 3{,}20$ (Correcto) \\
+
+\rowcolor{fondo}
+\textbf{9} & \textbf{R-03} & $0{,}40(2) = 0{,}80$ & $0{,}30(2) = 0{,}60$ & $0{,}30(2) = 0{,}60$ & \textbf{2{,}00} & $2{,}00 < 2{,}80$ (Correcto) \\
+
+\textbf{10} & \textbf{R-08} & $0{,}40(2) = 0{,}80$ & $0{,}30(2) = 0{,}60$ & $0{,}30(1) = 0{,}30$ & \textbf{1{,}70} & Mínimo puntaje \\
+
+\end{longtable}
+
+\endgroup
+
+Respecto al empate técnico en $3{,}40$ puntos entre \textbf{R-05} y \textbf{R-10}, ambos comparten idéntica distribución de criterios ($V=4$, $R=3$, $E=3$); se ubica primero a \textbf{R-05} por su impacto operativo directo en la atención de excepciones en ventanilla, sin que ello altere la obligatoriedad legal transversal de \textbf{R-10}[cite: 2, 8, 9].
+
 \subsection{Comparación con MoSCoW}
 
-Al contrastar el orden de la Tabla~\ref{tab:votacion} con la clasificación MoSCoW, se observan diferencias propias de combinar valor de negocio con factibilidad ($R$ y $E$):
+Al contrastar el ordenamiento de la Tabla~\ref{tab:votacion} con la clasificación MoSCoW, se identifican cuatro diferencias estructurales derivadas de equilibrar el valor de negocio (40\,\%) con la factibilidad técnica y de esfuerzo (60\,\% conjunto)[cite: 3]:
 
 \begin{itemize}[leftmargin=1.5em]
 
-    \item \textbf{Prioridad operativa vs.\ complejidad de integración:} \textbf{R-06} es indispensable como fuente de datos para \textbf{R-01} y \textbf{R-02}, pero obtiene un puntaje de $3{,}20$ (puesto $7$) al castigarse su dependencia externa ($R=2$, $E=2$). En la ejecución real, debe atenderse como precondición técnica pese a su posición en el ranking.
+    \item \textbf{Dependencia técnica frente a puntaje multicriterio (R-06):} En MoSCoW, \textbf{R-06} es imprescindible (\textit{Must}) porque provee las mallas, notas y paralelos necesarios para \textbf{R-01} y \textbf{R-02}. Sin embargo, en la votación ponderada desciende al puesto $7$ ($3{,}20$) debido a la penalización inversa por depender de un sistema académico externo ($R=2$, $E=2$). Esto demuestra que el ranking ponderado no sustituye el análisis de dependencias: \textbf{R-06} debe ejecutarse primero como habilitador técnico[cite: 2].
 
-    \item \textbf{Requisitos ligeros con buen puntaje:} \textbf{R-04} ($4{,}00$, puesto $2$) y \textbf{R-09} ($3{,}60$, puesto $4$) destacan porque combinan utilidad práctica con menor esfuerzo y riesgo relativo frente a metas de alta concurrencia como \textbf{R-07} ($2{,}80$, puesto $8$).
+    \item \textbf{Ascenso de requisitos de bajo esfuerzo y riesgo (R-04 y R-09):} \textbf{R-04} alcanza el segundo lugar ($4{,}00$) y \textbf{R-09} el cuarto ($3{,}60$, por encima de requisitos \textit{Must} como \textbf{R-05}, \textbf{R-10}, \textbf{R-06} y \textbf{R-07}). Mientras MoSCoW evalúa la criticidad funcional o normativa, la votación ponderada premia las funcionalidades rápidas y seguras de implementar ($R=4$, $E=4$)[cite: 2, 9].
 
-    \item \textbf{Exclusiones consistentes:} \textbf{R-03} ($2{,}00$, puesto $9$) y \textbf{R-08} ($1{,}70$, puesto $10$) ocupan los últimos lugares, respaldando su postergación para no comprometer el lanzamiento del sistema web en el próximo periodo académico.
+    \item \textbf{Penalización de requisitos no funcionales exigentes (R-07 y R-10):} \textbf{R-07} baja al puesto $8$ ($2{,}80$) por la complejidad de soportar $3000$ usuarios concurrentes en menos de $3$ segundos ($R=2$, $E=2$), y \textbf{R-10} se sitúa en el puesto $6$ ($3{,}40$). Aunque obtienen menor puntaje relativo, su cumplimiento sigue siendo obligatorio por continuidad operativa el primer día y por exigencia legal[cite: 2, 8, 9].
+
+    \item \textbf{Convergencia en el núcleo y en las exclusiones (R-01, R-02, R-03 y R-08):} Ambos métodos coinciden plenamente en los extremos: \textbf{R-01} ($4{,}10$, puesto $1$) y \textbf{R-02} ($3{,}80$, puesto $3$) lideran como base de la inscripción web, mientras que \textbf{R-03} ($2{,}00$, puesto $9$) y \textbf{R-08} ($1{,}70$, puesto $10$) quedan relegados al final, respaldando su exclusión o postergación en la primera entrega[cite: 2, 9].
 
 \end{itemize}
 
