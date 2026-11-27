@@ -1527,6 +1527,80 @@ Al contrastar el ordenamiento de la Tabla~\ref{tab:votacion} con la clasificaci�
 
 \subsection{Identificación y clasificación}
 
+\subsubsection{Conflicto 1: prioridad del pago en línea}
+
+El conflicto se presentó en R-03, correspondiente al
+pago de matrícula mediante una pasarela externa.
+Como auditor, propuse clasificarlo como Should porque
+facilita el proceso al estudiante.
+
+La gerente, Mayra Córdova, propuso Could porque el
+objetivo principal de la primera versión es resolver
+el proceso de inscripción. Consideró que integrar
+la pasarela podría requerir tiempo y recursos que
+deberían destinarse primero a los requisitos Must.
+
+El desarrollador, Gilmar Herrera, apoyó la categoría
+Could por el posible esfuerzo de integración,
+las pruebas de seguridad y el manejo de errores
+en las transacciones. Tanto la gerente como el
+desarrollador aceptaron reconsiderar Should si
+una evaluación posterior confirma su viabilidad
+sin afectar las funcionalidades imprescindibles.
+
+Se identificó un conflicto de intereses: mi posición
+priorizaba la facilidad de pago para el estudiante,
+mientras que la gerente y el desarrollador buscaban
+concentrar los recursos en el alcance imprescindible.
+
+Acepté cambiar mi propuesta a Could, condicionado
+a confirmar una modalidad alternativa de pago.
+La seguridad de las transacciones deberá mantenerse
+si se incorpora la pasarela. La alternativa de pago
+y la viabilidad técnica todavía requieren confirmación,
+por lo que el acuerdo permanece condicionado.
+
+\subsubsection{Conflicto 2: prioridad y meta de rendimiento}
+
+El conflicto se presentó en R-07, que establece la
+atención de 3000 usuarios concurrentes con un tiempo
+de respuesta menor a 3 segundos en el 95\,\% de
+las solicitudes.
+
+Como auditor, propuse mantenerlo como Must para
+evitar retrasos y dificultades durante las inscripciones.
+En su posición revisada, el desarrollador, Gilmar Herrera,
+propuso Should porque cumplir esa meta podría requerir
+infraestructura, optimización y pruebas que demandarían
+tiempo y recursos adicionales.
+
+Se identificó un conflicto de intereses entre asegurar
+la capacidad de atención prevista y ajustar el compromiso
+de la primera versión a los recursos disponibles.
+También existe incertidumbre técnica, porque todavía
+no se ha evaluado la capacidad de la infraestructura.
+
+Durante la negociación, Gilmar propuso evaluar
+1500 usuarios concurrentes como escenario inicial
+de prueba. Aclaró que esa cifra no debía considerarse
+definitiva sin conocer la demanda de inscripciones
+y las condiciones de la infraestructura.
+
+Acepté cambiar mi propuesta a Should y revisar la
+meta con información de la demanda y pruebas de carga.
+Por su parte, Gilmar aceptó reconsiderar la meta
+original de 3000 usuarios si los resultados muestran
+que es necesaria, revisando los recursos y las
+funcionalidades secundarias que podrían aplazarse.
+
+Este acuerdo entre el auditor y el desarrollador
+constituye una propuesta pendiente de ratificación
+por el equipo. Los 1500 usuarios representan un
+escenario de evaluación, no una capacidad comprobada
+ni una sustitución definitiva de la meta original.
+Tampoco se ha acordado modificar el tiempo de respuesta
+ni el porcentaje de solicitudes establecidos en R-07.
+
 \subsection{Acuerdos win-win}
 
 \subsection{Lista de conflictos resueltos}
@@ -1571,9 +1645,50 @@ Al contrastar el ordenamiento de la Tabla~\ref{tab:votacion} con la clasificaci�
 \endfoot
 
 \rowcolor{fondo}
-\textbf{1} & & & & \\[1cm]
+\textbf{1} &
+R-03: pago en línea.
 
-\textbf{2} & & & & \\[1cm]
+Auditor, gerente y desarrollador. &
+El auditor propone Should porque facilita el pago.
+
+La gerente propone Could para concentrar los recursos
+en los requisitos Must.
+
+El desarrollador respalda Could por el posible esfuerzo
+de integración, pruebas y manejo de errores. &
+De intereses: facilidad de pago para el estudiante
+frente a la distribución del tiempo y los recursos. &
+Acuerdo condicionado: mantener R-03 como Could,
+sujeto a confirmar otra modalidad de pago.
+
+El auditor acepta reducir su prioridad. La gerente
+y el desarrollador aceptan reconsiderar Should
+si se confirma su viabilidad sin afectar los Must.
+
+Si se implementa, deberán mantenerse los controles
+de seguridad. \\
+
+\textbf{2} &
+R-07: rendimiento.
+
+Auditor y desarrollador. &
+El auditor propone inicialmente Must para evitar
+dificultades durante las inscripciones.
+
+En su posición revisada, el desarrollador propone
+Should por la incertidumbre sobre infraestructura,
+tiempo y recursos. &
+De intereses: capacidad de atención frente al
+tiempo y los recursos disponibles. &
+El auditor acepta proponer Should y revisar la meta.
+
+El desarrollador acepta reconsiderar los 3000 usuarios
+si la demanda lo requiere, revisando recursos y
+funcionalidades que podrían aplazarse.
+
+Los 1500 usuarios son solo un escenario de prueba.
+La propuesta requiere ratificación del equipo;
+no modifica definitivamente la meta original. \\
 
 \end{longtable}
 
