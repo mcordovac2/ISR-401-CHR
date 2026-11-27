@@ -1603,6 +1603,94 @@ ni el porcentaje de solicitudes establecidos en R-07.
 
 \subsection{Acuerdos win-win}
 
+\textbf{Responsable:} Herrera Morán Gilmar Javier.
+
+Los siguientes acuerdos responden a los conflictos
+identificados. En ambos se busca atender el interés de
+cada parte sin descartar de forma definitiva la posición
+contraria.
+
+\subsubsection{Acuerdo 1: pago en línea (R-03)}
+
+R-03 se mantiene como \textbf{Could}, condicionado a
+confirmar una modalidad alternativa de pago. Se podrá
+reconsiderar como Should si una evaluación demuestra que
+es viable sin afectar los requisitos Must. Así, los
+recursos se concentran primero en la inscripción y el
+pago en línea conserva la posibilidad de incorporarse.
+
+\textbf{Estado:} condicionado. Falta confirmar la
+alternativa de pago y la viabilidad técnica.
+
+\subsubsection{Acuerdo 2: rendimiento (R-07)}
+
+El auditor y el desarrollador proponen clasificar R-07
+como \textbf{Should} y revisar la meta con datos de la
+demanda y pruebas de carga. Los 1500 usuarios
+concurrentes se usarán solo como escenario inicial de
+evaluación. Si los resultados muestran que se necesitan
+los 3000, se reconsiderará la meta original y se revisarán
+los recursos y las funcionalidades secundarias que puedan
+aplazarse. El tiempo de respuesta y el porcentaje de
+solicitudes no se modifican. De esta forma, el auditor
+asegura que la capacidad de atención se revise con
+evidencia y el desarrollador evita comprometer una meta
+antes de evaluar la infraestructura.
+
+\textbf{Estado:} pendiente de ratificación por el equipo.
+
+\subsubsection{Cumplimiento normativo y protección de datos}
+
+\begin{itemize}[leftmargin=1.5em]
+
+    \item Ninguno de los dos acuerdos cambia la bitácora
+    (R-04), el control de las autorizaciones (R-05) ni la
+    protección de datos personales (R-10), que son las
+    condiciones defendidas por el auditor.
+
+    \item Si se incorpora R-03, la pasarela deberá
+    mantener la seguridad de las transacciones, y los
+    datos personales se tratarán con cifrado y
+    consentimiento informado, según R-10.
+
+    \item Las pruebas de carga de R-07 deberán respetar
+    R-10.
+
+\end{itemize}
+
+\subsubsection{Correspondencia con la tabla MoSCoW}
+
+\begin{table}[htbp]
+    \centering
+    \small
+
+    \begin{tabularx}{\textwidth}{C{1.2cm} L{4.3cm} Y}
+
+        \rowcolor{azul}
+        \cabecera{ID} &
+        \cabecera{Categoría a registrar} &
+        \cabecera{Condición} \\
+
+        \rowcolor{fondo}
+        \textbf{R-03} &
+        Could (condicionado) &
+        Confirmar otra modalidad de pago y evaluar la
+        viabilidad de la pasarela. \\
+
+        \textbf{R-07} &
+        Should (propuesta por ratificar) &
+        Requiere la decisión del equipo; la propuesta
+        inicial del gerente fue Must. \\
+
+        \bottomrule
+
+    \end{tabularx}
+
+    \caption{Reflejo de los acuerdos en la tabla MoSCoW.}
+    \label{tab:reflejo-acuerdos}
+
+\end{table}
+
 \subsection{Lista de conflictos resueltos}
 
 \begingroup
@@ -1619,7 +1707,7 @@ ni el porcentaje de solicitudes establecidos en R-07.
     L{5.1cm}
 }
 
-\caption{Lista de conflictos resueltos.}
+\caption{Lista de conflictos y acuerdos alcanzados.}
 \label{tab:conflictos}\\
 
 \rowcolor{azul}
@@ -1658,15 +1746,18 @@ El desarrollador respalda Could por el posible esfuerzo
 de integración, pruebas y manejo de errores. &
 De intereses: facilidad de pago para el estudiante
 frente a la distribución del tiempo y los recursos. &
-Acuerdo condicionado: mantener R-03 como Could,
-sujeto a confirmar otra modalidad de pago.
+R-03 queda como Could, condicionado.
 
-El auditor acepta reducir su prioridad. La gerente
-y el desarrollador aceptan reconsiderar Should
-si se confirma su viabilidad sin afectar los Must.
+\textbf{Auditor.} Cede: la categoría Should.
+Gana: condición de otra modalidad de pago y controles
+de seguridad si se implementa.
 
-Si se implementa, deberán mantenerse los controles
-de seguridad. \\
+\textbf{Gerente.} Cede: acepta reconsiderar Should.
+Gana: recursos enfocados primero en los Must.
+
+\textbf{Desarrollador.} Cede: acepta reconsiderar
+Should si es viable. Gana: no compromete la integración
+sin evaluarla. \\
 
 \textbf{2} &
 R-07: rendimiento.
@@ -1680,15 +1771,16 @@ Should por la incertidumbre sobre infraestructura,
 tiempo y recursos. &
 De intereses: capacidad de atención frente al
 tiempo y los recursos disponibles. &
-El auditor acepta proponer Should y revisar la meta.
+Propuesta: R-07 como Should, por ratificar.
 
-El desarrollador acepta reconsiderar los 3000 usuarios
-si la demanda lo requiere, revisando recursos y
-funcionalidades que podrían aplazarse.
+\textbf{Auditor.} Cede: la categoría Must. Gana:
+revisión con datos de demanda y pruebas de carga, y
+posibilidad de recuperar la meta de 3000 usuarios.
 
-Los 1500 usuarios son solo un escenario de prueba.
-La propuesta requiere ratificación del equipo;
-no modifica definitivamente la meta original. \\
+\textbf{Desarrollador.} Cede: acepta reconsiderar los
+3000 usuarios y revisar recursos y alcance. Gana: no
+compromete la meta sin evaluar la infraestructura;
+1500 usuarios son solo un escenario de prueba. \\
 
 \end{longtable}
 
@@ -1705,6 +1797,20 @@ no modifica definitivamente la meta original. \\
 % ==================================================
 
 \section{Declaración de uso de inteligencia artificial}
+
+\textbf{Herramienta:} Claude (Anthropic).
+
+\textbf{Versión:} modelo configurado
+\texttt{claude-sonnet-5-5}.
+
+\textbf{Propósito:} apoyo para redactar y dar formato en
+\LaTeX{} a la parte 6.4 (acuerdos \textit{win-win}), a
+partir de los conflictos registrados por el equipo.
+
+\textbf{Procedimiento de verificación:} el responsable
+debe contrastar el contenido generado con lo ocurrido en
+la simulación, la guía y la rúbrica antes de la entrega.
+
 
 % ==================================================
 % FIN DEL DOCUMENTO
