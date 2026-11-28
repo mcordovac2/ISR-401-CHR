@@ -1627,9 +1627,11 @@ ni el porcentaje de solicitudes establecidos en R-07.
 \textbf{Responsable:} Herrera Morán Gilmar Javier.
 
 Los siguientes acuerdos responden a los conflictos
-identificados. En ambos se busca atender el interés de
-cada parte sin descartar de forma definitiva la posición
-contraria.
+identificados y fueron ratificados por los cuatro
+integrantes en la tabla MoSCoW acordada
+(Tabla~\ref{tab:moscow}). En ambos se atiende el interés
+de cada parte sin descartar de forma definitiva la
+posición contraria.
 
 \subsubsection{Acuerdo 1: pago en línea (R-03)}
 
@@ -1640,25 +1642,31 @@ es viable sin afectar los requisitos Must. Así, los
 recursos se concentran primero en la inscripción y el
 pago en línea conserva la posibilidad de incorporarse.
 
-\textbf{Estado:} condicionado. Falta confirmar la
-alternativa de pago y la viabilidad técnica.
+\textbf{Estado:} ratificado con condiciones. La
+alternativa de pago y la viabilidad técnica aún deben
+verificarse.
 
 \subsubsection{Acuerdo 2: rendimiento (R-07)}
 
-El auditor y el desarrollador proponen clasificar R-07
-como \textbf{Should} y revisar la meta con datos de la
-demanda y pruebas de carga. Los 1500 usuarios
-concurrentes se usarán solo como escenario inicial de
-evaluación. Si los resultados muestran que se necesitan
-los 3000, se reconsiderará la meta original y se revisarán
-los recursos y las funcionalidades secundarias que puedan
-aplazarse. El tiempo de respuesta y el porcentaje de
-solicitudes no se modifican. De esta forma, el auditor
-asegura que la capacidad de atención se revise con
-evidencia y el desarrollador evita comprometer una meta
-antes de evaluar la infraestructura.
+El equipo acordó clasificar R-07 como \textbf{Should} y
+revisar la meta con datos de la demanda y pruebas de
+carga. El auditor y la gerente, que propusieron
+inicialmente Must, aceptaron esta categoría. La meta
+original de 3000 usuarios concurrentes se conserva como
+objetivo sujeto a evaluación, y los 1500 usuarios se
+usarán solo como escenario inicial de prueba. Si los
+resultados muestran que se necesitan los 3000, se
+revisarán los recursos y las funcionalidades secundarias
+que puedan aplazarse. El tiempo de respuesta y el
+porcentaje de solicitudes no se modifican. La capacidad
+mínima para operar deberá justificarse con esa
+evaluación. De esta forma, la gerente y el auditor
+mantienen la exigencia de un rendimiento suficiente y el
+desarrollador evita comprometer una meta antes de evaluar
+la infraestructura.
 
-\textbf{Estado:} pendiente de ratificación por el equipo.
+\textbf{Estado:} ratificado con condiciones. La
+evaluación de demanda e infraestructura está pendiente.
 
 \subsubsection{Cumplimiento normativo y protección de datos}
 
@@ -1716,6 +1724,9 @@ antes de evaluar la infraestructura.
 
 \subsubsection{Correspondencia con la tabla MoSCoW}
 
+Las categorías de ambos acuerdos coinciden con las
+registradas en la Tabla~\ref{tab:moscow}.
+
 \begin{table}[H]
     \centering
     \small
@@ -1724,7 +1735,7 @@ antes de evaluar la infraestructura.
 
         \rowcolor{azul}
         \cabecera{ID} &
-        \cabecera{Categoría a registrar} &
+        \cabecera{Categoría registrada} &
         \cabecera{Condición} \\
 
         \rowcolor{fondo}
@@ -1734,9 +1745,9 @@ antes de evaluar la infraestructura.
         viabilidad de la pasarela. \\
 
         \textbf{R-07} &
-        Should (propuesta por ratificar) &
-        Requiere la decisión del equipo; la propuesta
-        inicial del gerente fue Must. \\
+        Should &
+        Evaluar la demanda y la infraestructura mediante
+        pruebas de carga. \\
 
         \bottomrule
 
@@ -1819,20 +1830,27 @@ sin evaluarla. \\
 \textbf{2} &
 R-07: rendimiento.
 
-Auditor y desarrollador. &
+Auditor, gerente y desarrollador. &
 El auditor propone inicialmente Must para evitar
 dificultades durante las inscripciones.
+
+La gerente propone inicialmente Must por la
+disponibilidad el primer día.
 
 En su posición revisada, el desarrollador propone
 Should por la incertidumbre sobre infraestructura,
 tiempo y recursos. &
 De intereses: capacidad de atención frente al
 tiempo y los recursos disponibles. &
-Propuesta: R-07 como Should, por ratificar.
+R-07 queda como Should, condicionado.
 
 \textbf{Auditor.} Cede: la categoría Must. Gana:
 revisión con datos de demanda y pruebas de carga, y
 posibilidad de recuperar la meta de 3000 usuarios.
+
+\textbf{Gerente.} Cede: la categoría Must. Gana: la
+meta original se conserva como objetivo y la capacidad
+mínima deberá justificarse.
 
 \textbf{Desarrollador.} Cede: acepta reconsiderar los
 3000 usuarios y revisar recursos y alcance. Gana: no
