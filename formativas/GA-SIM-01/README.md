@@ -102,6 +102,17 @@ Debido a que el equipo está conformado por cuatro integrantes, cada estudiante 
 
 Las posiciones específicas de cada rol se establecerán a partir de las tarjetas correspondientes a la simulación. Estas no deberán mostrarse a los demás participantes.
 
+### Incorporación al equipo
+
+Durante la semana 5 del período académico, por disposición
+del docente, Espinoza Pivaque Angelo Maximiliano se incorporó
+al equipo CHR. En esta actividad participa como auditor y
+es responsable de la identificación y clasificación
+de los conflictos.
+
+Las actividades anteriores a su incorporación conservan
+sus integrantes y registros de autoría originales.
+
 ## 5. Desarrollo de la actividad
 
 ### 5.1. Presentación de posiciones
